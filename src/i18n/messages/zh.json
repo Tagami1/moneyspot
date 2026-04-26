@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "东京外币兑换，找到最优汇率",
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "close": "关闭",
+    "back": "← 返回",
+    "noResults": "未找到结果",
+    "lastUpdated": "最后更新: {time}",
+    "shopsFound": "{count}家店铺"
+  },
+  "header": {
+    "language": "语言",
+    "map": "地图",
+    "list": "列表"
+  },
+  "search": {
+    "placeholder": "按货币、地区、店铺名搜索",
+    "nearMe": "我附近",
+    "currency": "选择货币"
+  },
+  "shop": {
+    "open": "营业中",
+    "closed": "营业时间外",
+    "closingSoon": "即将关店",
+    "closedToday": "今日休息",
+    "bestRate": "最优汇率",
+    "nearest": "最近",
+    "buyRate": "买入",
+    "sellRate": "卖出",
+    "sell": "卖",
+    "buy": "买",
+    "distance": "{distance}km",
+    "directions": "Google Maps 路线导航",
+    "details": "详情",
+    "businessHours": "营业时间",
+    "holidayClosed": "休息",
+    "phone": "电话号码",
+    "website": "网站",
+    "address": "地址",
+    "basicInfo": "基本信息",
+    "exchangeRates": "汇率",
+    "referenceRate": "参考汇率",
+    "referenceRateNote": "参考汇率：Google中间汇率（无手续费）",
+    "currencies": "可兑换货币",
+    "specialist": "外币兑换专门店",
+    "ticketShop": "票券店",
+    "bank": "银行",
+    "atm": "自助兑换机",
+    "hotel": "酒店",
+    "currencyLabel": "货币",
+    "updatedAgo": "{time}前更新",
+    "justNow": "刚刚更新",
+    "todayHours": "Today"
+  },
+  "currency": {
+    "title": "选择货币",
+    "popular": "热门货币",
+    "all": "所有货币",
+    "searchPlaceholder": "按货币名搜索..."
+  },
+  "sort": {
+    "bestRate": "汇率最优",
+    "nearest": "距离最近",
+    "name": "按店铺名"
+  },
+  "filter": {
+    "openNow": "仅营业中",
+    "favorites": "收藏",
+    "shopType": "店铺类型"
+  },
+  "calculator": {
+    "title": "快速计算",
+    "jpyTo": "日元 → {currency}",
+    "toJpy": "{currency} → 日元",
+    "youPay": "支付",
+    "youGet": "收到",
+    "sellRateLabel": "卖出汇率: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "买入汇率: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "模拟",
+    "button": "模拟",
+    "inputAmount": "输入金额",
+    "direction": "方向",
+    "sellForeign": "外币 → 日元（卖出外币）",
+    "buyForeign": "日元 → 外币（买入外币）",
+    "rank": "排名",
+    "shopName": "店铺",
+    "result": "收到",
+    "diff": "差额",
+    "run": "比较",
+    "noRate": "无汇率"
+  },
+  "area": {
+    "all": "全部",
+    "shinjuku": "新宿",
+    "shibuya": "涩谷",
+    "ginza": "银座/有乐町",
+    "ueno": "上野/秋叶原",
+    "ikebukuro": "池袋",
+    "tokyo": "东京站/丸之内",
+    "airport": "机场",
+    "osaka": "大阪",
+    "kyoto": "京都",
+    "kobe": "神户",
+    "nagoya": "名古屋",
+    "fukuoka": "福冈",
+    "hiroshima": "广岛",
+    "sendai": "仙台",
+    "yokohama": "横滨",
+    "okinawa": "冲绳",
+    "hokkaido": "北海道",
+    "narita": "成田机场",
+    "haneda": "羽田机场"
+  },
+  "languageSelect": {
+    "title": "选择语言"
+  }
+}

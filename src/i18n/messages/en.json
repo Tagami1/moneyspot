@@ -1,0 +1,227 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "Find the best exchange rates in Japan",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "back": "← Back",
+    "noResults": "No results found",
+    "lastUpdated": "Last updated: {time}",
+    "shopsFound": "{count} shops found"
+  },
+  "header": {
+    "language": "Language",
+    "map": "Map",
+    "list": "List"
+  },
+  "shop": {
+    "open": "Open",
+    "closed": "Closed",
+    "closingSoon": "Closing soon",
+    "closedToday": "Closed today",
+    "bestRate": "Best Rate",
+    "nearest": "Nearest",
+    "buyRate": "Buy",
+    "sellRate": "Sell",
+    "sell": "Sell",
+    "buy": "Buy",
+    "distance": "{distance}km",
+    "directions": "Get Directions on Google Maps",
+    "details": "Details",
+    "businessHours": "Business Hours",
+    "holidayClosed": "Closed",
+    "phone": "Phone",
+    "website": "Website",
+    "address": "Address",
+    "basicInfo": "Basic Info",
+    "exchangeRates": "Exchange Rates",
+    "referenceRate": "Ref. Rate",
+    "referenceRateNote": "Reference rate: Google mid-market rate (no fees)",
+    "currencies": "Available Currencies",
+    "specialist": "Exchange Specialist",
+    "ticketShop": "Ticket Shop",
+    "bank": "Bank",
+    "atm": "Exchange ATM",
+    "hotel": "Hotel",
+    "currencyLabel": "Currency",
+    "todayHours": "Today",
+    "updatedAgo": "Updated {time} ago",
+    "justNow": "Just updated",
+    "hoursUnknown": "Hours unknown",
+    "estimatedRate": "Estimated rate",
+    "promoted": "Promoted"
+  },
+  "currency": {
+    "title": "Select Currency",
+    "popular": "Popular Currencies",
+    "all": "All Currencies",
+    "searchPlaceholder": "Search currencies..."
+  },
+  "sort": {
+    "bestRate": "Best Rate",
+    "nearest": "Nearest",
+    "name": "Name"
+  },
+  "filter": {
+    "openNow": "Open Now",
+    "favorites": "Favorites",
+    "shopType": "Shop Type"
+  },
+  "calculator": {
+    "title": "Quick Calculator",
+    "jpyTo": "JPY → {currency}",
+    "toJpy": "{currency} → JPY",
+    "youPay": "You pay",
+    "youGet": "You get",
+    "sellRateLabel": "Sell rate: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "Buy rate: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "Simulation",
+    "button": "Simulate",
+    "inputAmount": "Enter amount",
+    "direction": "Direction",
+    "sellForeign": "Foreign → JPY (Sell foreign)",
+    "buyForeign": "JPY → Foreign (Buy foreign)",
+    "rank": "Rank",
+    "shopName": "Shop",
+    "result": "You get",
+    "diff": "Diff",
+    "run": "Compare",
+    "noRate": "No rate"
+  },
+  "area": {
+    "all": "All",
+    "shinjuku": "Shinjuku",
+    "shibuya": "Shibuya",
+    "ginza": "Ginza/Yurakucho",
+    "ueno": "Ueno/Akihabara",
+    "ikebukuro": "Ikebukuro",
+    "tokyo": "Tokyo Sta./Marunouchi",
+    "airport": "Airport",
+    "osaka": "Osaka",
+    "kyoto": "Kyoto",
+    "kobe": "Kobe",
+    "nagoya": "Nagoya",
+    "fukuoka": "Fukuoka",
+    "hiroshima": "Hiroshima",
+    "sendai": "Sendai",
+    "yokohama": "Yokohama",
+    "okinawa": "Okinawa",
+    "hokkaido": "Hokkaido",
+    "narita": "Narita Airport",
+    "haneda": "Haneda Airport"
+  },
+  "languageSelect": {
+    "title": "Select Language"
+  },
+  "filterBar": {
+    "showFilters": "▼ Filters",
+    "hideFilters": "▲ Filters"
+  },
+  "bestRate": {
+    "badge": "Best"
+  },
+  "spread": {
+    "plus": "+¥{amount}"
+  },
+  "amountInput": {
+    "placeholder": "Amount",
+    "clear": "×"
+  },
+  "pullToRefresh": {
+    "pull": "↻ Pull to refresh",
+    "release": "↻ Release to refresh",
+    "refreshing": "Refreshing..."
+  },
+  "search": {
+    "placeholder": "Search by shop name or area",
+    "nearMe": "Near me",
+    "currency": "Select currency"
+  },
+  "distance": {
+    "all": "Any distance",
+    "5km": "Within 5km",
+    "10km": "Within 10km",
+    "20km": "Within 20km"
+  },
+  "top5": {
+    "title": "Top 5 Rates",
+    "rank": ""
+  },
+  "auth": {
+    "title": "Create Account",
+    "subtitle": "Sync your favorites and settings across devices",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Doe",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "John",
+    "email": "Email",
+    "phone": "Phone Number",
+    "optional": "optional",
+    "country": "Country",
+    "countrySelect": "Select your country",
+    "sendCode": "Send Verification Code",
+    "sending": "Sending...",
+    "codeSent": "Verification code sent to",
+    "codeLabel": "Verification code",
+    "verify": "Verify",
+    "verifying": "Verifying...",
+    "backToForm": "← Back to form",
+    "errorLastName": "Please enter your last name",
+    "errorFirstName": "Please enter your first name",
+    "errorPhone": "Please enter your phone number",
+    "errorEmail": "Please enter a valid email",
+    "errorCountry": "Please select your country",
+    "errorCode": "Please enter the verification code",
+    "login": "Login",
+    "loginSubtitle": "Enter your registered email",
+    "loginSend": "Send Login Code",
+    "register": "Register",
+    "logout": "Logout",
+    "logoutConfirm": "Are you sure you want to logout?",
+    "profile": "Profile"
+  },
+  "mypage": {
+    "title": "My Page",
+    "favorites": "Favorite Shops",
+    "favoritesEmpty": "No favorite shops yet",
+    "favoritesHint": "Tap ♡ on a shop to add",
+    "history": "Recently Viewed",
+    "historyEmpty": "No browsing history",
+    "settings": "Settings",
+    "defaultCurrency": "Default Currency",
+    "language": "Language",
+    "country": "Country",
+    "clearHistory": "Clear History",
+    "clearHistoryConfirm": "Clear browsing history?",
+    "version": "Version",
+    "loginPrompt": "Login to sync favorites and settings",
+    "editProfile": "Edit Profile"
+  },
+  "disclaimer": {
+    "text": "Rates shown are for reference only. Please confirm actual rates at the shop."
+  },
+  "ads": {
+    "placeholder": "Ad Space",
+    "label": "Ad"
+  },
+  "wise": {
+    "title": "Exchange online for better rates",
+    "subtitle": "Save on fees with Wise mid-market rates",
+    "marketRate": "Mid-market rate",
+    "shopSpread": "Shop spread",
+    "cta": "Try Wise"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "Go Premium",
+    "subtitle": "No ads, rate alerts, and more",
+    "benefitAdFree": "Ad-free experience",
+    "benefitAlerts": "Rate change notifications",
+    "benefitCharts": "Historical rate charts",
+    "comingSoon": "Coming Soon"
+  }
+}

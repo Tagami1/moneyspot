@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "Penukaran mata uang asing di Tokyo, temukan kurs terbaik",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba lagi",
+    "close": "Tutup",
+    "back": "← Kembali",
+    "noResults": "Tidak ada hasil ditemukan",
+    "lastUpdated": "Terakhir diperbarui: {time}",
+    "shopsFound": "{count} toko"
+  },
+  "header": {
+    "language": "Bahasa",
+    "map": "Peta",
+    "list": "Daftar"
+  },
+  "search": {
+    "placeholder": "Cari berdasarkan mata uang, area, atau nama toko",
+    "nearMe": "Dekat saya",
+    "currency": "Pilih mata uang"
+  },
+  "shop": {
+    "open": "Buka",
+    "closed": "Tutup",
+    "closingSoon": "Segera tutup",
+    "closedToday": "Hari ini libur",
+    "bestRate": "Kurs terbaik",
+    "nearest": "Terdekat",
+    "buyRate": "Beli",
+    "sellRate": "Jual",
+    "sell": "Jual",
+    "buy": "Beli",
+    "distance": "{distance}km",
+    "directions": "Petunjuk arah di Google Maps",
+    "details": "Detail",
+    "businessHours": "Jam operasional",
+    "holidayClosed": "Libur",
+    "phone": "Nomor telepon",
+    "website": "Situs web",
+    "address": "Alamat",
+    "basicInfo": "Informasi dasar",
+    "exchangeRates": "Kurs",
+    "referenceRate": "Kurs ref.",
+    "referenceRateNote": "Kurs referensi: kurs tengah Google (tanpa biaya)",
+    "currencies": "Mata uang tersedia",
+    "specialist": "Toko penukaran uang",
+    "ticketShop": "Toko tiket",
+    "bank": "Bank",
+    "atm": "Mesin penukaran otomatis",
+    "hotel": "Hotel",
+    "currencyLabel": "Mata uang",
+    "updatedAgo": "Diperbarui {time} lalu",
+    "justNow": "Baru diperbarui",
+    "todayHours": "Today"
+  },
+  "currency": {
+    "title": "Pilih mata uang",
+    "popular": "Mata uang populer",
+    "all": "Semua mata uang",
+    "searchPlaceholder": "Cari berdasarkan nama mata uang..."
+  },
+  "sort": {
+    "bestRate": "Kurs terbaik",
+    "nearest": "Terdekat",
+    "name": "Berdasarkan nama"
+  },
+  "filter": {
+    "openNow": "Buka",
+    "favorites": "Favorit",
+    "shopType": "Jenis toko"
+  },
+  "calculator": {
+    "title": "Kalkulator cepat",
+    "jpyTo": "JPY → {currency}",
+    "toJpy": "{currency} → JPY",
+    "youPay": "Bayar",
+    "youGet": "Terima",
+    "sellRateLabel": "Kurs jual: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "Kurs beli: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "Simulasi",
+    "button": "Simulasi",
+    "inputAmount": "Masukkan jumlah",
+    "direction": "Arah",
+    "sellForeign": "Valuta asing → JPY (Jual valuta)",
+    "buyForeign": "JPY → Valuta asing (Beli valuta)",
+    "rank": "Peringkat",
+    "shopName": "Toko",
+    "result": "Terima",
+    "diff": "Selisih",
+    "run": "Bandingkan",
+    "noRate": "Tidak ada kurs"
+  },
+  "area": {
+    "all": "Semua",
+    "shinjuku": "Shinjuku",
+    "shibuya": "Shibuya",
+    "ginza": "Ginza/Yurakucho",
+    "ueno": "Ueno/Akihabara",
+    "ikebukuro": "Ikebukuro",
+    "tokyo": "Stasiun Tokyo/Marunouchi",
+    "airport": "Bandara",
+    "osaka": "Osaka",
+    "kyoto": "Kyoto",
+    "kobe": "Kobe",
+    "nagoya": "Nagoya",
+    "fukuoka": "Fukuoka",
+    "hiroshima": "Hiroshima",
+    "sendai": "Sendai",
+    "yokohama": "Yokohama",
+    "okinawa": "Okinawa",
+    "hokkaido": "Hokkaido",
+    "narita": "Bandara Narita",
+    "haneda": "Bandara Haneda"
+  },
+  "languageSelect": {
+    "title": "Pilih bahasa"
+  }
+}

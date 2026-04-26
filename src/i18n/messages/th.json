@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "แลกเปลี่ยนเงินตราในโตเกียว ค้นหาอัตราที่ดีที่สุด",
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "retry": "ลองอีกครั้ง",
+    "close": "ปิด",
+    "back": "← กลับ",
+    "noResults": "ไม่พบผลลัพธ์",
+    "lastUpdated": "อัปเดตล่าสุด: {time}",
+    "shopsFound": "{count} ร้าน"
+  },
+  "header": {
+    "language": "ภาษา",
+    "map": "แผนที่",
+    "list": "รายการ"
+  },
+  "search": {
+    "placeholder": "ค้นหาตามสกุลเงิน พื้นที่ หรือชื่อร้าน",
+    "nearMe": "ใกล้ฉัน",
+    "currency": "เลือกสกุลเงิน"
+  },
+  "shop": {
+    "open": "เปิดอยู่",
+    "closed": "ปิดแล้ว",
+    "closingSoon": "ใกล้ปิด",
+    "closedToday": "วันนี้หยุด",
+    "bestRate": "อัตราดีที่สุด",
+    "nearest": "ใกล้ที่สุด",
+    "buyRate": "ซื้อ",
+    "sellRate": "ขาย",
+    "sell": "ขาย",
+    "buy": "ซื้อ",
+    "distance": "{distance}km",
+    "directions": "นำทางด้วย Google Maps",
+    "details": "รายละเอียด",
+    "businessHours": "เวลาทำการ",
+    "holidayClosed": "หยุด",
+    "phone": "หมายเลขโทรศัพท์",
+    "website": "เว็บไซต์",
+    "address": "ที่อยู่",
+    "basicInfo": "ข้อมูลพื้นฐาน",
+    "exchangeRates": "อัตราแลกเปลี่ยน",
+    "referenceRate": "อัตราอ้างอิง",
+    "referenceRateNote": "อัตราอ้างอิง: อัตรากลาง Google (ไม่มีค่าธรรมเนียม)",
+    "currencies": "สกุลเงินที่รับแลก",
+    "specialist": "ร้านแลกเปลี่ยนเงินตรา",
+    "ticketShop": "ร้านขายตั๋ว",
+    "bank": "ธนาคาร",
+    "atm": "เครื่องแลกเงินอัตโนมัติ",
+    "hotel": "โรงแรม",
+    "currencyLabel": "สกุลเงิน",
+    "updatedAgo": "อัปเดต {time} ที่แล้ว",
+    "justNow": "เพิ่งอัปเดต",
+    "todayHours": "Today"
+  },
+  "currency": {
+    "title": "เลือกสกุลเงิน",
+    "popular": "สกุลเงินยอดนิยม",
+    "all": "สกุลเงินทั้งหมด",
+    "searchPlaceholder": "ค้นหาตามชื่อสกุลเงิน..."
+  },
+  "sort": {
+    "bestRate": "อัตราดีที่สุด",
+    "nearest": "ใกล้ที่สุด",
+    "name": "ตามชื่อร้าน"
+  },
+  "filter": {
+    "openNow": "เปิดอยู่",
+    "favorites": "รายการโปรด",
+    "shopType": "ประเภทร้าน"
+  },
+  "calculator": {
+    "title": "คำนวณง่ายๆ",
+    "jpyTo": "เยน → {currency}",
+    "toJpy": "{currency} → เยน",
+    "youPay": "จ่าย",
+    "youGet": "ได้รับ",
+    "sellRateLabel": "อัตราขาย: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "อัตราซื้อ: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "จำลอง",
+    "button": "จำลอง",
+    "inputAmount": "ป้อนจำนวน",
+    "direction": "ทิศทาง",
+    "sellForeign": "เงินตราต่างประเทศ → เยน",
+    "buyForeign": "เยน → เงินตราต่างประเทศ",
+    "rank": "อันดับ",
+    "shopName": "ร้าน",
+    "result": "ได้รับ",
+    "diff": "ส่วนต่าง",
+    "run": "เปรียบเทียบ",
+    "noRate": "ไม่มีอัตรา"
+  },
+  "area": {
+    "all": "ทั้งหมด",
+    "shinjuku": "ชินจูกุ",
+    "shibuya": "ชิบูย่า",
+    "ginza": "กินซ่า/ยูราคุโช",
+    "ueno": "อุเอโนะ/อากิฮาบาระ",
+    "ikebukuro": "อิเคะบุคุโระ",
+    "tokyo": "สถานีโตเกียว/มารุโนะอุชิ",
+    "airport": "สนามบิน",
+    "osaka": "โอซากา",
+    "kyoto": "เกียวโต",
+    "kobe": "โกเบ",
+    "nagoya": "นาโกย่า",
+    "fukuoka": "ฟุกุโอกะ",
+    "hiroshima": "ฮิโรชิมา",
+    "sendai": "เซนได",
+    "yokohama": "โยโกฮามา",
+    "okinawa": "โอกินาวา",
+    "hokkaido": "ฮอกไกโด",
+    "narita": "สนามบินนาริตะ",
+    "haneda": "สนามบินฮาเนดะ"
+  },
+  "languageSelect": {
+    "title": "เลือกภาษา"
+  }
+}

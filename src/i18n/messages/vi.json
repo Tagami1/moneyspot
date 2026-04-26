@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "Đổi ngoại tệ tại Tokyo, tìm tỷ giá tốt nhất",
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "retry": "Thử lại",
+    "close": "Đóng",
+    "back": "← Quay lại",
+    "noResults": "Không tìm thấy kết quả",
+    "lastUpdated": "Cập nhật lần cuối: {time}",
+    "shopsFound": "{count} cửa hàng"
+  },
+  "header": {
+    "language": "Ngôn ngữ",
+    "map": "Bản đồ",
+    "list": "Danh sách"
+  },
+  "search": {
+    "placeholder": "Tìm theo tiền tệ, khu vực hoặc tên cửa hàng",
+    "nearMe": "Gần tôi",
+    "currency": "Chọn tiền tệ"
+  },
+  "shop": {
+    "open": "Đang mở",
+    "closed": "Đã đóng",
+    "closingSoon": "Sắp đóng",
+    "closedToday": "Hôm nay nghỉ",
+    "bestRate": "Tỷ giá tốt nhất",
+    "nearest": "Gần nhất",
+    "buyRate": "Mua",
+    "sellRate": "Bán",
+    "sell": "Bán",
+    "buy": "Mua",
+    "distance": "{distance}km",
+    "directions": "Chỉ đường trên Google Maps",
+    "details": "Chi tiết",
+    "businessHours": "Giờ làm việc",
+    "holidayClosed": "Nghỉ",
+    "phone": "Số điện thoại",
+    "website": "Trang web",
+    "address": "Địa chỉ",
+    "basicInfo": "Thông tin cơ bản",
+    "exchangeRates": "Tỷ giá",
+    "referenceRate": "Tỷ giá tham khảo",
+    "referenceRateNote": "Tỷ giá tham khảo: tỷ giá trung bình Google (không phí)",
+    "currencies": "Tiền tệ hỗ trợ",
+    "specialist": "Cửa hàng đổi tiền chuyên dụng",
+    "ticketShop": "Cửa hàng vé",
+    "bank": "Ngân hàng",
+    "atm": "Máy đổi tiền tự động",
+    "hotel": "Khách sạn",
+    "currencyLabel": "Tiền tệ",
+    "updatedAgo": "Cập nhật {time} trước",
+    "justNow": "Vừa cập nhật",
+    "todayHours": "Today"
+  },
+  "currency": {
+    "title": "Chọn tiền tệ",
+    "popular": "Tiền tệ phổ biến",
+    "all": "Tất cả tiền tệ",
+    "searchPlaceholder": "Tìm theo tên tiền tệ..."
+  },
+  "sort": {
+    "bestRate": "Tỷ giá tốt nhất",
+    "nearest": "Gần nhất",
+    "name": "Theo tên cửa hàng"
+  },
+  "filter": {
+    "openNow": "Đang mở",
+    "favorites": "Yêu thích",
+    "shopType": "Loại cửa hàng"
+  },
+  "calculator": {
+    "title": "Tính nhanh",
+    "jpyTo": "JPY → {currency}",
+    "toJpy": "{currency} → JPY",
+    "youPay": "Thanh toán",
+    "youGet": "Nhận được",
+    "sellRateLabel": "Tỷ giá bán: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "Tỷ giá mua: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "Mô phỏng",
+    "button": "Mô phỏng",
+    "inputAmount": "Nhập số tiền",
+    "direction": "Hướng",
+    "sellForeign": "Ngoại tệ → JPY (Bán ngoại tệ)",
+    "buyForeign": "JPY → Ngoại tệ (Mua ngoại tệ)",
+    "rank": "Hạng",
+    "shopName": "Cửa hàng",
+    "result": "Nhận được",
+    "diff": "Chênh lệch",
+    "run": "So sánh",
+    "noRate": "Không có tỷ giá"
+  },
+  "area": {
+    "all": "Tất cả",
+    "shinjuku": "Shinjuku",
+    "shibuya": "Shibuya",
+    "ginza": "Ginza/Yurakucho",
+    "ueno": "Ueno/Akihabara",
+    "ikebukuro": "Ikebukuro",
+    "tokyo": "Ga Tokyo/Marunouchi",
+    "airport": "Sân bay",
+    "osaka": "Osaka",
+    "kyoto": "Kyoto",
+    "kobe": "Kobe",
+    "nagoya": "Nagoya",
+    "fukuoka": "Fukuoka",
+    "hiroshima": "Hiroshima",
+    "sendai": "Sendai",
+    "yokohama": "Yokohama",
+    "okinawa": "Okinawa",
+    "hokkaido": "Hokkaido",
+    "narita": "Sân bay Narita",
+    "haneda": "Sân bay Haneda"
+  },
+  "languageSelect": {
+    "title": "Chọn ngôn ngữ"
+  }
+}

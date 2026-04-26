@@ -1,0 +1,122 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "Cambio de divisas en Tokio, encuentra la mejor tasa",
+    "loading": "Cargando...",
+    "error": "Se produjo un error",
+    "retry": "Reintentar",
+    "close": "Cerrar",
+    "back": "← Volver",
+    "noResults": "No se encontraron resultados",
+    "lastUpdated": "Última actualización: {time}",
+    "shopsFound": "{count} tiendas"
+  },
+  "header": {
+    "language": "Idioma",
+    "map": "Mapa",
+    "list": "Lista"
+  },
+  "search": {
+    "placeholder": "Buscar por moneda, zona o nombre de tienda",
+    "nearMe": "Cerca de mí",
+    "currency": "Seleccionar moneda"
+  },
+  "shop": {
+    "open": "Abierto",
+    "closed": "Cerrado",
+    "closingSoon": "Cierra pronto",
+    "closedToday": "Cerrado hoy",
+    "bestRate": "Mejor tasa",
+    "nearest": "Más cercano",
+    "buyRate": "Compra",
+    "sellRate": "Venta",
+    "sell": "Venta",
+    "buy": "Compra",
+    "distance": "{distance}km",
+    "directions": "Cómo llegar en Google Maps",
+    "details": "Detalles",
+    "businessHours": "Horario de atención",
+    "holidayClosed": "Cerrado",
+    "phone": "Teléfono",
+    "website": "Sitio web",
+    "address": "Dirección",
+    "basicInfo": "Información básica",
+    "exchangeRates": "Tasas de cambio",
+    "referenceRate": "Tasa ref.",
+    "referenceRateNote": "Tasa de referencia: tasa media de Google (sin comisiones)",
+    "currencies": "Monedas disponibles",
+    "specialist": "Casa de cambio",
+    "ticketShop": "Tienda de tickets",
+    "bank": "Banco",
+    "atm": "Máquina de cambio",
+    "hotel": "Hotel",
+    "currencyLabel": "Moneda",
+    "updatedAgo": "Actualizado hace {time}",
+    "justNow": "Recién actualizado",
+    "todayHours": "Today"
+  },
+  "currency": {
+    "title": "Seleccionar moneda",
+    "popular": "Monedas populares",
+    "all": "Todas las monedas",
+    "searchPlaceholder": "Buscar por nombre de moneda..."
+  },
+  "sort": {
+    "bestRate": "Mejor tasa",
+    "nearest": "Más cercano",
+    "name": "Por nombre"
+  },
+  "filter": {
+    "openNow": "Abierto",
+    "favorites": "Favoritos",
+    "shopType": "Tipo de tienda"
+  },
+  "calculator": {
+    "title": "Calculadora rápida",
+    "jpyTo": "JPY → {currency}",
+    "toJpy": "{currency} → JPY",
+    "youPay": "Paga",
+    "youGet": "Recibe",
+    "sellRateLabel": "Tasa de venta: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "Tasa de compra: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "Simulación",
+    "button": "Simular",
+    "inputAmount": "Ingrese monto",
+    "direction": "Dirección",
+    "sellForeign": "Divisa → JPY (Vender divisa)",
+    "buyForeign": "JPY → Divisa (Comprar divisa)",
+    "rank": "Rango",
+    "shopName": "Tienda",
+    "result": "Recibe",
+    "diff": "Dif.",
+    "run": "Comparar",
+    "noRate": "Sin tasa"
+  },
+  "area": {
+    "all": "Todo",
+    "shinjuku": "Shinjuku",
+    "shibuya": "Shibuya",
+    "ginza": "Ginza/Yurakucho",
+    "ueno": "Ueno/Akihabara",
+    "ikebukuro": "Ikebukuro",
+    "tokyo": "Est. Tokyo/Marunouchi",
+    "airport": "Aeropuerto",
+    "osaka": "Osaka",
+    "kyoto": "Kioto",
+    "kobe": "Kobe",
+    "nagoya": "Nagoya",
+    "fukuoka": "Fukuoka",
+    "hiroshima": "Hiroshima",
+    "sendai": "Sendai",
+    "yokohama": "Yokohama",
+    "okinawa": "Okinawa",
+    "hokkaido": "Hokkaido",
+    "narita": "Aeropuerto Narita",
+    "haneda": "Aeropuerto Haneda"
+  },
+  "languageSelect": {
+    "title": "Seleccionar idioma"
+  }
+}

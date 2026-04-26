@@ -1,0 +1,227 @@
+{
+  "common": {
+    "appName": "MoneySpot",
+    "tagline": "日本の外貨両替、最安レートを見つけよう",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "再試行",
+    "close": "閉じる",
+    "back": "← 戻る",
+    "noResults": "結果が見つかりませんでした",
+    "lastUpdated": "最終更新: {time}",
+    "shopsFound": "{count}件の店舗"
+  },
+  "header": {
+    "language": "言語",
+    "map": "マップ",
+    "list": "リスト"
+  },
+  "shop": {
+    "open": "営業中",
+    "closed": "営業時間外",
+    "closingSoon": "まもなく閉店",
+    "closedToday": "本日定休",
+    "bestRate": "Best Rate",
+    "nearest": "Nearest",
+    "buyRate": "買取",
+    "sellRate": "販売",
+    "sell": "売",
+    "buy": "買",
+    "distance": "{distance}km",
+    "directions": "Google Maps でルート案内",
+    "details": "詳細",
+    "businessHours": "営業時間",
+    "holidayClosed": "定休日",
+    "phone": "電話番号",
+    "website": "ウェブサイト",
+    "address": "住所",
+    "basicInfo": "基本情報",
+    "exchangeRates": "為替レート",
+    "referenceRate": "参考レート",
+    "referenceRateNote": "参考レート: Google中間レート（手数料なし）",
+    "currencies": "取扱通貨",
+    "specialist": "両替専門店",
+    "ticketShop": "金券ショップ",
+    "bank": "銀行",
+    "atm": "自動両替機",
+    "hotel": "ホテル",
+    "currencyLabel": "通貨",
+    "todayHours": "今日",
+    "updatedAgo": "{time}前更新",
+    "justNow": "たった今更新",
+    "hoursUnknown": "営業時間不明",
+    "estimatedRate": "参考レート（推定値）",
+    "promoted": "おすすめ"
+  },
+  "currency": {
+    "title": "通貨を選択",
+    "popular": "人気の通貨",
+    "all": "すべての通貨",
+    "searchPlaceholder": "通貨名で検索..."
+  },
+  "sort": {
+    "bestRate": "Best Rate",
+    "nearest": "Nearest",
+    "name": "店舗名順"
+  },
+  "filter": {
+    "openNow": "営業中",
+    "favorites": "お気に入り",
+    "shopType": "店舗の種類"
+  },
+  "calculator": {
+    "title": "かんたん計算",
+    "jpyTo": "円 → {currency}",
+    "toJpy": "{currency} → 円",
+    "youPay": "支払い",
+    "youGet": "受取",
+    "sellRateLabel": "販売レート: ¥{rate} / 1 {currency}",
+    "buyRateLabel": "買取レート: ¥{rate} / 1 {currency}"
+  },
+  "simulation": {
+    "title": "シミュレーション",
+    "button": "シミュレーション",
+    "inputAmount": "金額を入力",
+    "direction": "方向",
+    "sellForeign": "外貨 → 円（外貨を売る）",
+    "buyForeign": "円 → 外貨（外貨を買う）",
+    "rank": "順位",
+    "shopName": "店舗名",
+    "result": "受取額",
+    "diff": "差額",
+    "run": "比較する",
+    "noRate": "レートなし"
+  },
+  "area": {
+    "all": "全て",
+    "shinjuku": "新宿",
+    "shibuya": "渋谷",
+    "ginza": "銀座・有楽町",
+    "ueno": "上野・秋葉原",
+    "ikebukuro": "池袋",
+    "tokyo": "東京駅・丸の内",
+    "airport": "空港",
+    "osaka": "大阪",
+    "kyoto": "京都",
+    "kobe": "神戸",
+    "nagoya": "名古屋",
+    "fukuoka": "福岡",
+    "hiroshima": "広島",
+    "sendai": "仙台",
+    "yokohama": "横浜",
+    "okinawa": "沖縄",
+    "hokkaido": "北海道",
+    "narita": "成田空港",
+    "haneda": "羽田空港"
+  },
+  "languageSelect": {
+    "title": "言語を選択"
+  },
+  "filterBar": {
+    "showFilters": "▼ フィルター",
+    "hideFilters": "▲ フィルター"
+  },
+  "bestRate": {
+    "badge": "最安"
+  },
+  "spread": {
+    "plus": "+¥{amount}"
+  },
+  "amountInput": {
+    "placeholder": "金額",
+    "clear": "×"
+  },
+  "pullToRefresh": {
+    "pull": "↻ 引っ張って更新",
+    "release": "↻ 離して更新",
+    "refreshing": "更新中..."
+  },
+  "search": {
+    "placeholder": "店舗名・エリアで検索",
+    "nearMe": "現在地周辺",
+    "currency": "通貨を選択"
+  },
+  "distance": {
+    "all": "全距離",
+    "5km": "5km以内",
+    "10km": "10km以内",
+    "20km": "20km以内"
+  },
+  "top5": {
+    "title": "レートTOP5",
+    "rank": "位"
+  },
+  "auth": {
+    "title": "アカウント登録",
+    "subtitle": "お気に入りや設定をどの端末でも同期できます",
+    "lastName": "姓",
+    "lastNamePlaceholder": "田中",
+    "firstName": "名",
+    "firstNamePlaceholder": "太郎",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "optional": "任意",
+    "country": "お住まいの国",
+    "countrySelect": "国を選択してください",
+    "sendCode": "認証コードを送信",
+    "sending": "送信中...",
+    "codeSent": "認証コードを送信しました",
+    "codeLabel": "認証コード",
+    "verify": "認証する",
+    "verifying": "認証中...",
+    "backToForm": "← 入力画面に戻る",
+    "errorLastName": "姓を入力してください",
+    "errorFirstName": "名を入力してください",
+    "errorPhone": "電話番号を入力してください",
+    "errorEmail": "正しいメールアドレスを入力してください",
+    "errorCountry": "国を選択してください",
+    "errorCode": "認証コードを入力してください",
+    "login": "ログイン",
+    "loginSubtitle": "登録済みのメールアドレスを入力",
+    "loginSend": "ログインコードを送信",
+    "register": "新規登録",
+    "logout": "ログアウト",
+    "logoutConfirm": "ログアウトしますか？",
+    "profile": "プロフィール"
+  },
+  "mypage": {
+    "title": "マイページ",
+    "favorites": "お気に入り店舗",
+    "favoritesEmpty": "お気に入りの店舗がありません",
+    "favoritesHint": "店舗の♡をタップして追加",
+    "history": "最近見た店舗",
+    "historyEmpty": "閲覧履歴がありません",
+    "settings": "設定",
+    "defaultCurrency": "デフォルト通貨",
+    "language": "言語",
+    "country": "国",
+    "clearHistory": "履歴をクリア",
+    "clearHistoryConfirm": "閲覧履歴をクリアしますか？",
+    "version": "バージョン",
+    "loginPrompt": "ログインするとお気に入りや設定を同期できます",
+    "editProfile": "プロフィール編集"
+  },
+  "disclaimer": {
+    "text": "表示レートは参考値です。実際のレートは店舗にてご確認ください。"
+  },
+  "ads": {
+    "placeholder": "広告スペース",
+    "label": "広告"
+  },
+  "wise": {
+    "title": "オンライン両替ならもっとお得",
+    "subtitle": "Wiseの中間レートで手数料を節約",
+    "marketRate": "中間レート",
+    "shopSpread": "店舗スプレッド",
+    "cta": "Wiseを試す"
+  },
+  "premium": {
+    "sectionTitle": "プレミアム",
+    "title": "プレミアムプラン",
+    "subtitle": "広告なし、レート通知など",
+    "benefitAdFree": "広告なしの快適体験",
+    "benefitAlerts": "レート変動通知",
+    "benefitCharts": "レート推移チャート",
+    "comingSoon": "近日公開"
+  }
+}
