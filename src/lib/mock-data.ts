@@ -17,7 +17,7 @@ export const mockShops: ExchangeShop[] = [
     id: 1, chain_id: 5, name: "ドルレンジャー 銀座3丁目店", name_en: "Dollar Ranger Ginza",
     address: "東京都中央区銀座3-2-13 江戸常ビル1階", address_en: "Chuo-ku, Ginza 3-2-13, Edotsune Bldg 1F",
     lat: 35.6720, lng: 139.7660, phone: "03-1234-5678", website_url: "https://d-ranger.jp/",
-    shop_type: "specialist", is_active: true, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
+    shop_type: "specialist", is_active: true, is_promoted: false, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
     exchange_chains: { id: 5, name: "ドルレンジャー", name_en: "Dollar Ranger", logo_url: null, website_url: "https://d-ranger.jp/", created_at: "" },
     shop_business_hours: [
       { id: 1, shop_id: 1, day_of_week: 0, open_time: "10:00", close_time: "18:00", is_closed: false },
@@ -39,7 +39,7 @@ export const mockShops: ExchangeShop[] = [
     id: 2, chain_id: 6, name: "インターバンク 新宿店", name_en: "Interbank Shinjuku",
     address: "東京都新宿区西新宿1-2-12", address_en: "Shinjuku-ku, Nishi-Shinjuku 1-2-12",
     lat: 35.6935, lng: 139.6985, phone: "03-2345-6789", website_url: "https://www.interbank.co.jp/",
-    shop_type: "specialist", is_active: true, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
+    shop_type: "specialist", is_active: true, is_promoted: false, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
     exchange_chains: { id: 6, name: "インターバンク", name_en: "Interbank", logo_url: null, website_url: "https://www.interbank.co.jp/", created_at: "" },
     shop_business_hours: [
       { id: 8, shop_id: 2, day_of_week: 0, open_time: null, close_time: null, is_closed: true },
@@ -60,7 +60,7 @@ export const mockShops: ExchangeShop[] = [
     id: 3, chain_id: 7, name: "エクスチェンジャーズ 丸の内店", name_en: "Exchangers Marunouchi",
     address: "東京都千代田区丸の内3-3-1 新東京ビル1階", address_en: "Chiyoda-ku, Marunouchi 3-3-1, Shin-Tokyo Bldg 1F",
     lat: 35.6790, lng: 139.7640, phone: "03-3456-7890", website_url: "https://www.exchangers.co.jp/",
-    shop_type: "specialist", is_active: true, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
+    shop_type: "specialist", is_active: true, is_promoted: false, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
     exchange_chains: { id: 7, name: "エクスチェンジャーズ", name_en: "Exchangers", logo_url: null, website_url: "https://www.exchangers.co.jp/", created_at: "" },
     shop_business_hours: [
       { id: 15, shop_id: 3, day_of_week: 0, open_time: null, close_time: null, is_closed: true },
@@ -81,7 +81,7 @@ export const mockShops: ExchangeShop[] = [
     id: 5, chain_id: 1, name: "大黒屋 東京駅前店", name_en: "Daikokuya Tokyo Station",
     address: "東京都中央区八重洲1-6-19 第二大黒ビル1F", address_en: "Chuo-ku, Yaesu 1-6-19, Daini Daikoku Bldg 1F",
     lat: 35.6808, lng: 139.7705, phone: "03-4567-8901", website_url: "https://gaika.e-daikoku.com/",
-    shop_type: "ticket_shop", is_active: true, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
+    shop_type: "ticket_shop", is_active: true, is_promoted: false, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
     exchange_chains: { id: 1, name: "大黒屋", name_en: "Daikokuya", logo_url: null, website_url: "https://gaika.e-daikoku.com/", created_at: "" },
     shop_business_hours: [
       { id: 29, shop_id: 5, day_of_week: 0, open_time: "10:00", close_time: "18:00", is_closed: false },
@@ -101,7 +101,7 @@ export const mockShops: ExchangeShop[] = [
     id: 6, chain_id: 8, name: "SAKURA CURRENCY 上野アメ横店", name_en: "SAKURA CURRENCY Ueno Ameyoko",
     address: "東京都台東区上野6-4-19", address_en: "Taito-ku, Ueno 6-4-19",
     lat: 35.7100, lng: 139.7740, phone: null, website_url: "https://sakura-currency.co.jp/",
-    shop_type: "specialist", is_active: true, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
+    shop_type: "specialist", is_active: true, is_promoted: false, source: "scraper" as const, osm_id: null, country_code: "JP", created_at: "", updated_at: "",
     exchange_chains: { id: 8, name: "SAKURA CURRENCY", name_en: "SAKURA CURRENCY", logo_url: null, website_url: "https://sakura-currency.co.jp/", created_at: "" },
     shop_business_hours: [
       { id: 36, shop_id: 6, day_of_week: 0, open_time: "10:00", close_time: "19:00", is_closed: false },
