@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geist = Geist({
@@ -112,6 +113,12 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${geist.variable} ${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5732642781898820"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         {children}
         <script
           dangerouslySetInnerHTML={{
