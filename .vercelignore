@@ -1,0 +1,10 @@
+node_modules
+.next.old.*
+out.old.*
+.next.old
+out.old
+*.log
+mobile
+supabase/migrations
+workers
+scripts

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
+import Link from "next/link";
 import Header from "@/components/common/Header";
 import ShopMap from "@/components/map/ShopMap";
 import ShopCard from "@/components/shop/ShopCard";
@@ -10,11 +11,16 @@ import SimulationModal from "@/components/simulation/SimulationModal";
 import MyPage from "@/components/mypage/MyPage";
 import AdBanner from "@/components/ads/AdBanner";
 import WiseAffiliateBanner from "@/components/ads/WiseAffiliateBanner";
+import GrowthBanner from "@/components/growth/GrowthBanner";
 import { calcDistance, isOpenNow } from "@/lib/utils";
 import { mockShops, mockCurrencies } from "@/lib/mock-data";
+import { comparePromotedShops } from "@/lib/monetization";
+import { areaPages, getAreaPage, type AreaPage } from "@/lib/areas";
 import { useTranslation } from "@/i18n/useTranslation";
 import { useAuth } from "@/hooks/useAuth";
 import { useUserBehavior } from "@/hooks/useUserBehavior";
+import { usePremium } from "@/hooks/usePremium";
+import { useRateAlerts } from "@/hooks/useRateAlerts";
 import type { ExchangeShop, Currency, NearbyShopResult } from "@/lib/database.types";
 import type { Locale } from "@/i18n/config";
 
@@ -32,6 +38,12 @@ const LANG_DEFAULT_CURRENCY: Record<string, string> = {
   es: "EUR",
 };
 
+// デフォルト位置（東京駅）
+const DEFAULT_LOCATION = { lat: 35.6812, lng: 139.7671 };
+const DEFAULT_SEARCH_RADIUS_M = 20000;
+const EXPANDED_SEARCH_RADIUS_M = 50000;
+const AREA_PICKER_AREAS = areaPages.slice(0, 8);
+
 export default function HomePage() {
   const [viewMode, setViewMode] = useState<"map" | "list">("map");
   const [locale, setLocale] = useState<Locale>("en");
@@ -45,6 +57,7 @@ export default function HomePage() {
     lat: number;
     lng: number;
   } | null>(null);
+  const [locationReady, setLocationReady] = useState(false);
   const [sortBy, setSortBy] = useState<"rate" | "distance">("rate");
   const [filterOpenNow, setFilterOpenNow] = useState(false);
   const [filterFavorites, setFilterFavorites] = useState(false);
@@ -52,17 +65,14 @@ export default function HomePage() {
   const [marketRates, setMarketRates] = useState<Record<string, number>>({});
   const [searchQuery, setSearchQuery] = useState("");
   const [distanceFilter, setDistanceFilter] = useState<number | null>(null); // km
+  const [searchRadiusM, setSearchRadiusM] = useState(DEFAULT_SEARCH_RADIUS_M);
+  const [noNearbyShops, setNoNearbyShops] = useState(false);
   const [showMyPage, setShowMyPage] = useState(false);
+  const [myPageInitialAuthMode, setMyPageInitialAuthMode] = useState<"register" | "login" | null>(null);
+  const [showAreaPicker, setShowAreaPicker] = useState(true);
 
   // Feature 4: Collapsible filter bar
-  const [filtersExpanded, setFiltersExpanded] = useState(() => {
-    if (typeof window !== "undefined") {
-      try {
-        return sessionStorage.getItem("moneyspot_filters_expanded") === "true";
-      } catch {}
-    }
-    return false;
-  });
+  const [filtersExpanded, setFiltersExpanded] = useState(false);
 
   // Feature 7: Amount input with cross-currency conversion
   const [amountInput, setAmountInput] = useState("");
@@ -81,10 +91,82 @@ export default function HomePage() {
   const [detailShopId, setDetailShopId] = useState<number | null>(null);
   // Suppress card scroll auto-select after filter changes
   const suppressScrollSelect = useRef(false);
+  const initialShopOpenRef = useRef(false);
 
   const { t } = useTranslation(locale);
-  const { userId, isLoggedIn, profile, sendOtp, verifyOtp, updateProfile, signOut } = useAuth();
+  const {
+    userId,
+    isLoggedIn,
+    profile,
+    loading: authLoading,
+    sendOtp,
+    verifyOtp,
+    updateProfile,
+    signOut,
+  } = useAuth();
   const { favorites, toggleFavorite, viewedShopIds, addToViewed, clearViewedHistory, trackEvent } = useUserBehavior(userId);
+  const { isPremium } = usePremium(userId);
+  const {
+    rateAlerts,
+    saveRateAlert,
+    toggleRateAlert,
+    removeRateAlert,
+    triggeredRateAlerts,
+  } = useRateAlerts(shops);
+  const searchRadiusKm = Math.round(searchRadiusM / 1000);
+  const canExpandNearbySearch = searchRadiusM < EXPANDED_SEARCH_RADIUS_M;
+  const handleExpandNearbySearch = useCallback(() => {
+    setNoNearbyShops(false);
+    setDistanceFilter(null);
+    setSearchRadiusM(EXPANDED_SEARCH_RADIUS_M);
+  }, []);
+  const clearRegisterParams = useCallback(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has("register")) {
+        params.delete("register");
+        const nextQuery = params.toString();
+        window.history.replaceState(null, "", nextQuery ? `/?${nextQuery}` : "/");
+      }
+    } catch {}
+  }, []);
+  const openRegistration = useCallback(() => {
+    setMyPageInitialAuthMode(isLoggedIn ? null : "register");
+    setShowMyPage(true);
+  }, [isLoggedIn]);
+  const closeMyPage = useCallback(() => {
+    setShowMyPage(false);
+    setMyPageInitialAuthMode(null);
+    clearRegisterParams();
+  }, [clearRegisterParams]);
+  const handleAuthSuccess = useCallback(() => {
+    setMyPageInitialAuthMode(null);
+    clearRegisterParams();
+  }, [clearRegisterParams]);
+  const closeAreaPicker = useCallback(() => {
+    setShowAreaPicker(false);
+    try {
+      window.localStorage.setItem("moneyspot_area_picker_seen", "true");
+    } catch {}
+  }, []);
+  const handleAreaSelect = useCallback((area: AreaPage) => {
+    setUserLocation({ lat: area.lat, lng: area.lng });
+    setLocationReady(true);
+    setViewMode("list");
+    setDistanceFilter(area.radiusKm);
+    setSearchRadiusM(DEFAULT_SEARCH_RADIUS_M);
+    setNoNearbyShops(false);
+    setSelectedShopId(null);
+    setDetailShopId(null);
+    closeAreaPicker();
+    try {
+      const params = new URLSearchParams(window.location.search);
+      params.set("area", area.slug);
+      params.delete("shop");
+      window.history.replaceState(null, "", `/?${params.toString()}`);
+    } catch {}
+    trackEvent("area_select", { area: area.slug });
+  }, [closeAreaPicker, trackEvent]);
 
   // Feature 4: persist filter expanded state
   useEffect(() => {
@@ -93,15 +175,34 @@ export default function HomePage() {
     } catch {}
   }, [filtersExpanded]);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("register") !== "1") return;
+    if (authLoading) return;
+    const timer = window.setTimeout(() => {
+      openRegistration();
+      if (isLoggedIn) clearRegisterParams();
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [authLoading, clearRegisterParams, isLoggedIn, openRegistration]);
+
   // favorites, toggleFavorite, viewedShopIds, addToViewed, clearViewedHistory
   // are now provided by useUserBehavior hook (synced with Supabase)
 
-  // デフォルト位置（東京駅）
-  const DEFAULT_LOCATION = { lat: 35.6812, lng: 139.7671 };
-
   // 位置情報取得（拒否時はデフォルト位置を使用）
-  const [locationReady, setLocationReady] = useState(false);
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const area = getAreaPage(params.get("area") ?? "");
+    if (area) {
+      const timer = window.setTimeout(() => {
+        setUserLocation({ lat: area.lat, lng: area.lng });
+        setLocationReady(true);
+        setViewMode("list");
+        setDistanceFilter(area.radiusKm);
+      }, 0);
+      return () => window.clearTimeout(timer);
+    }
+
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (pos) => {
@@ -118,23 +219,29 @@ export default function HomePage() {
         }
       );
     } else {
-      setUserLocation(DEFAULT_LOCATION);
-      setLocationReady(true);
+      const timer = window.setTimeout(() => {
+        setUserLocation(DEFAULT_LOCATION);
+        setLocationReady(true);
+      }, 0);
+      return () => window.clearTimeout(timer);
     }
   }, []);
 
   // Feature 3: ブラウザの言語を自動検出 + default currency
   useEffect(() => {
-    const browserLang = navigator.language.slice(0, 2);
-    const supportedLocales = ["ja", "en", "zh", "ko", "es", "th", "vi", "id"];
-    if (supportedLocales.includes(browserLang)) {
-      setLocale(browserLang as Locale);
-    }
-    // Set default currency based on browser language
-    const defaultCurrency = LANG_DEFAULT_CURRENCY[browserLang];
-    if (defaultCurrency) {
-      setSelectedCurrency(defaultCurrency);
-    }
+    const timer = window.setTimeout(() => {
+      const browserLang = navigator.language.slice(0, 2);
+      const supportedLocales = ["ja", "en", "zh", "ko", "es", "th", "vi", "id"];
+      if (supportedLocales.includes(browserLang)) {
+        setLocale(browserLang as Locale);
+      }
+      // Set default currency based on browser language
+      const defaultCurrency = LANG_DEFAULT_CURRENCY[browserLang];
+      if (defaultCurrency) {
+        setSelectedCurrency(defaultCurrency);
+      }
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   // データ取得（位置情報ベースの20km圏内フィルタ）
@@ -145,62 +252,82 @@ export default function HomePage() {
         // ダミーデータを使用
         setShops(mockShops);
         setCurrencies(mockCurrencies);
+        setNoNearbyShops(false);
       } else {
         const { supabase } = await import("@/lib/supabase");
 
-        // 20km圏内のショップIDを取得
+        // 指定範囲内のショップIDを取得
         const { data: nearbyData } = await supabase
           .rpc("get_nearby_shop_ids" as never, {
             user_lat: location.lat,
             user_lng: location.lng,
-            radius_m: 20000,
+            radius_m: searchRadiusM,
           } as never) as unknown as { data: NearbyShopResult[] | null };
 
         const nearbyIds = nearbyData?.map((r) => r.shop_id) ?? [];
 
+        const currenciesQuery = supabase.from("currencies").select("*").order("sort_order");
+
+        if (nearbyIds.length === 0) {
+          const { data: currenciesData } = await currenciesQuery;
+          setShops([]);
+          setNoNearbyShops(true);
+          if (currenciesData) setCurrencies(currenciesData);
+          return;
+        }
+
         // 近くのショップの詳細データを取得（関連データ含む）
-        const shopsQuery = nearbyIds.length > 0
-          ? supabase
-              .from("exchange_shops")
-              .select(`
-                *,
-                exchange_chains(*),
-                shop_business_hours(*),
-                exchange_rates(*)
-              `)
-              .in("id", nearbyIds)
-              .eq("is_active", true)
-          : supabase
-              .from("exchange_shops")
-              .select(`
-                *,
-                exchange_chains(*),
-                shop_business_hours(*),
-                exchange_rates(*)
-              `)
-              .eq("is_active", true);
+        const shopsQuery = supabase
+          .from("exchange_shops")
+          .select(`
+            *,
+            exchange_chains(*),
+            shop_business_hours(*),
+            exchange_rates(*)
+          `)
+          .in("id", nearbyIds)
+          .eq("is_active", true);
 
         const [shopsRes, currenciesRes] = await Promise.all([
           shopsQuery,
-          supabase.from("currencies").select("*").order("sort_order"),
+          currenciesQuery,
         ]);
 
         if (shopsRes.data) setShops(shopsRes.data as unknown as ExchangeShop[]);
         if (currenciesRes.data) setCurrencies(currenciesRes.data);
+        setNoNearbyShops(false);
       }
     } catch (err) {
       console.error("Failed to fetch data:", err);
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [searchRadiusM]);
 
   // 位置情報が確定したらデータ取得
   useEffect(() => {
-    if (locationReady && userLocation) {
-      fetchData(userLocation);
-    }
+    if (!locationReady || !userLocation) return;
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (!cancelled) void fetchData(userLocation);
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [locationReady, userLocation, fetchData]);
+
+  useEffect(() => {
+    if (initialShopOpenRef.current || shops.length === 0) return;
+    const params = new URLSearchParams(window.location.search);
+    const shopId = Number(params.get("shop"));
+    if (!Number.isFinite(shopId) || !shops.some((shop) => shop.id === shopId)) return;
+    initialShopOpenRef.current = true;
+    queueMicrotask(() => {
+      setViewMode("list");
+      setSelectedShopId(shopId);
+      setDetailShopId(shopId);
+    });
+  }, [shops]);
 
   // 市場レート（Google参考レート）を取得
   useEffect(() => {
@@ -265,7 +392,6 @@ export default function HomePage() {
     );
   }
   // 距離フィルター変更時はカードスクロール自動選択を抑制
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     suppressScrollSelect.current = true;
     const timer = setTimeout(() => { suppressScrollSelect.current = false; }, 500);
@@ -280,10 +406,8 @@ export default function HomePage() {
   }
 
   const sortedShops = [...filteredShops].sort((a, b) => {
-    // Promoted shops always appear first
-    const aPromoted = a.is_promoted ? 1 : 0;
-    const bPromoted = b.is_promoted ? 1 : 0;
-    if (aPromoted !== bPromoted) return bPromoted - aPromoted;
+    const promotedOrder = comparePromotedShops(a, b);
+    if (promotedOrder !== 0) return promotedOrder;
 
     if (sortBy === "distance" && userLocation) {
       const distA = calcDistance(userLocation.lat, userLocation.lng, a.lat, a.lng);
@@ -333,7 +457,6 @@ export default function HomePage() {
       .map((s) => s.id);
   }, [sortedShops, selectedCurrency]);
 
-  const selectedShop = shops.find((s) => s.id === selectedShopId);
   const detailShop = shops.find((s) => s.id === detailShopId);
 
   // Track viewed shops when shop detail opens
@@ -429,11 +552,59 @@ export default function HomePage() {
       <Header
         viewMode={viewMode}
         onViewModeChange={setViewMode}
-        locale={locale}
-        onLocaleChange={setLocale}
-        onMyPageOpen={() => setShowMyPage(true)}
+        onMyPageOpen={() => {
+          setMyPageInitialAuthMode(null);
+          setShowMyPage(true);
+        }}
         t={t}
       />
+
+      {!authLoading && !isLoggedIn && <GrowthBanner t={t} onRegister={openRegistration} />}
+
+      {triggeredRateAlerts.length > 0 && (
+        <button
+          onClick={() => setShowMyPage(true)}
+          className="bg-green-50 border-b border-green-200 px-4 py-2 text-left"
+        >
+          <p className="text-xs font-bold text-green-700">
+            {t("rateAlert.triggered", {
+              currency: triggeredRateAlerts[0].currency,
+              rate: triggeredRateAlerts[0].currentRate.toFixed(2),
+              shop: triggeredRateAlerts[0].shopName,
+            })}
+          </p>
+        </button>
+      )}
+
+      {showAreaPicker && (
+        <div className="border-b border-blue-100 bg-blue-50 px-3 py-3">
+          <div className="mx-auto max-w-5xl">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="text-sm font-black text-gray-900">{t("areaPicker.title")}</p>
+                <p className="mt-1 text-xs leading-5 text-gray-600">{t("areaPicker.description")}</p>
+              </div>
+              <button
+                onClick={closeAreaPicker}
+                className="rounded-lg border border-blue-200 bg-white px-2.5 py-1.5 text-xs font-bold text-blue-700"
+              >
+                {t("areaPicker.dismiss")}
+              </button>
+            </div>
+            <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+              {AREA_PICKER_AREAS.map((area) => (
+                <button
+                  key={area.slug}
+                  onClick={() => handleAreaSelect(area)}
+                  className="whitespace-nowrap rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-bold text-blue-700 shadow-sm"
+                >
+                  {locale === "ja" ? area.nameJa : area.nameEn}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Filter bar - mobile optimized */}
       <div className="bg-white border-b px-3 py-2 space-y-2 overflow-hidden">
@@ -615,6 +786,30 @@ export default function HomePage() {
               <p className="text-gray-500 text-sm">{t("common.loading")}</p>
             </div>
           </div>
+        ) : noNearbyShops ? (
+          <div className="flex items-center justify-center h-full bg-gray-50 p-4">
+            <div className="w-full max-w-sm rounded-xl border border-gray-200 bg-white p-5 text-center shadow-sm">
+              <h2 className="text-base font-black text-gray-900">{t("nearby.noShopsTitle")}</h2>
+              <p className="mt-2 text-sm leading-6 text-gray-500">
+                {t("nearby.noShopsDescription", { radius: searchRadiusKm })}
+              </p>
+              {canExpandNearbySearch ? (
+                <button
+                  onClick={handleExpandNearbySearch}
+                  className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-3 text-sm font-bold text-white hover:bg-blue-700"
+                >
+                  {t("nearby.expandSearch")}
+                </button>
+              ) : (
+                <Link
+                  href="/areas"
+                  className="mt-4 block w-full rounded-lg bg-blue-600 px-4 py-3 text-sm font-bold text-white hover:bg-blue-700"
+                >
+                  {t("nearby.viewAreas")}
+                </Link>
+              )}
+            </div>
+          </div>
         ) : viewMode === "map" ? (
           <>
             <ShopMap
@@ -623,7 +818,6 @@ export default function HomePage() {
               selectedCurrency={selectedCurrency}
               onShopSelect={(id) => { setSelectedShopId(id); setDetailShopId(id); }}
               userLocation={userLocation}
-              onLocationUpdate={setUserLocation}
             />
             {/* Feature 1: マップ下部のカードスライダー with sync */}
             <div className="absolute bottom-8 left-0 right-0 px-4 pb-4">
@@ -746,7 +940,7 @@ export default function HomePage() {
                 />
                 {/* Show ad banner every 5th card */}
                 {(index + 1) % 5 === 0 && (
-                  <AdBanner locale={locale} t={t} placement="list" />
+                  <AdBanner isPremium={isPremium} locale={locale} t={t} placement="list" />
                 )}
               </div>
             ))}
@@ -800,6 +994,15 @@ export default function HomePage() {
       <div className="bg-gray-50 border-t border-gray-200 px-4 py-1.5 text-center">
         <p className="text-[10px] text-gray-400 leading-tight">
           {t("disclaimer.text")}
+          <Link href="/cities" className="ml-2 font-semibold text-blue-600">
+            🌍 Worldwide
+          </Link>
+          <Link href="/areas" className="ml-2 font-semibold text-blue-500">
+            {t("areaSeo.link")}
+          </Link>
+          <Link href="/share" className="ml-2 font-semibold text-green-600">
+            {t("growth.prKit")}
+          </Link>
         </p>
       </div>
 
@@ -836,16 +1039,24 @@ export default function HomePage() {
           selectedCurrency={selectedCurrency}
           locale={locale}
           t={t}
-          onClose={() => setShowMyPage(false)}
-          onShopSelect={(id) => { setDetailShopId(id); setShowMyPage(false); }}
+          onClose={closeMyPage}
+          initialAuthMode={myPageInitialAuthMode}
+          onShopSelect={(id) => { setDetailShopId(id); closeMyPage(); }}
           onToggleFavorite={toggleFavorite}
           onCurrencyChange={setSelectedCurrency}
           onLocaleChange={setLocale}
           onClearHistory={clearViewedHistory}
+          rateAlerts={rateAlerts}
+          triggeredRateAlerts={triggeredRateAlerts}
+          onSaveRateAlert={saveRateAlert}
+          onToggleRateAlert={toggleRateAlert}
+          onRemoveRateAlert={removeRateAlert}
+          isPremium={isPremium}
           isLoggedIn={isLoggedIn}
           profile={profile}
           onSendOtp={sendOtp}
           onVerifyOtp={verifyOtp}
+          onAuthSuccess={handleAuthSuccess}
           onUpdateProfile={updateProfile}
           onSignOut={signOut}
         />

@@ -12,10 +12,88 @@ export type UserProfile = {
   country: string;
 };
 
+export type AuthResult = {
+  error: string | null;
+  localTestCode?: string;
+};
+
 // Check if we have a real Supabase connection
 const HAS_SUPABASE =
   !!process.env.NEXT_PUBLIC_SUPABASE_URL &&
   !process.env.NEXT_PUBLIC_SUPABASE_URL.includes("placeholder");
+const LOCAL_AUTH_TEST_CODE = "000000";
+const LOCAL_AUTH_FALLBACK_EMAIL_KEY = "moneyspot_local_auth_fallback_email";
+
+function isLocalDevHost() {
+  if (typeof window === "undefined") return false;
+  return ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
+}
+
+function isLocalAuthEmail(email: string) {
+  if (!isLocalDevHost()) return false;
+  try {
+    return localStorage.getItem(LOCAL_AUTH_FALLBACK_EMAIL_KEY) === email;
+  } catch {
+    return false;
+  }
+}
+
+function shouldUseLocalAuthFallback(error: unknown) {
+  if (!isLocalDevHost()) return false;
+  const message = typeof error === "string" ? error : error instanceof Error ? error.message : "";
+  const normalized = message.toLowerCase();
+  return (
+    normalized.includes("error sending confirmation email") ||
+    normalized.includes("failed to fetch") ||
+    normalized.includes("network")
+  );
+}
+
+function makeLocalUser(email: string, profile: Omit<UserProfile, "email">) {
+  const fullProfile: UserProfile = { ...profile, email };
+  try { localStorage.setItem("moneyspot_user_profile", JSON.stringify(fullProfile)); } catch {}
+  return {
+    id: "local-dev",
+    email,
+    is_anonymous: false,
+    user_metadata: { ...fullProfile, localAuthFallback: true },
+  } as unknown as User;
+}
+
+function isLocalAuthUser(user: User | null) {
+  return user?.id === "local-dev" || Boolean(user?.user_metadata?.localAuthFallback);
+}
+
+function getAuthErrorMessage(error: unknown) {
+  const message = typeof error === "string" ? error : error instanceof Error ? error.message : "";
+  const normalized = message.toLowerCase();
+  if (normalized.includes("error sending confirmation email")) {
+    return "認証メールを送信できませんでした。時間をおいて再度お試しください。";
+  }
+  if (normalized.includes("failed to fetch") || normalized.includes("network")) {
+    return "通信に失敗しました。ネットワーク接続を確認して再度お試しください。";
+  }
+  return message || "認証処理に失敗しました。時間をおいて再度お試しください。";
+}
+
+function getLocalStoredUser(): User | null {
+  if (typeof window === "undefined") return null;
+  if (HAS_SUPABASE && !isLocalDevHost()) return null;
+  try {
+    const stored = localStorage.getItem("moneyspot_user_profile");
+    if (!stored) return null;
+    const profile = JSON.parse(stored) as UserProfile;
+    if (!profile.email) return null;
+    return {
+      id: "local-dev",
+      email: profile.email,
+      is_anonymous: false,
+      user_metadata: { ...profile, localAuthFallback: true },
+    } as unknown as User;
+  } catch {
+    return null;
+  }
+}
 
 export function useAuth() {
   const [user, setUser] = useState<User | null>(null);
@@ -23,61 +101,81 @@ export function useAuth() {
 
   // Initialize: check current session
   useEffect(() => {
+    const localUser = getLocalStoredUser();
+    if (localUser) {
+      const timer = window.setTimeout(() => {
+        setUser(localUser);
+        setLoading(false);
+      }, 0);
+      return () => window.clearTimeout(timer);
+    }
+
     if (!HAS_SUPABASE) {
-      // Try localStorage fallback for demo/mock mode
-      try {
-        const stored = localStorage.getItem("moneyspot_user_profile");
-        if (stored) {
-          const profile = JSON.parse(stored) as UserProfile;
-          setUser({ id: "local", email: profile.email, user_metadata: profile } as unknown as User);
-        }
-      } catch {}
-      setLoading(false);
-      return;
+      const timer = window.setTimeout(() => setLoading(false), 0);
+      return () => window.clearTimeout(timer);
     }
 
     let mounted = true;
+    let unsubscribe: (() => void) | undefined;
     (async () => {
-      const { supabase } = await import("@/lib/supabase");
-      const { data } = await supabase.auth.getSession();
-      if (mounted) {
-        if (data.session?.user) {
-          setUser(data.session.user);
-        } else {
-          // 匿名認証: ログインしていないユーザーにもIDを付与
-          const { data: anonData } = await supabase.auth.signInAnonymously();
-          if (anonData?.user && mounted) {
-            setUser(anonData.user);
+      try {
+        const { supabase } = await import("@/lib/supabase");
+        const { data } = await supabase.auth.getSession();
+        if (mounted) {
+          if (data.session?.user) {
+            setUser(data.session.user);
+          } else {
+            // 匿名認証: ログインしていないユーザーにもIDを付与
+            const { data: anonData } = await supabase.auth.signInAnonymously();
+            if (anonData?.user && mounted) {
+              setUser(anonData.user);
+            }
           }
+          setLoading(false);
         }
-        setLoading(false);
+
+        // Listen for auth changes
+        const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+          if (mounted) setUser(session?.user ?? null);
+        });
+        unsubscribe = () => listener.subscription.unsubscribe();
+      } catch {
+        if (mounted) {
+          setUser(null);
+          setLoading(false);
+        }
       }
-
-      // Listen for auth changes
-      const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
-        if (mounted) setUser(session?.user ?? null);
-      });
-
-      return () => {
-        mounted = false;
-        listener.subscription.unsubscribe();
-      };
     })();
 
-    return () => { mounted = false; };
+    return () => {
+      mounted = false;
+      unsubscribe?.();
+    };
   }, []);
 
   // Send OTP to email
-  const sendOtp = useCallback(async (email: string): Promise<{ error: string | null }> => {
+  const sendOtp = useCallback(async (email: string): Promise<AuthResult> => {
     if (!HAS_SUPABASE) {
-      return { error: null }; // Mock: always succeed
+      return { error: null, localTestCode: LOCAL_AUTH_TEST_CODE }; // Mock: always succeed
     }
-    const { supabase } = await import("@/lib/supabase");
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      options: { shouldCreateUser: true },
-    });
-    return { error: error?.message ?? null };
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      const { error } = await supabase.auth.signInWithOtp({
+        email,
+        options: { shouldCreateUser: true },
+      });
+      if (error && shouldUseLocalAuthFallback(error.message)) {
+        try { localStorage.setItem(LOCAL_AUTH_FALLBACK_EMAIL_KEY, email); } catch {}
+        return { error: null, localTestCode: LOCAL_AUTH_TEST_CODE };
+      }
+      return { error: error ? getAuthErrorMessage(error.message) : null };
+    } catch (error) {
+      if (shouldUseLocalAuthFallback(error)) {
+        try { localStorage.setItem(LOCAL_AUTH_FALLBACK_EMAIL_KEY, email); } catch {}
+        return { error: null, localTestCode: LOCAL_AUTH_TEST_CODE };
+      }
+      return { error: getAuthErrorMessage(error) };
+    }
   }, []);
 
   // Verify OTP and set profile
@@ -85,35 +183,42 @@ export function useAuth() {
     email: string,
     token: string,
     profile: Omit<UserProfile, "email">
-  ): Promise<{ error: string | null }> => {
-    if (!HAS_SUPABASE) {
+  ): Promise<AuthResult> => {
+    if (!HAS_SUPABASE || isLocalAuthEmail(email)) {
+      if (HAS_SUPABASE && token !== LOCAL_AUTH_TEST_CODE) {
+        return { error: "認証コードが違います。" };
+      }
       // Mock mode: store in localStorage
-      const fullProfile: UserProfile = { ...profile, email };
-      try { localStorage.setItem("moneyspot_user_profile", JSON.stringify(fullProfile)); } catch {}
-      setUser({ id: "local", email, user_metadata: fullProfile } as unknown as User);
+      setUser(makeLocalUser(email, profile));
+      try { localStorage.removeItem(LOCAL_AUTH_FALLBACK_EMAIL_KEY); } catch {}
       return { error: null };
     }
 
-    const { supabase } = await import("@/lib/supabase");
-    const { data, error } = await supabase.auth.verifyOtp({
-      email,
-      token,
-      type: "email",
-    });
-    if (error) return { error: error.message };
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      const { data, error } = await supabase.auth.verifyOtp({
+        email,
+        token,
+        type: "email",
+      });
+      if (error) return { error: getAuthErrorMessage(error.message) };
 
-    // Update user metadata with profile info
-    await supabase.auth.updateUser({
-      data: { lastName: profile.lastName, firstName: profile.firstName, phone: profile.phone, country: profile.country },
-    });
+      // Update user metadata with profile info
+      const { data: updateData, error: updateError } = await supabase.auth.updateUser({
+        data: { lastName: profile.lastName, firstName: profile.firstName, phone: profile.phone, country: profile.country },
+      });
+      if (updateError) return { error: getAuthErrorMessage(updateError.message) };
 
-    if (data.user) setUser(data.user);
-    return { error: null };
+      if (updateData.user || data.user) setUser((updateData.user ?? data.user) as User);
+      return { error: null };
+    } catch (error) {
+      return { error: getAuthErrorMessage(error) };
+    }
   }, []);
 
   // Update profile
-  const updateProfile = useCallback(async (updates: Partial<UserProfile>): Promise<{ error: string | null }> => {
-    if (!HAS_SUPABASE) {
+  const updateProfile = useCallback(async (updates: Partial<UserProfile>): Promise<AuthResult> => {
+    if (!HAS_SUPABASE || isLocalAuthUser(user)) {
       try {
         const stored = localStorage.getItem("moneyspot_user_profile");
         const current = stored ? JSON.parse(stored) : {};
@@ -124,13 +229,17 @@ export function useAuth() {
       return { error: null };
     }
 
-    const { supabase } = await import("@/lib/supabase");
-    const { error } = await supabase.auth.updateUser({ data: updates });
-    if (!error) {
-      setUser((prev) => prev ? { ...prev, user_metadata: { ...prev.user_metadata, ...updates } } as User : null);
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      const { error } = await supabase.auth.updateUser({ data: updates });
+      if (!error) {
+        setUser((prev) => prev ? { ...prev, user_metadata: { ...prev.user_metadata, ...updates } } as User : null);
+      }
+      return { error: error ? getAuthErrorMessage(error.message) : null };
+    } catch (error) {
+      return { error: getAuthErrorMessage(error) };
     }
-    return { error: error?.message ?? null };
-  }, []);
+  }, [user]);
 
   // Sign out
   const signOut = useCallback(async () => {
@@ -139,10 +248,18 @@ export function useAuth() {
       setUser(null);
       return;
     }
-    const { supabase } = await import("@/lib/supabase");
-    await supabase.auth.signOut();
+    if (isLocalAuthUser(user)) {
+      localStorage.removeItem("moneyspot_user_profile");
+      try { localStorage.removeItem(LOCAL_AUTH_FALLBACK_EMAIL_KEY); } catch {}
+      setUser(null);
+      return;
+    }
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      await supabase.auth.signOut();
+    } catch {}
     setUser(null);
-  }, []);
+  }, [user]);
 
   const profile: UserProfile | null = user
     ? {
@@ -156,7 +273,7 @@ export function useAuth() {
 
   return {
     user,
-    userId: user?.id ?? null,
+    userId: isLocalAuthUser(user) ? null : user?.id ?? null,
     profile,
     loading,
     isLoggedIn: !!user && !user.is_anonymous,

@@ -1,9 +1,24 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import Link from "next/link";
 import type { ExchangeShop } from "@/lib/database.types";
 import { getOpenStatus, formatRate, formatTimeAgo } from "@/lib/utils";
+import { isPromotedShop } from "@/lib/monetization";
+import {
+  COMPARISON_JPY_AMOUNT,
+  convertJpyToForeign,
+  formatForeignAmount,
+  formatJpyAmount,
+  getRateTrustClasses,
+  getRateTrustLabelKey,
+  getRateTrustNoteKey,
+  getRateTrustScore,
+  getRateTrustScoreClasses,
+} from "@/lib/rate-display";
+import { getShopSlug } from "@/lib/shop-pages";
 import type { TFunction } from "@/i18n/useTranslation";
+import PromotedBadge from "./PromotedBadge";
 
 type Props = {
   shop: ExchangeShop;
@@ -23,11 +38,90 @@ const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
 export default function ShopDetail({ shop, selectedCurrency, marketRates, locale, t, isFavorite, onToggleFavorite, onClose, isBestRate, wiseAffiliateBanner }: Props) {
   const hasBusinessHours = shop.shop_business_hours && shop.shop_business_hours.length > 0;
   const openStatus = hasBusinessHours ? getOpenStatus(shop.shop_business_hours) : null;
+  const isPromoted = isPromotedShop(shop);
   const [calcAmount, setCalcAmount] = useState("");
   const [calcDirection, setCalcDirection] = useState<"buy" | "sell">("sell");
+  const [showRateReport, setShowRateReport] = useState(false);
+  const [reportSellRate, setReportSellRate] = useState("");
+  const [reportBuyRate, setReportBuyRate] = useState("");
+  const [reportNote, setReportNote] = useState("");
+  const [reportSubmitted, setReportSubmitted] = useState(false);
+  const [shareStatus, setShareStatus] = useState("");
   const selectedRate = shop.exchange_rates?.find(
     (r) => r.currency_code === selectedCurrency
   );
+  const selectedTrustScore = selectedRate
+    ? getRateTrustScore(selectedRate.rate_type, selectedRate.fetched_at)
+    : null;
+  const selectedComparisonAmount = convertJpyToForeign(
+    COMPARISON_JPY_AMOUNT,
+    selectedRate?.sell_rate
+  );
+  const selectedComparisonText = formatForeignAmount(
+    selectedComparisonAmount,
+    selectedCurrency,
+    locale
+  );
+  const submitRateReport = () => {
+    const sellRate = Number(reportSellRate);
+    const buyRate = Number(reportBuyRate);
+    const hasValidSell = Number.isFinite(sellRate) && sellRate > 0;
+    const hasValidBuy = Number.isFinite(buyRate) && buyRate > 0;
+    if (!hasValidSell && !hasValidBuy && reportNote.trim().length === 0) return;
+
+    try {
+      const stored = window.localStorage.getItem("moneyspot_rate_reports");
+      const reports = stored ? JSON.parse(stored) : [];
+      const next = Array.isArray(reports) ? reports : [];
+      next.unshift({
+        id: `${shop.id}-${selectedCurrency}-${Date.now()}`,
+        shopId: shop.id,
+        shopName: shop.name,
+        currency: selectedCurrency,
+        sellRate: hasValidSell ? sellRate : null,
+        buyRate: hasValidBuy ? buyRate : null,
+        note: reportNote.trim(),
+        status: "pending_review",
+        rateType: "user_reported",
+        source: "user_report",
+        reviewedAt: null,
+        createdAt: new Date().toISOString(),
+      });
+      window.localStorage.setItem("moneyspot_rate_reports", JSON.stringify(next.slice(0, 100)));
+    } catch {}
+
+    setReportSubmitted(true);
+    setReportSellRate("");
+    setReportBuyRate("");
+    setReportNote("");
+  };
+
+  const shareShop = async () => {
+    const url = `${window.location.origin}/shops/${getShopSlug(shop)}`;
+    const rateText = selectedRate?.sell_rate
+      ? `${selectedCurrency} ${t("shop.sell")}: ¥${formatRate(Number(selectedRate.sell_rate))}`
+      : selectedCurrency;
+    const text = t("share.message", {
+      shop: shop.name,
+      rate: rateText,
+      comparison: selectedComparisonAmount !== null
+        ? t("shop.jpyComparison", {
+            amount: formatJpyAmount(COMPARISON_JPY_AMOUNT, locale),
+            result: selectedComparisonText,
+          })
+        : rateText,
+    });
+
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: shop.name, text, url });
+      } else {
+        await navigator.clipboard.writeText(`${text}\n${url}`);
+        setShareStatus(t("share.copied"));
+        window.setTimeout(() => setShareStatus(""), 2500);
+      }
+    } catch {}
+  };
 
   const statusLabel =
     openStatus === null
@@ -61,6 +155,7 @@ export default function ShopDetail({ shop, selectedCurrency, marketRates, locale
               {t("bestRate.badge")}
             </span>
           )}
+          {isPromoted && <PromotedBadge t={t} />}
         </div>
         <button
           onClick={() => onToggleFavorite(shop.id)}
@@ -90,6 +185,128 @@ export default function ShopDetail({ shop, selectedCurrency, marketRates, locale
             </span>
           )}
         </div>
+
+        {/* レートの信頼性 */}
+        {selectedRate && (
+          <div className="rounded-lg border border-gray-200 bg-white p-4">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <h3 className="text-sm font-bold text-gray-800">{t("shop.rateTrust")}</h3>
+                <p className="mt-1 text-xs leading-5 text-gray-500">
+                  {t(getRateTrustNoteKey(selectedRate.rate_type))}
+                </p>
+              </div>
+              <span className={`text-xs px-2 py-1 rounded-full border font-bold whitespace-nowrap ${getRateTrustClasses(selectedRate.rate_type)}`}>
+                {t(getRateTrustLabelKey(selectedRate.rate_type))}
+              </span>
+            </div>
+            <div className="mt-3 grid grid-cols-2 gap-3">
+              <div className="rounded-lg bg-blue-50 p-3">
+                <p className="text-[11px] font-semibold text-blue-700">
+                  {t("shop.jpyComparisonLabel")}
+                </p>
+                <p className="mt-1 text-sm font-black text-blue-900">
+                  {selectedComparisonAmount !== null
+                    ? t("shop.jpyComparison", {
+                        amount: formatJpyAmount(COMPARISON_JPY_AMOUNT, locale),
+                        result: selectedComparisonText,
+                      })
+                    : "-"}
+                </p>
+              </div>
+              {selectedTrustScore && (
+                <div className="rounded-lg bg-gray-50 p-3">
+                  <p className="text-[11px] font-semibold text-gray-500">
+                    {t("shop.trustScoreLabel")}
+                  </p>
+                  <p className={`mt-1 text-sm font-black ${getRateTrustScoreClasses(selectedTrustScore.level)}`}>
+                    {t("shop.trustScore", { score: selectedTrustScore.score })}
+                  </p>
+                  <p className="mt-1 text-[11px] font-semibold text-gray-500">
+                    {t(selectedTrustScore.labelKey)}
+                  </p>
+                </div>
+              )}
+              <div className="rounded-lg bg-gray-50 p-3">
+                <p className="text-[11px] font-semibold text-gray-500">
+                  {t("shop.lastChecked")}
+                </p>
+                <p className="mt-1 text-sm font-bold text-gray-800">
+                  {t("shop.lastCheckedAt", {
+                    time: formatTimeAgo(selectedRate.fetched_at, locale),
+                  })}
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => { setShowRateReport((v) => !v); setReportSubmitted(false); }}
+              className="mt-3 w-full rounded-lg border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-bold text-blue-700"
+            >
+              {t("report.button")}
+            </button>
+          </div>
+        )}
+
+        {showRateReport && (
+          <div className="rounded-lg border border-blue-100 bg-blue-50 p-4">
+            <h3 className="font-bold text-gray-800">{t("report.title")}</h3>
+            <p className="mt-1 text-xs leading-5 text-gray-500">{t("report.description")}</p>
+            {reportSubmitted ? (
+              <p className="mt-3 rounded-lg bg-white px-3 py-2 text-sm font-bold text-green-700">
+                {t("report.thanks")}
+              </p>
+            ) : (
+              <div className="mt-3 space-y-3">
+                <p className="text-xs font-bold text-gray-600">{selectedCurrency}</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <label className="text-xs font-medium text-gray-600">
+                    {t("report.sellRate")}
+                    <input
+                      type="text"
+                      inputMode="decimal"
+                      value={reportSellRate}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        if (v === "" || /^\d*\.?\d*$/.test(v)) setReportSellRate(v);
+                      }}
+                      className="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      placeholder={selectedRate?.sell_rate ? String(selectedRate.sell_rate) : "150.00"}
+                    />
+                  </label>
+                  <label className="text-xs font-medium text-gray-600">
+                    {t("report.buyRate")}
+                    <input
+                      type="text"
+                      inputMode="decimal"
+                      value={reportBuyRate}
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        if (v === "" || /^\d*\.?\d*$/.test(v)) setReportBuyRate(v);
+                      }}
+                      className="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      placeholder={selectedRate?.buy_rate ? String(selectedRate.buy_rate) : "149.00"}
+                    />
+                  </label>
+                </div>
+                <label className="block text-xs font-medium text-gray-600">
+                  {t("report.note")}
+                  <textarea
+                    value={reportNote}
+                    onChange={(e) => setReportNote(e.target.value)}
+                    className="mt-1 h-20 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    placeholder={t("report.notePlaceholder")}
+                  />
+                </label>
+                <button
+                  onClick={submitRateReport}
+                  className="w-full rounded-lg bg-blue-600 px-3 py-2 text-sm font-bold text-white hover:bg-blue-700"
+                >
+                  {t("report.submit")}
+                </button>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* レート一覧 */}
         {shop.exchange_rates && shop.exchange_rates.length > 0 && (
@@ -122,7 +339,7 @@ export default function ShopDetail({ shop, selectedCurrency, marketRates, locale
                             {rate.currency_code}
                             {isReference && (
                               <span className="text-[9px] px-1 py-0.5 rounded bg-gray-100 text-gray-500 font-normal">
-                                {locale === "ja" ? "参考" : "Est."}
+                                {t("shop.referenceShort")}
                               </span>
                             )}
                           </div>
@@ -299,6 +516,13 @@ export default function ShopDetail({ shop, selectedCurrency, marketRates, locale
         </div>
 
         {/* ルート案内ボタン */}
+        <Link
+          href={`/shops/${getShopSlug(shop)}`}
+          className="block w-full text-center bg-white text-blue-600 py-3 rounded-xl font-bold border border-blue-200 hover:bg-blue-50 transition-colors"
+        >
+          {t("seo.shopPageLink")}
+        </Link>
+
         <a
           href={`https://www.google.com/maps/dir/?api=1&destination=${shop.lat},${shop.lng}`}
           target="_blank"
@@ -307,6 +531,13 @@ export default function ShopDetail({ shop, selectedCurrency, marketRates, locale
         >
           {t("shop.directions")}
         </a>
+
+        <button
+          onClick={shareShop}
+          className="block w-full text-center bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700 transition-colors"
+        >
+          {shareStatus || t("share.button")}
+        </button>
 
         {/* 下部の閉じるボタン */}
         <button

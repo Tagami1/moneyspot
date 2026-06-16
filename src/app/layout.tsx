@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geist = Geist({
@@ -14,6 +15,31 @@ const outfit = Outfit({
 });
 
 const SITE_URL = "https://moneyspot.money";
+const serviceWorkerScript =
+  process.env.NODE_ENV === "production"
+    ? `
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    `
+    : `
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations()
+          .then((registrations) => Promise.all(registrations.map((registration) => registration.unregister())))
+          .then(() => {
+            if ('caches' in window) {
+              return caches.keys().then((keys) => Promise.all(keys.map((key) => caches.delete(key))));
+            }
+          })
+          .then(() => {
+            if (navigator.serviceWorker.controller) {
+              window.location.reload();
+            }
+          });
+      }
+    `;
 
 export const viewport: Viewport = {
   themeColor: "#2563eb",
@@ -25,58 +51,59 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "MoneySpot - 東京の外貨両替レート比較 | Best Exchange Rates in Tokyo",
+    default: "MoneySpot - Find the Best Currency Exchange Rates Worldwide | 外貨両替レート比較",
     template: "%s | MoneySpot",
   },
   description:
-    "東京都内の両替所のリアルタイムレートを比較。最安レートの両替所が地図ですぐ見つかる。Compare real-time currency exchange rates at shops across Tokyo.",
+    "Find the best currency exchange rates in 185+ cities and 80+ countries. Real-time rates, locations, and reviews. 世界中の両替所レートを比較。",
   keywords: [
     "currency exchange",
-    "Tokyo",
-    "exchange rate",
-    "両替",
-    "外貨両替",
-    "東京 両替 おすすめ",
     "exchange rate comparison",
-    "money exchange Tokyo",
+    "money exchange",
+    "bureau de change",
+    "best exchange rates",
+    "currency converter",
+    "Tokyo currency exchange",
+    "London currency exchange",
+    "Bangkok currency exchange",
+    "Dubai currency exchange",
+    "外貨両替",
     "両替所 レート比較",
-    "新宿 両替",
-    "渋谷 両替",
-    "上野 両替",
-    "秋葉原 両替",
+    "海外旅行 両替",
   ],
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
     languages: {
-      "ja": "/",
-      "en": "/",
-      "zh": "/",
-      "ko": "/",
+      en: "/",
+      ja: "/",
+      zh: "/",
+      ko: "/",
+      "x-default": "/",
     },
   },
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "MoneySpot - 東京の外貨両替レート比較",
+    title: "MoneySpot - Currency Exchange Rates Worldwide",
     description:
-      "東京都内の両替所のリアルタイムレートを比較。最安レートの両替所が地図ですぐ見つかる。",
+      "Find the best currency exchange shops in 185+ cities worldwide. Compare real-time rates and locations.",
     siteName: "MoneySpot",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "MoneySpot - Tokyo Currency Exchange Rate Comparison",
+        alt: "MoneySpot - Worldwide Currency Exchange Rate Comparison",
       },
     ],
-    locale: "ja_JP",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MoneySpot - 東京の外貨両替レート比較",
+    title: "MoneySpot - Currency Exchange Rates Worldwide",
     description:
-      "東京都内の両替所のリアルタイムレートを比較。最安レートが地図ですぐ見つかる。",
+      "Find the best currency exchange shops in 185+ cities worldwide.",
     images: ["/og-image.png"],
   },
   icons: {
@@ -110,28 +137,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${geist.variable} ${outfit.variable} h-full antialiased`}>
-      <head>
-        {/* Google AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5732642781898820"
-          crossOrigin="anonymous"
-        />
-      </head>
+    <html lang="en" className={`${geist.variable} ${outfit.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         {children}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                  navigator.serviceWorker.register('/sw.js');
-                });
-              }
-            `,
-          }}
-        />
+        <Script id="service-worker-control" strategy="afterInteractive">
+          {serviceWorkerScript}
+        </Script>
       </body>
     </html>
   );

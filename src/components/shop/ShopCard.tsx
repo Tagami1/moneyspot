@@ -2,8 +2,17 @@
 
 import type { ExchangeShop } from "@/lib/database.types";
 import { getOpenStatus, formatRate, formatTimeAgo, getTodayHours } from "@/lib/utils";
+import { isPromotedShop } from "@/lib/monetization";
+import {
+  COMPARISON_JPY_AMOUNT,
+  convertJpyToForeign,
+  formatForeignAmount,
+  formatJpyAmount,
+  getRateTrustClasses,
+  getRateTrustLabelKey,
+} from "@/lib/rate-display";
 import type { TFunction } from "@/i18n/useTranslation";
-import PromotedBadge from "@/components/shop/PromotedBadge";
+import PromotedBadge from "./PromotedBadge";
 
 type Props = {
   shop: ExchangeShop;
@@ -34,6 +43,7 @@ export default function ShopCard({
 }: Props) {
   const hasBusinessHours = shop.shop_business_hours && shop.shop_business_hours.length > 0;
   const openStatus = hasBusinessHours ? getOpenStatus(shop.shop_business_hours) : null;
+  const isPromoted = isPromotedShop(shop);
   const rate = shop.exchange_rates?.find(
     (r) => r.currency_code === selectedCurrency
   );
@@ -66,6 +76,8 @@ export default function ShopCard({
   const marketRate = marketRates?.[selectedCurrency];
   const sellRateNum = rate?.sell_rate ? Number(rate.sell_rate) : null;
   const spread = sellRateNum !== null && marketRate ? sellRateNum - marketRate : null;
+  const comparisonAmount = convertJpyToForeign(COMPARISON_JPY_AMOUNT, sellRateNum);
+  const comparisonText = formatForeignAmount(comparisonAmount, selectedCurrency, locale);
 
   // Calculate converted amount if amountInput is provided
   const convertedAmount = amountInput && sellRateNum ? (amountInput / sellRateNum) : null;
@@ -88,12 +100,12 @@ export default function ShopCard({
           <div className="flex-1 min-w-0">
             <h3 className="font-bold text-gray-900 text-sm leading-tight truncate">{shop.name}</h3>
             <div className="flex items-center gap-1.5 mt-1 flex-wrap">
-              {shop.is_promoted && <PromotedBadge t={t} />}
               {isBestRate && (
                 <span className="text-[10px] px-1 py-0.5 rounded font-bold bg-yellow-100 text-yellow-700 border border-yellow-300 whitespace-nowrap flex-shrink-0">
                   {t("bestRate.badge")}
                 </span>
               )}
+              {isPromoted && <PromotedBadge t={t} />}
               <span
                 className={`text-xs px-2 py-0.5 rounded-full font-medium whitespace-nowrap flex-shrink-0 ${statusClass}`}
               >
@@ -124,7 +136,7 @@ export default function ShopCard({
                   </p>
                   {rate.rate_type === "reference" && (
                     <span className="text-[9px] px-1 py-0.5 rounded bg-gray-100 text-gray-500">
-                      {locale === "ja" ? "参考" : "Est."}
+                      {t("shop.referenceShort")}
                     </span>
                   )}
                 </>
@@ -136,9 +148,19 @@ export default function ShopCard({
                 </p>
               )}
               {!amountInput && (
-                <p className="text-sm text-gray-700 mt-1">
-                  {t("shop.buy")} ¥{formatRate(rate.buy_rate ? Number(rate.buy_rate) : null)}
-                </p>
+                <>
+                  <p className="text-sm text-gray-700 mt-1">
+                    {t("shop.buy")} ¥{formatRate(rate.buy_rate ? Number(rate.buy_rate) : null)}
+                  </p>
+                  {comparisonAmount !== null && (
+                    <p className="text-[11px] font-bold text-gray-700 mt-1">
+                      {t("shop.jpyComparison", {
+                        amount: formatJpyAmount(COMPARISON_JPY_AMOUNT, locale),
+                        result: comparisonText,
+                      })}
+                    </p>
+                  )}
+                </>
               )}
             </div>
           )}
@@ -158,10 +180,17 @@ export default function ShopCard({
         </div>
 
         {/* Last updated time */}
-        {latestFetchedAt && (
-          <p className="text-[10px] text-gray-400 mt-1">
-            {t("shop.updatedAgo", { time: formatTimeAgo(latestFetchedAt, locale) })}
-          </p>
+        {rate && (
+          <div className="mt-2 flex items-center gap-2 flex-wrap">
+            <span className={`text-[10px] px-1.5 py-0.5 rounded-full border font-semibold ${getRateTrustClasses(rate.rate_type)}`}>
+              {t(getRateTrustLabelKey(rate.rate_type))}
+            </span>
+            {latestFetchedAt && (
+              <span className="text-[10px] text-gray-400">
+                {t("shop.updatedAgo", { time: formatTimeAgo(latestFetchedAt, locale) })}
+              </span>
+            )}
+          </div>
         )}
       </button>
     </div>

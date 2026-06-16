@@ -38,6 +38,8 @@ export type Database = {
           shop_type: "specialist" | "ticket_shop" | "bank" | "atm" | "hotel";
           is_active: boolean;
           is_promoted: boolean;
+          promoted_rank: number | null;
+          promoted_until: string | null;
           source: "scraper" | "osm" | "manual" | "user";
           osm_id: number | null;
           country_code: string | null;

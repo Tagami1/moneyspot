@@ -1,0 +1,13 @@
+name = "moneyspot-reference-rates"
+main = "index.ts"
+compatibility_date = "2024-01-01"
+
+[triggers]
+crons = ["0 3 * * *"]  # Daily at 12:00 JST
+
+[vars]
+ENVIRONMENT = "production"
+
+# シークレット（wrangler secret put で設定）
+# SUPABASE_URL       - Supabase プロジェクトURL
+# SUPABASE_SERVICE_KEY - Supabase service_role キー

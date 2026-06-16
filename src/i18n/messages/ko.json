@@ -6,6 +6,8 @@
     "error": "오류가 발생했습니다",
     "retry": "다시 시도",
     "close": "닫기",
+    "cancel": "취소",
+    "confirm": "확인",
     "back": "← 뒤로",
     "noResults": "결과를 찾을 수 없습니다",
     "lastUpdated": "최종 업데이트: {time}",
@@ -53,7 +55,28 @@
     "currencyLabel": "통화",
     "updatedAgo": "{time} 전 업데이트",
     "justNow": "방금 업데이트",
-    "todayHours": "Today"
+    "todayHours": "Today",
+    "hoursUnknown": "영업시간 알 수 없음",
+    "estimatedRate": "예상 참고 환율",
+    "promoted": "추천",
+    "noRatesAvailable": "이 매장의 환율 정보가 없습니다",
+    "referenceShort": "참고",
+    "actualRate": "매장 실제 환율",
+    "referenceEstimate": "참고 환율",
+    "userReportedRate": "사용자 제보 환율",
+    "actualRateNote": "매장 또는 공식 정보에서 가져온 환율입니다.",
+    "referenceRateNoteShort": "시장 환율을 바탕으로 한 예상값이며 매장 실제 환율과 다를 수 있습니다.",
+    "userReportedRateNote": "사용자가 공유한 환율입니다. 방문 전 매장에 확인해 주세요.",
+    "rateTrust": "환율 신뢰도",
+    "jpyComparison": "¥{amount}이면 {result}",
+    "jpyComparisonLabel": "¥10,000 기준",
+    "lastChecked": "마지막 확인",
+    "lastCheckedAt": "{time} 전",
+    "trustScoreLabel": "신뢰 점수",
+    "trustScore": "{score}/100",
+    "trustHigh": "신뢰도 높음",
+    "trustMedium": "방문 전 확인 권장",
+    "trustLow": "참고용"
   },
   "currency": {
     "title": "통화 선택",
@@ -118,5 +141,110 @@
   },
   "languageSelect": {
     "title": "언어 선택"
+  },
+  "mypage": {
+    "title": "마이페이지",
+    "overview": "이용 현황 및 설정",
+    "favorites": "즐겨찾는 매장",
+    "favoritesEmpty": "즐겨찾는 매장이 없습니다",
+    "favoritesHint": "매장의 ♡를 눌러 추가하세요",
+    "history": "최근 본 매장",
+    "historyEmpty": "조회 기록이 없습니다",
+    "summary": "이용 현황",
+    "favoriteCount": "즐겨찾기",
+    "openFavorites": "영업 중인 즐겨찾기",
+    "historyCount": "최근 본 매장",
+    "ratedShopCount": "환율 등록 매장",
+    "bestFavoriteRate": "즐겨찾기 최저 환율",
+    "noFavoriteRate": "즐겨찾기 환율 없음",
+    "rateAlert": "환율 알림",
+    "rateAlertTitle": "{currency}가 목표 환율에 도달하면 알림",
+    "rateAlertDescription": "목표 환율을 저장하면 조건에 맞는 환율이 있을 때 앱 안에서 알려드립니다",
+    "rateAlertOn": "알림이 켜져 있습니다. 조건에 맞는 환율이 앱에 표시됩니다.",
+    "rateAlertOff": "알림이 꺼져 있습니다. 목표 환율을 저장하면 켜집니다.",
+    "settings": "설정",
+    "defaultCurrency": "기본 통화",
+    "language": "언어",
+    "country": "국가",
+    "accountStatus": "동기화 상태",
+    "synced": "동기화됨",
+    "localOnly": "이 기기만",
+    "clearHistory": "기록 지우기",
+    "clearHistoryConfirm": "조회 기록을 지울까요?",
+    "version": "버전",
+    "loginPrompt": "로그인하면 즐겨찾기와 설정을 동기화할 수 있습니다",
+    "editProfile": "프로필 편집",
+    "freePlan": "무료",
+    "profileCompletion": "프로필 완성도"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "Premium 플랜",
+    "subtitle": "광고 제거, 환율 알림 등",
+    "benefitAdFree": "광고 없는 이용",
+    "benefitAlerts": "환율 변동 알림",
+    "benefitCharts": "환율 추이 차트",
+    "comingSoon": "곧 제공 예정",
+    "active": "Premium 활성화됨"
+  },
+  "areaSeo": {
+    "link": "지역별 페이지"
+  },
+  "report": {
+    "button": "이 환율 확인/제보",
+    "title": "환율 제보하기",
+    "description": "매장에서 본 환율이나 차이를 공유할 수 있습니다. 제출 내용은 검토 대기 상태로 이 기기에 저장되며 향후 데이터 개선에 활용됩니다.",
+    "sellRate": "판매 환율",
+    "buyRate": "매입 환율",
+    "note": "메모",
+    "notePlaceholder": "예: 매장 표시판에는 USD 판매가 151.80이었습니다",
+    "submit": "제보 저장",
+    "thanks": "감사합니다. 제보가 검토 대기 상태로 저장되었습니다.",
+    "historyTitle": "환율 제보 내역",
+    "historyEmpty": "저장된 환율 제보가 없습니다",
+    "pendingReview": "검토 대기",
+    "approved": "승인됨"
+  },
+  "rateAlert": {
+    "save": "저장",
+    "savedAlerts": "저장된 알림",
+    "noAlerts": "저장된 알림이 없습니다",
+    "targetRate": "목표 ¥{rate}",
+    "triggered": "{currency}가 목표 범위입니다: {shop} / ¥{rate}",
+    "active": "켜짐",
+    "paused": "일시정지",
+    "remove": "삭제",
+    "invalidTarget": "올바른 목표 환율을 입력해 주세요"
+  },
+  "seo": {
+    "shopPageLink": "매장 페이지 열기"
+  },
+  "nearby": {
+    "noShopsTitle": "근처에 매장이 없습니다",
+    "noShopsDescription": "{radius}km 이내에 지원되는 매장이 없습니다. 검색 범위를 넓힐까요?",
+    "expandSearch": "50km까지 넓히기",
+    "viewAreas": "지역별 페이지 보기"
+  },
+  "share": {
+    "button": "비교 결과 공유",
+    "copied": "공유 링크를 복사했습니다",
+    "message": "{shop} 환율: {rate}. {comparison}"
+  },
+  "areaPicker": {
+    "title": "지역으로 찾기",
+    "description": "현재 위치를 사용할 수 없거나 여행지를 미리 확인할 때 지역을 선택해 시작할 수 있습니다.",
+    "dismiss": "닫기"
+  },
+  "growth": {
+    "title": "무료 등록으로 더 편리하게",
+    "subtitle": "즐겨찾기, 환율 알림, 제보 내역을 저장할 수 있습니다. 여행 동료에게도 공유해 MoneySpot을 함께 키워주세요.",
+    "registerCta": "무료 등록",
+    "shareCta": "친구에게 공유",
+    "shareCopied": "초대 링크를 복사했습니다",
+    "shareMessage": "일본에서 환전하기 전에 MoneySpot으로 가까운 매장과 환율을 비교해 보세요.",
+    "prKit": "소개 페이지",
+    "benefitFavorites": "관심 매장을 저장하고 나중에 확인",
+    "benefitAlerts": "목표 환율에 가까워지면 앱에서 알림",
+    "benefitReports": "매장 환율 제보와 내역 저장"
   }
 }

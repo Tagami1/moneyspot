@@ -6,6 +6,8 @@
     "error": "エラーが発生しました",
     "retry": "再試行",
     "close": "閉じる",
+    "cancel": "キャンセル",
+    "confirm": "実行",
     "back": "← 戻る",
     "noResults": "結果が見つかりませんでした",
     "lastUpdated": "最終更新: {time}",
@@ -51,7 +53,25 @@
     "justNow": "たった今更新",
     "hoursUnknown": "営業時間不明",
     "estimatedRate": "参考レート（推定値）",
-    "promoted": "おすすめ"
+    "promoted": "おすすめ",
+    "noRatesAvailable": "この店舗のレート情報はありません",
+    "referenceShort": "参考",
+    "actualRate": "実店舗レート",
+    "referenceEstimate": "参考レート",
+    "userReportedRate": "投稿レート",
+    "actualRateNote": "店舗または公式情報から取得したレートです。",
+    "referenceRateNoteShort": "市場レートをもとにした目安です。店舗の実レートとは異なる場合があります。",
+    "userReportedRateNote": "ユーザーから共有されたレートです。来店前に店舗で確認してください。",
+    "rateTrust": "レートの信頼性",
+    "jpyComparison": "¥{amount}なら {result}",
+    "jpyComparisonLabel": "10,000円の目安",
+    "lastChecked": "最終確認",
+    "lastCheckedAt": "{time}前",
+    "trustScoreLabel": "信頼スコア",
+    "trustScore": "{score}/100",
+    "trustHigh": "高め",
+    "trustMedium": "確認推奨",
+    "trustLow": "参考程度"
   },
   "currency": {
     "title": "通貨を選択",
@@ -186,20 +206,38 @@
   },
   "mypage": {
     "title": "マイページ",
+    "overview": "利用状況と設定",
     "favorites": "お気に入り店舗",
     "favoritesEmpty": "お気に入りの店舗がありません",
     "favoritesHint": "店舗の♡をタップして追加",
     "history": "最近見た店舗",
     "historyEmpty": "閲覧履歴がありません",
+    "summary": "利用状況",
+    "favoriteCount": "お気に入り",
+    "openFavorites": "営業中のお気に入り",
+    "historyCount": "最近見た店舗",
+    "ratedShopCount": "レート掲載店舗",
+    "bestFavoriteRate": "お気に入り最安",
+    "noFavoriteRate": "お気に入りレートなし",
+    "rateAlert": "レート通知",
+    "rateAlertTitle": "{currency} が目標レートになったら通知",
+    "rateAlertDescription": "保存すると、条件に合うレートが見つかった時にアプリ内でお知らせします",
+    "rateAlertOn": "通知はオンです。条件に合う店舗が見つかると画面上に表示します。",
+    "rateAlertOff": "通知はオフです。目標レートを保存するとオンになります。",
     "settings": "設定",
     "defaultCurrency": "デフォルト通貨",
     "language": "言語",
     "country": "国",
+    "accountStatus": "同期状態",
+    "synced": "同期中",
+    "localOnly": "端末のみ",
     "clearHistory": "履歴をクリア",
     "clearHistoryConfirm": "閲覧履歴をクリアしますか？",
     "version": "バージョン",
     "loginPrompt": "ログインするとお気に入りや設定を同期できます",
-    "editProfile": "プロフィール編集"
+    "editProfile": "プロフィール編集",
+    "freePlan": "Free",
+    "profileCompletion": "プロフィール完成度"
   },
   "disclaimer": {
     "text": "表示レートは参考値です。実際のレートは店舗にてご確認ください。"
@@ -222,6 +260,67 @@
     "benefitAdFree": "広告なしの快適体験",
     "benefitAlerts": "レート変動通知",
     "benefitCharts": "レート推移チャート",
-    "comingSoon": "近日公開"
+    "comingSoon": "近日公開",
+    "active": "Premium有効"
+  },
+  "areaSeo": {
+    "link": "地域別ページ"
+  },
+  "report": {
+    "button": "このレートを確認/報告",
+    "title": "レートを報告する",
+    "description": "店頭で見たレートや違いを共有できます。送信内容は審査待ちとして端末に保存され、今後のデータ改善に使える形です。",
+    "sellRate": "販売レート",
+    "buyRate": "買取レート",
+    "note": "メモ",
+    "notePlaceholder": "例: 店頭表示ではUSD販売が151.80でした",
+    "submit": "報告を保存",
+    "thanks": "ありがとうございます。報告を審査待ちとして保存しました。",
+    "historyTitle": "レート報告履歴",
+    "historyEmpty": "保存済みのレート報告はありません",
+    "pendingReview": "審査待ち",
+    "approved": "承認済み"
+  },
+  "rateAlert": {
+    "save": "保存",
+    "savedAlerts": "保存中の通知",
+    "noAlerts": "保存中の通知はありません",
+    "targetRate": "目標 ¥{rate}",
+    "triggered": "{currency} が目標内です: {shop} / ¥{rate}",
+    "active": "オン",
+    "paused": "停止中",
+    "remove": "削除",
+    "invalidTarget": "目標レートを正しく入力してください"
+  },
+  "seo": {
+    "shopPageLink": "店舗ページを開く"
+  },
+  "nearby": {
+    "noShopsTitle": "近くに店舗がありません",
+    "noShopsDescription": "{radius}km圏内に対応店舗がありません。エリアを広げますか？",
+    "expandSearch": "50kmまで広げる",
+    "viewAreas": "地域別ページを見る"
+  },
+  "share": {
+    "button": "比較結果を共有",
+    "copied": "共有リンクをコピーしました",
+    "message": "{shop} のレート: {rate}。{comparison}"
+  },
+  "areaPicker": {
+    "title": "エリアから探す",
+    "description": "現在地が取れない場合や旅行先で探す場合は、エリアを選んで開始できます。",
+    "dismiss": "閉じる"
+  },
+  "growth": {
+    "title": "無料登録でもっと便利に",
+    "subtitle": "お気に入り、レート通知、報告履歴を保存できます。旅行仲間にも共有して、MoneySpotを育てていきましょう。",
+    "registerCta": "無料登録する",
+    "shareCta": "友だちに共有",
+    "shareCopied": "紹介リンクをコピーしました",
+    "shareMessage": "日本で外貨両替する前に、MoneySpotで近くの店舗とレートを比較できます。",
+    "prKit": "紹介ページ",
+    "benefitFavorites": "お気に入り店舗を保存してあとから確認",
+    "benefitAlerts": "目標レートに近づいたらアプリ内で通知",
+    "benefitReports": "店頭で見たレート報告と履歴を保存"
   }
 }

@@ -5,9 +5,10 @@ import type { TFunction } from "@/i18n/useTranslation";
 type Props = {
   locale: string;
   t: TFunction;
+  isPremium?: boolean;
 };
 
-export default function PremiumBanner({ t }: Props) {
+export default function PremiumBanner({ t, isPremium }: Props) {
   return (
     <div className="bg-white mt-2">
       <div className="px-4 py-3 border-b border-gray-100">
@@ -19,7 +20,7 @@ export default function PremiumBanner({ t }: Props) {
             {t("premium.title")}
           </h3>
           <p className="text-gray-500 text-xs mt-1">
-            {t("premium.subtitle")}
+            {isPremium ? t("premium.active") : t("premium.subtitle")}
           </p>
 
           <ul className="mt-3 space-y-2">
@@ -45,9 +46,13 @@ export default function PremiumBanner({ t }: Props) {
 
           <button
             disabled
-            className="mt-4 w-full py-2.5 rounded-lg font-bold text-sm bg-gray-300 text-gray-500 cursor-not-allowed"
+            className={`mt-4 w-full py-2.5 rounded-lg font-bold text-sm ${
+              isPremium
+                ? "bg-green-100 text-green-700"
+                : "bg-gray-300 text-gray-500 cursor-not-allowed"
+            }`}
           >
-            {t("premium.comingSoon")}
+            {isPremium ? t("premium.active") : t("premium.comingSoon")}
           </button>
         </div>
       </div>

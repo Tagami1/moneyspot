@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from "react";
 import type { ExchangeShop, Currency } from "@/lib/database.types";
-import { formatRate } from "@/lib/utils";
 import type { TFunction } from "@/i18n/useTranslation";
 
 type Props = {

@@ -6,6 +6,8 @@
     "error": "Đã xảy ra lỗi",
     "retry": "Thử lại",
     "close": "Đóng",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
     "back": "← Quay lại",
     "noResults": "Không tìm thấy kết quả",
     "lastUpdated": "Cập nhật lần cuối: {time}",
@@ -53,7 +55,28 @@
     "currencyLabel": "Tiền tệ",
     "updatedAgo": "Cập nhật {time} trước",
     "justNow": "Vừa cập nhật",
-    "todayHours": "Today"
+    "todayHours": "Today",
+    "hoursUnknown": "Chưa rõ giờ mở cửa",
+    "estimatedRate": "Tỷ giá tham khảo ước tính",
+    "promoted": "Được đề xuất",
+    "noRatesAvailable": "Chưa có thông tin tỷ giá cho cửa hàng này",
+    "referenceShort": "Tham khảo",
+    "actualRate": "Tỷ giá tại cửa hàng",
+    "referenceEstimate": "Tỷ giá tham khảo",
+    "userReportedRate": "Tỷ giá do người dùng báo",
+    "actualRateNote": "Tỷ giá này đến từ cửa hàng hoặc nguồn chính thức.",
+    "referenceRateNoteShort": "Đây là ước tính theo tỷ giá thị trường và có thể khác tỷ giá tại cửa hàng.",
+    "userReportedRateNote": "Tỷ giá này do người dùng chia sẻ. Vui lòng xác nhận với cửa hàng trước khi đến.",
+    "rateTrust": "Độ tin cậy của tỷ giá",
+    "jpyComparison": "¥{amount} nhận {result}",
+    "jpyComparisonLabel": "Với ¥10,000",
+    "lastChecked": "Kiểm tra lần cuối",
+    "lastCheckedAt": "{time} trước",
+    "trustScoreLabel": "Điểm tin cậy",
+    "trustScore": "{score}/100",
+    "trustHigh": "Độ tin cậy cao",
+    "trustMedium": "Nên kiểm tra trước khi đến",
+    "trustLow": "Chỉ nên tham khảo"
   },
   "currency": {
     "title": "Chọn tiền tệ",
@@ -118,5 +141,110 @@
   },
   "languageSelect": {
     "title": "Chọn ngôn ngữ"
+  },
+  "mypage": {
+    "title": "Trang của tôi",
+    "overview": "Sử dụng và cài đặt",
+    "favorites": "Cửa hàng yêu thích",
+    "favoritesEmpty": "Chưa có cửa hàng yêu thích",
+    "favoritesHint": "Nhấn ♡ trên cửa hàng để thêm",
+    "history": "Đã xem gần đây",
+    "historyEmpty": "Chưa có lịch sử xem",
+    "summary": "Tóm tắt sử dụng",
+    "favoriteCount": "Yêu thích",
+    "openFavorites": "Yêu thích đang mở cửa",
+    "historyCount": "Cửa hàng đã xem gần đây",
+    "ratedShopCount": "Cửa hàng có tỷ giá",
+    "bestFavoriteRate": "Tỷ giá tốt nhất trong yêu thích",
+    "noFavoriteRate": "Chưa có tỷ giá yêu thích",
+    "rateAlert": "Cảnh báo tỷ giá",
+    "rateAlertTitle": "Thông báo khi {currency} đạt tỷ giá mục tiêu",
+    "rateAlertDescription": "Lưu tỷ giá mục tiêu và MoneySpot sẽ hiển thị cảnh báo trong ứng dụng khi có tỷ giá phù hợp",
+    "rateAlertOn": "Cảnh báo đang bật. Tỷ giá phù hợp sẽ hiển thị trong ứng dụng.",
+    "rateAlertOff": "Cảnh báo đang tắt. Lưu tỷ giá mục tiêu để bật.",
+    "settings": "Cài đặt",
+    "defaultCurrency": "Tiền tệ mặc định",
+    "language": "Ngôn ngữ",
+    "country": "Quốc gia",
+    "accountStatus": "Trạng thái đồng bộ",
+    "synced": "Đã đồng bộ",
+    "localOnly": "Chỉ trên thiết bị này",
+    "clearHistory": "Xóa lịch sử",
+    "clearHistoryConfirm": "Xóa lịch sử xem?",
+    "version": "Phiên bản",
+    "loginPrompt": "Đăng nhập để đồng bộ yêu thích và cài đặt",
+    "editProfile": "Sửa hồ sơ",
+    "freePlan": "Miễn phí",
+    "profileCompletion": "Mức hoàn thiện hồ sơ"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "Gói Premium",
+    "subtitle": "Không quảng cáo, cảnh báo tỷ giá và hơn thế nữa",
+    "benefitAdFree": "Trải nghiệm không quảng cáo",
+    "benefitAlerts": "Cảnh báo biến động tỷ giá",
+    "benefitCharts": "Biểu đồ lịch sử tỷ giá",
+    "comingSoon": "Sắp ra mắt",
+    "active": "Premium đang hoạt động"
+  },
+  "areaSeo": {
+    "link": "Trang theo khu vực"
+  },
+  "report": {
+    "button": "Kiểm tra / báo tỷ giá này",
+    "title": "Báo tỷ giá",
+    "description": "Chia sẻ tỷ giá bạn thấy tại cửa hàng hoặc ghi chú điểm khác biệt. Báo cáo được lưu trên thiết bị này ở trạng thái chờ duyệt để cải thiện dữ liệu sau này.",
+    "sellRate": "Tỷ giá bán",
+    "buyRate": "Tỷ giá mua",
+    "note": "Ghi chú",
+    "notePlaceholder": "Ví dụ: Bảng tại cửa hàng ghi USD bán là 151.80",
+    "submit": "Lưu báo cáo",
+    "thanks": "Cảm ơn bạn. Báo cáo đã được lưu ở trạng thái chờ duyệt.",
+    "historyTitle": "Lịch sử báo cáo tỷ giá",
+    "historyEmpty": "Chưa có báo cáo tỷ giá đã lưu",
+    "pendingReview": "Chờ duyệt",
+    "approved": "Đã duyệt"
+  },
+  "rateAlert": {
+    "save": "Lưu",
+    "savedAlerts": "Cảnh báo đã lưu",
+    "noAlerts": "Chưa có cảnh báo đã lưu",
+    "targetRate": "Mục tiêu ¥{rate}",
+    "triggered": "{currency} đã trong mục tiêu: {shop} / ¥{rate}",
+    "active": "Bật",
+    "paused": "Tạm dừng",
+    "remove": "Xóa",
+    "invalidTarget": "Nhập tỷ giá mục tiêu hợp lệ"
+  },
+  "seo": {
+    "shopPageLink": "Mở trang cửa hàng"
+  },
+  "nearby": {
+    "noShopsTitle": "Không có cửa hàng gần bạn",
+    "noShopsDescription": "Không tìm thấy cửa hàng hỗ trợ trong phạm vi {radius} km. Mở rộng khu vực tìm kiếm?",
+    "expandSearch": "Mở rộng đến 50 km",
+    "viewAreas": "Xem trang theo khu vực"
+  },
+  "share": {
+    "button": "Chia sẻ so sánh",
+    "copied": "Đã sao chép liên kết chia sẻ",
+    "message": "Tỷ giá tại {shop}: {rate}. {comparison}"
+  },
+  "areaPicker": {
+    "title": "Tìm theo khu vực",
+    "description": "Chọn khu vực để bắt đầu nhanh khi không dùng được vị trí hoặc khi bạn đang lên kế hoạch trước.",
+    "dismiss": "Đóng"
+  },
+  "growth": {
+    "title": "Đăng ký miễn phí để dùng tiện hơn",
+    "subtitle": "Lưu cửa hàng yêu thích, cảnh báo tỷ giá và lịch sử báo cáo. Chia sẻ MoneySpot với bạn đồng hành để cùng phát triển.",
+    "registerCta": "Đăng ký miễn phí",
+    "shareCta": "Chia sẻ với bạn bè",
+    "shareCopied": "Đã sao chép liên kết mời",
+    "shareMessage": "Trước khi đổi tiền mặt ở Nhật, hãy so sánh cửa hàng gần bạn và tỷ giá bằng MoneySpot.",
+    "prKit": "Trang chia sẻ",
+    "benefitFavorites": "Lưu cửa hàng yêu thích để xem lại sau",
+    "benefitAlerts": "Nhận cảnh báo trong ứng dụng khi tỷ giá gần mục tiêu",
+    "benefitReports": "Lưu báo cáo tỷ giá tại cửa hàng và lịch sử"
   }
 }

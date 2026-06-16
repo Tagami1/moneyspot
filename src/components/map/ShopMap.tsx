@@ -13,37 +13,28 @@ type Props = {
   selectedCurrency: string;
   onShopSelect: (shopId: number) => void;
   userLocation: { lat: number; lng: number } | null;
-  onLocationUpdate?: (loc: { lat: number; lng: number }) => void;
 };
 
-function MyLocationButton({
-  userLocation,
-  onLocationUpdate,
-}: {
-  userLocation: { lat: number; lng: number } | null;
-  onLocationUpdate?: (loc: { lat: number; lng: number }) => void;
-}) {
+function MyLocationButton({ userLocation }: { userLocation: { lat: number; lng: number } | null }) {
   const map = useMap();
 
   const handleClick = useCallback(() => {
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        const loc = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-        if (map) {
-          map.panTo(loc);
-          map.setZoom(16);
-        }
-        onLocationUpdate?.(loc);
-      },
-      () => {
-        if (userLocation && map) {
-          map.panTo(userLocation);
-          map.setZoom(16);
-        }
-      },
-      { enableHighAccuracy: true }
-    );
-  }, [map, userLocation, onLocationUpdate]);
+    if (userLocation && map) {
+      map.panTo(userLocation);
+      map.setZoom(16);
+    } else {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          if (map) {
+            map.panTo({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+            map.setZoom(16);
+          }
+        },
+        () => {},
+        { enableHighAccuracy: true }
+      );
+    }
+  }, [map, userLocation]);
 
   return (
     <button
@@ -66,7 +57,6 @@ export default function ShopMap({
   selectedCurrency,
   onShopSelect,
   userLocation,
-  onLocationUpdate,
 }: Props) {
   const center = userLocation || JAPAN_CENTER;
   const defaultZoom = userLocation ? 14 : 6;
@@ -106,9 +96,7 @@ export default function ShopMap({
                 className={`px-2 py-1 rounded-full text-xs font-bold shadow-md cursor-pointer transition-transform ${
                   selectedShopId === shop.id
                     ? "bg-blue-600 text-white scale-110"
-                    : shop.is_promoted
-                      ? "bg-amber-400 text-white hover:scale-105 ring-2 ring-amber-300"
-                      : "bg-white text-gray-800 hover:scale-105"
+                    : "bg-white text-gray-800 hover:scale-105"
                 }`}
               >
                 {rate?.sell_rate
@@ -125,7 +113,7 @@ export default function ShopMap({
           </AdvancedMarker>
         )}
       </Map>
-      <MyLocationButton userLocation={userLocation} onLocationUpdate={onLocationUpdate} />
+      <MyLocationButton userLocation={userLocation} />
       </div>
     </APIProvider>
   );

@@ -1,13 +1,10 @@
 "use client";
 
-import type { Locale } from "@/i18n/config";
 import type { TFunction } from "@/i18n/useTranslation";
 
 type Props = {
   viewMode: "map" | "list";
   onViewModeChange: (mode: "map" | "list") => void;
-  locale: Locale;
-  onLocaleChange: (locale: Locale) => void;
   onMyPageOpen: () => void;
   t: TFunction;
 };
@@ -15,8 +12,6 @@ type Props = {
 export default function Header({
   viewMode,
   onViewModeChange,
-  locale,
-  onLocaleChange,
   onMyPageOpen,
   t,
 }: Props) {

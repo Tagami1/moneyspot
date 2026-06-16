@@ -6,6 +6,8 @@
     "error": "เกิดข้อผิดพลาด",
     "retry": "ลองอีกครั้ง",
     "close": "ปิด",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน",
     "back": "← กลับ",
     "noResults": "ไม่พบผลลัพธ์",
     "lastUpdated": "อัปเดตล่าสุด: {time}",
@@ -53,7 +55,28 @@
     "currencyLabel": "สกุลเงิน",
     "updatedAgo": "อัปเดต {time} ที่แล้ว",
     "justNow": "เพิ่งอัปเดต",
-    "todayHours": "Today"
+    "todayHours": "Today",
+    "hoursUnknown": "ไม่ทราบเวลาเปิดทำการ",
+    "estimatedRate": "เรทอ้างอิงโดยประมาณ",
+    "promoted": "แนะนำ",
+    "noRatesAvailable": "ยังไม่มีข้อมูลเรทของร้านนี้",
+    "referenceShort": "อ้างอิง",
+    "actualRate": "เรทร้านจริง",
+    "referenceEstimate": "เรทอ้างอิง",
+    "userReportedRate": "เรทจากผู้ใช้",
+    "actualRateNote": "เรทนี้มาจากร้านหรือแหล่งข้อมูลทางการ",
+    "referenceRateNoteShort": "เป็นค่าประมาณจากเรทตลาด และอาจต่างจากเรทจริงของร้าน",
+    "userReportedRateNote": "เรทนี้แชร์โดยผู้ใช้ โปรดยืนยันกับร้านก่อนเดินทาง",
+    "rateTrust": "ความน่าเชื่อถือของเรท",
+    "jpyComparison": "¥{amount} ได้ {result}",
+    "jpyComparisonLabel": "สำหรับ ¥10,000",
+    "lastChecked": "ตรวจล่าสุด",
+    "lastCheckedAt": "{time} ที่แล้ว",
+    "trustScoreLabel": "คะแนนความน่าเชื่อถือ",
+    "trustScore": "{score}/100",
+    "trustHigh": "น่าเชื่อถือสูง",
+    "trustMedium": "ควรตรวจสอบก่อนเดินทาง",
+    "trustLow": "ใช้เป็นแนวทาง"
   },
   "currency": {
     "title": "เลือกสกุลเงิน",
@@ -118,5 +141,110 @@
   },
   "languageSelect": {
     "title": "เลือกภาษา"
+  },
+  "mypage": {
+    "title": "หน้าของฉัน",
+    "overview": "การใช้งานและการตั้งค่า",
+    "favorites": "ร้านโปรด",
+    "favoritesEmpty": "ยังไม่มีร้านโปรด",
+    "favoritesHint": "แตะ ♡ ที่ร้านเพื่อเพิ่ม",
+    "history": "ดูล่าสุด",
+    "historyEmpty": "ยังไม่มีประวัติการดู",
+    "summary": "สรุปการใช้งาน",
+    "favoriteCount": "รายการโปรด",
+    "openFavorites": "ร้านโปรดที่เปิดอยู่",
+    "historyCount": "ร้านที่ดูล่าสุด",
+    "ratedShopCount": "ร้านที่มีเรท",
+    "bestFavoriteRate": "เรทดีที่สุดในร้านโปรด",
+    "noFavoriteRate": "ยังไม่มีเรทของร้านโปรด",
+    "rateAlert": "แจ้งเตือนเรท",
+    "rateAlertTitle": "แจ้งเตือนเมื่อ {currency} ถึงเรทเป้าหมาย",
+    "rateAlertDescription": "บันทึกเรทเป้าหมาย แล้ว MoneySpot จะแจ้งในแอปเมื่อพบเรทที่ตรงเงื่อนไข",
+    "rateAlertOn": "เปิดการแจ้งเตือนแล้ว เรทที่ตรงเงื่อนไขจะแสดงในแอป",
+    "rateAlertOff": "ปิดการแจ้งเตือนอยู่ บันทึกเรทเป้าหมายเพื่อเปิดใช้งาน",
+    "settings": "การตั้งค่า",
+    "defaultCurrency": "สกุลเงินเริ่มต้น",
+    "language": "ภาษา",
+    "country": "ประเทศ",
+    "accountStatus": "สถานะซิงค์",
+    "synced": "ซิงค์แล้ว",
+    "localOnly": "เฉพาะอุปกรณ์นี้",
+    "clearHistory": "ล้างประวัติ",
+    "clearHistoryConfirm": "ล้างประวัติการดูหรือไม่?",
+    "version": "เวอร์ชัน",
+    "loginPrompt": "เข้าสู่ระบบเพื่อซิงค์รายการโปรดและการตั้งค่า",
+    "editProfile": "แก้ไขโปรไฟล์",
+    "freePlan": "ฟรี",
+    "profileCompletion": "ความครบถ้วนของโปรไฟล์"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "แผน Premium",
+    "subtitle": "ไม่มีโฆษณา แจ้งเตือนเรท และอื่นๆ",
+    "benefitAdFree": "ใช้งานแบบไม่มีโฆษณา",
+    "benefitAlerts": "แจ้งเตือนการเปลี่ยนแปลงเรท",
+    "benefitCharts": "กราฟประวัติเรท",
+    "comingSoon": "เร็วๆ นี้",
+    "active": "เปิดใช้ Premium แล้ว"
+  },
+  "areaSeo": {
+    "link": "หน้าตามพื้นที่"
+  },
+  "report": {
+    "button": "ตรวจสอบ/รายงานเรทนี้",
+    "title": "รายงานเรท",
+    "description": "แชร์อัตราที่เห็นที่หน้าร้านหรือข้อมูลที่แตกต่างได้ รายงานจะถูกบันทึกในเครื่องนี้เป็นสถานะรอตรวจสอบเพื่อปรับปรุงข้อมูลในอนาคต",
+    "sellRate": "เรทขาย",
+    "buyRate": "เรทซื้อ",
+    "note": "บันทึก",
+    "notePlaceholder": "ตัวอย่าง: ป้ายหน้าร้านแสดง USD ขายที่ 151.80",
+    "submit": "บันทึกรายงาน",
+    "thanks": "ขอบคุณ รายงานของคุณถูกบันทึกเป็นสถานะรอตรวจสอบแล้ว",
+    "historyTitle": "ประวัติรายงานอัตรา",
+    "historyEmpty": "ยังไม่มีรายงานอัตราที่บันทึกไว้",
+    "pendingReview": "รอตรวจสอบ",
+    "approved": "อนุมัติแล้ว"
+  },
+  "rateAlert": {
+    "save": "บันทึก",
+    "savedAlerts": "การแจ้งเตือนที่บันทึกไว้",
+    "noAlerts": "ยังไม่มีการแจ้งเตือนที่บันทึกไว้",
+    "targetRate": "เป้าหมาย ¥{rate}",
+    "triggered": "{currency} อยู่ในเป้าหมายของคุณ: {shop} / ¥{rate}",
+    "active": "เปิด",
+    "paused": "พักไว้",
+    "remove": "ลบ",
+    "invalidTarget": "กรุณาใส่เรทเป้าหมายที่ถูกต้อง"
+  },
+  "seo": {
+    "shopPageLink": "เปิดหน้าร้าน"
+  },
+  "nearby": {
+    "noShopsTitle": "ไม่พบร้านใกล้คุณ",
+    "noShopsDescription": "ไม่พบร้านที่รองรับภายใน {radius} กม. ต้องการขยายพื้นที่ค้นหาหรือไม่?",
+    "expandSearch": "ขยายเป็น 50 กม.",
+    "viewAreas": "ดูหน้าตามพื้นที่"
+  },
+  "share": {
+    "button": "แชร์ผลเปรียบเทียบ",
+    "copied": "คัดลอกลิงก์แชร์แล้ว",
+    "message": "อัตราของ {shop}: {rate}. {comparison}"
+  },
+  "areaPicker": {
+    "title": "ค้นหาตามพื้นที่",
+    "description": "เลือกพื้นที่เพื่อเริ่มค้นหาได้เร็วขึ้นเมื่อใช้ตำแหน่งไม่ได้หรือวางแผนล่วงหน้า",
+    "dismiss": "ปิด"
+  },
+  "growth": {
+    "title": "สมัครฟรีเพื่อใช้งานสะดวกขึ้น",
+    "subtitle": "บันทึกร้านโปรด การแจ้งเตือนอัตรา และประวัติรายงาน แชร์ MoneySpot ให้เพื่อนร่วมทริปได้ด้วย",
+    "registerCta": "สมัครฟรี",
+    "shareCta": "แชร์ให้เพื่อน",
+    "shareCopied": "คัดลอกลิงก์เชิญแล้ว",
+    "shareMessage": "ก่อนแลกเงินสดในญี่ปุ่น เปรียบเทียบร้านใกล้ตัวและอัตราแลกเปลี่ยนด้วย MoneySpot",
+    "prKit": "หน้าแชร์",
+    "benefitFavorites": "บันทึกร้านโปรดไว้ดูภายหลัง",
+    "benefitAlerts": "รับแจ้งเตือนในแอปเมื่ออัตราใกล้เป้าหมาย",
+    "benefitReports": "บันทึกรายงานอัตราหน้าร้านและประวัติ"
   }
 }

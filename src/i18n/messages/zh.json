@@ -6,6 +6,8 @@
     "error": "发生错误",
     "retry": "重试",
     "close": "关闭",
+    "cancel": "取消",
+    "confirm": "确认",
     "back": "← 返回",
     "noResults": "未找到结果",
     "lastUpdated": "最后更新: {time}",
@@ -53,7 +55,28 @@
     "currencyLabel": "货币",
     "updatedAgo": "{time}前更新",
     "justNow": "刚刚更新",
-    "todayHours": "Today"
+    "todayHours": "Today",
+    "hoursUnknown": "营业时间未知",
+    "estimatedRate": "预估参考汇率",
+    "promoted": "推荐",
+    "noRatesAvailable": "该店铺暂无汇率信息",
+    "referenceShort": "参考",
+    "actualRate": "店铺实际汇率",
+    "referenceEstimate": "参考汇率",
+    "userReportedRate": "用户提交汇率",
+    "actualRateNote": "该汇率来自店铺或官方来源。",
+    "referenceRateNoteShort": "这是基于市场汇率的估算，可能与店铺实际汇率不同。",
+    "userReportedRateNote": "该汇率由用户分享。到店前请向店铺确认。",
+    "rateTrust": "汇率可信度",
+    "jpyComparison": "¥{amount} 可换 {result}",
+    "jpyComparisonLabel": "¥10,000 参考",
+    "lastChecked": "最后确认",
+    "lastCheckedAt": "{time}前",
+    "trustScoreLabel": "可信度评分",
+    "trustScore": "{score}/100",
+    "trustHigh": "可信度高",
+    "trustMedium": "到店前确认",
+    "trustLow": "仅供参考"
   },
   "currency": {
     "title": "选择货币",
@@ -118,5 +141,110 @@
   },
   "languageSelect": {
     "title": "选择语言"
+  },
+  "mypage": {
+    "title": "我的页面",
+    "overview": "使用情况和设置",
+    "favorites": "收藏店铺",
+    "favoritesEmpty": "还没有收藏店铺",
+    "favoritesHint": "点按店铺上的 ♡ 即可添加",
+    "history": "最近查看",
+    "historyEmpty": "暂无浏览记录",
+    "summary": "使用概览",
+    "favoriteCount": "收藏",
+    "openFavorites": "营业中的收藏",
+    "historyCount": "最近查看的店铺",
+    "ratedShopCount": "有汇率的店铺",
+    "bestFavoriteRate": "收藏中最佳汇率",
+    "noFavoriteRate": "暂无收藏汇率",
+    "rateAlert": "汇率提醒",
+    "rateAlertTitle": "{currency} 达到目标汇率时通知我",
+    "rateAlertDescription": "保存目标汇率后，出现符合条件的汇率时会在应用内提醒",
+    "rateAlertOn": "提醒已开启。符合条件的汇率会显示在应用内。",
+    "rateAlertOff": "提醒已关闭。保存目标汇率后会开启。",
+    "settings": "设置",
+    "defaultCurrency": "默认货币",
+    "language": "语言",
+    "country": "国家/地区",
+    "accountStatus": "同步状态",
+    "synced": "已同步",
+    "localOnly": "仅此设备",
+    "clearHistory": "清除记录",
+    "clearHistoryConfirm": "要清除浏览记录吗？",
+    "version": "版本",
+    "loginPrompt": "登录后可同步收藏和设置",
+    "editProfile": "编辑资料",
+    "freePlan": "免费",
+    "profileCompletion": "资料完成度"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "Premium 方案",
+    "subtitle": "无广告、汇率提醒等功能",
+    "benefitAdFree": "无广告体验",
+    "benefitAlerts": "汇率变动提醒",
+    "benefitCharts": "汇率历史图表",
+    "comingSoon": "即将推出",
+    "active": "Premium 已启用"
+  },
+  "areaSeo": {
+    "link": "地区页面"
+  },
+  "report": {
+    "button": "确认/报告此汇率",
+    "title": "报告汇率",
+    "description": "可以分享你在店内看到的汇率或差异。提交内容会以待审核状态保存在本设备，用于改进今后的数据。",
+    "sellRate": "卖出汇率",
+    "buyRate": "买入汇率",
+    "note": "备注",
+    "notePlaceholder": "例：店头显示 USD 卖出为151.80",
+    "submit": "保存报告",
+    "thanks": "谢谢。你的报告已保存为待审核。",
+    "historyTitle": "汇率报告记录",
+    "historyEmpty": "还没有保存的汇率报告",
+    "pendingReview": "待审核",
+    "approved": "已批准"
+  },
+  "rateAlert": {
+    "save": "保存",
+    "savedAlerts": "已保存提醒",
+    "noAlerts": "暂无已保存提醒",
+    "targetRate": "目标 ¥{rate}",
+    "triggered": "{currency} 已达到目标内：{shop} / ¥{rate}",
+    "active": "开启",
+    "paused": "暂停",
+    "remove": "删除",
+    "invalidTarget": "请输入有效的目标汇率"
+  },
+  "seo": {
+    "shopPageLink": "打开店铺页面"
+  },
+  "nearby": {
+    "noShopsTitle": "附近没有店铺",
+    "noShopsDescription": "{radius}公里范围内没有支持的店铺。要扩大搜索范围吗？",
+    "expandSearch": "扩大到50公里",
+    "viewAreas": "查看地区页面"
+  },
+  "share": {
+    "button": "分享比较结果",
+    "copied": "分享链接已复制",
+    "message": "{shop} 汇率: {rate}。{comparison}"
+  },
+  "areaPicker": {
+    "title": "按地区搜索",
+    "description": "无法取得当前位置或提前规划行程时，可以先选择地区开始搜索。",
+    "dismiss": "关闭"
+  },
+  "growth": {
+    "title": "免费注册，使用更方便",
+    "subtitle": "保存收藏店铺、汇率提醒和报告记录。也可以分享给同行朋友，一起完善 MoneySpot。",
+    "registerCta": "免费注册",
+    "shareCta": "分享给朋友",
+    "shareCopied": "邀请链接已复制",
+    "shareMessage": "在日本兑换外币前，可以用 MoneySpot 比较附近店铺和汇率。",
+    "prKit": "介绍页面",
+    "benefitFavorites": "保存收藏店铺，之后快速查看",
+    "benefitAlerts": "当汇率接近目标时收到应用内提醒",
+    "benefitReports": "保存店内汇率报告和记录"
   }
 }

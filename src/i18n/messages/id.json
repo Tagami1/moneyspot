@@ -6,6 +6,8 @@
     "error": "Terjadi kesalahan",
     "retry": "Coba lagi",
     "close": "Tutup",
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
     "back": "← Kembali",
     "noResults": "Tidak ada hasil ditemukan",
     "lastUpdated": "Terakhir diperbarui: {time}",
@@ -53,7 +55,28 @@
     "currencyLabel": "Mata uang",
     "updatedAgo": "Diperbarui {time} lalu",
     "justNow": "Baru diperbarui",
-    "todayHours": "Today"
+    "todayHours": "Today",
+    "hoursUnknown": "Jam buka belum diketahui",
+    "estimatedRate": "Kurs referensi perkiraan",
+    "promoted": "Direkomendasikan",
+    "noRatesAvailable": "Belum ada informasi kurs untuk toko ini",
+    "referenceShort": "Ref.",
+    "actualRate": "Kurs toko",
+    "referenceEstimate": "Kurs referensi",
+    "userReportedRate": "Kurs dari pengguna",
+    "actualRateNote": "Kurs ini berasal dari toko atau sumber resmi.",
+    "referenceRateNoteShort": "Ini perkiraan berdasarkan kurs pasar dan dapat berbeda dari kurs toko.",
+    "userReportedRateNote": "Kurs ini dibagikan oleh pengguna. Konfirmasikan ke toko sebelum datang.",
+    "rateTrust": "Keandalan kurs",
+    "jpyComparison": "¥{amount} menjadi {result}",
+    "jpyComparisonLabel": "Untuk ¥10.000",
+    "lastChecked": "Terakhir dicek",
+    "lastCheckedAt": "{time} lalu",
+    "trustScoreLabel": "Skor kepercayaan",
+    "trustScore": "{score}/100",
+    "trustHigh": "Kepercayaan tinggi",
+    "trustMedium": "Cek sebelum datang",
+    "trustLow": "Sebagai panduan"
   },
   "currency": {
     "title": "Pilih mata uang",
@@ -118,5 +141,110 @@
   },
   "languageSelect": {
     "title": "Pilih bahasa"
+  },
+  "mypage": {
+    "title": "Halaman Saya",
+    "overview": "Penggunaan dan pengaturan",
+    "favorites": "Toko favorit",
+    "favoritesEmpty": "Belum ada toko favorit",
+    "favoritesHint": "Ketuk ♡ pada toko untuk menambahkan",
+    "history": "Baru dilihat",
+    "historyEmpty": "Belum ada riwayat lihat",
+    "summary": "Ringkasan penggunaan",
+    "favoriteCount": "Favorit",
+    "openFavorites": "Favorit yang buka",
+    "historyCount": "Toko yang baru dilihat",
+    "ratedShopCount": "Toko dengan kurs",
+    "bestFavoriteRate": "Kurs favorit terbaik",
+    "noFavoriteRate": "Belum ada kurs favorit",
+    "rateAlert": "Peringatan kurs",
+    "rateAlertTitle": "Beri tahu saat {currency} mencapai kurs target",
+    "rateAlertDescription": "Simpan kurs target dan MoneySpot akan menampilkan peringatan di aplikasi saat ada kurs yang cocok",
+    "rateAlertOn": "Peringatan aktif. Kurs yang cocok akan muncul di aplikasi.",
+    "rateAlertOff": "Peringatan nonaktif. Simpan kurs target untuk mengaktifkan.",
+    "settings": "Pengaturan",
+    "defaultCurrency": "Mata uang default",
+    "language": "Bahasa",
+    "country": "Negara",
+    "accountStatus": "Status sinkronisasi",
+    "synced": "Tersinkron",
+    "localOnly": "Hanya perangkat ini",
+    "clearHistory": "Hapus riwayat",
+    "clearHistoryConfirm": "Hapus riwayat lihat?",
+    "version": "Versi",
+    "loginPrompt": "Masuk untuk menyinkronkan favorit dan pengaturan",
+    "editProfile": "Edit profil",
+    "freePlan": "Gratis",
+    "profileCompletion": "Kelengkapan profil"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "Paket Premium",
+    "subtitle": "Tanpa iklan, peringatan kurs, dan lainnya",
+    "benefitAdFree": "Pengalaman tanpa iklan",
+    "benefitAlerts": "Peringatan perubahan kurs",
+    "benefitCharts": "Grafik riwayat kurs",
+    "comingSoon": "Segera hadir",
+    "active": "Premium aktif"
+  },
+  "areaSeo": {
+    "link": "Halaman area"
+  },
+  "report": {
+    "button": "Cek / laporkan kurs ini",
+    "title": "Laporkan kurs",
+    "description": "Bagikan kurs yang Anda lihat di toko atau catat perbedaannya. Laporan disimpan di perangkat ini sebagai menunggu peninjauan untuk peningkatan data.",
+    "sellRate": "Kurs jual",
+    "buyRate": "Kurs beli",
+    "note": "Catatan",
+    "notePlaceholder": "Contoh: Papan toko menunjukkan USD jual 151.80",
+    "submit": "Simpan laporan",
+    "thanks": "Terima kasih. Laporan Anda disimpan sebagai menunggu peninjauan.",
+    "historyTitle": "Riwayat laporan kurs",
+    "historyEmpty": "Belum ada laporan kurs tersimpan",
+    "pendingReview": "Menunggu peninjauan",
+    "approved": "Disetujui"
+  },
+  "rateAlert": {
+    "save": "Simpan",
+    "savedAlerts": "Peringatan tersimpan",
+    "noAlerts": "Belum ada peringatan tersimpan",
+    "targetRate": "Target ¥{rate}",
+    "triggered": "{currency} sudah sesuai target: {shop} / ¥{rate}",
+    "active": "Aktif",
+    "paused": "Dijeda",
+    "remove": "Hapus",
+    "invalidTarget": "Masukkan kurs target yang valid"
+  },
+  "seo": {
+    "shopPageLink": "Buka halaman toko"
+  },
+  "nearby": {
+    "noShopsTitle": "Tidak ada toko terdekat",
+    "noShopsDescription": "Tidak ada toko yang didukung dalam radius {radius} km. Perluas area pencarian?",
+    "expandSearch": "Perluas ke 50 km",
+    "viewAreas": "Lihat halaman area"
+  },
+  "share": {
+    "button": "Bagikan perbandingan",
+    "copied": "Tautan berbagi disalin",
+    "message": "Kurs {shop}: {rate}. {comparison}"
+  },
+  "areaPicker": {
+    "title": "Cari berdasarkan area",
+    "description": "Pilih area untuk mulai cepat saat lokasi tidak tersedia atau saat merencanakan perjalanan.",
+    "dismiss": "Tutup"
+  },
+  "growth": {
+    "title": "Daftar gratis agar lebih praktis",
+    "subtitle": "Simpan favorit, notifikasi kurs, dan riwayat laporan. Bagikan MoneySpot ke teman perjalanan agar makin berkembang.",
+    "registerCta": "Daftar gratis",
+    "shareCta": "Bagikan ke teman",
+    "shareCopied": "Tautan undangan disalin",
+    "shareMessage": "Sebelum menukar uang di Jepang, bandingkan toko terdekat dan kurs dengan MoneySpot.",
+    "prKit": "Halaman berbagi",
+    "benefitFavorites": "Simpan toko favorit untuk dicek nanti",
+    "benefitAlerts": "Dapatkan notifikasi dalam aplikasi saat kurs mendekati target",
+    "benefitReports": "Simpan laporan kurs toko dan riwayatnya"
   }
 }

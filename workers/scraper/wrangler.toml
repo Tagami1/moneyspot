@@ -1,0 +1,24 @@
+# MoneySpot Rate Scraper - Cloudflare Worker 設定
+
+name = "moneyspot-scraper"
+main = "index.ts"
+compatibility_date = "2024-09-23"
+
+# Cron Triggers
+# - 毎日 11:15 JST (02:15 UTC) : ドルユーロ(11:00更新)とインターバンク(10:30更新)の後
+# - 毎日 12:00 JST (03:00 UTC) : 昼の再取得（レート変動キャッチ用）
+# - 毎日 15:00 JST (06:00 UTC) : 午後の取得
+[triggers]
+crons = [
+  "15 2 * * *",
+  "0 3 * * *",
+  "0 6 * * *",
+]
+
+# 環境変数（公開値）
+[vars]
+ENVIRONMENT = "production"
+
+# シークレット（wrangler secret put で設定）
+# SUPABASE_URL       - Supabase プロジェクトURL
+# SUPABASE_SERVICE_KEY - Supabase service_role キー

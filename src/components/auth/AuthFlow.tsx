@@ -2,23 +2,26 @@
 
 import { useState } from "react";
 import type { TFunction } from "@/i18n/useTranslation";
-import type { UserProfile } from "@/hooks/useAuth";
+import type { Locale } from "@/i18n/config";
+import type { AuthResult, UserProfile } from "@/hooks/useAuth";
 import { COUNTRIES, getPhoneCodeByCountry } from "@/lib/countries";
 import CountrySelect from "@/components/common/CountrySelect";
 
 type Props = {
   t: TFunction;
   mode: "register" | "login";
-  onSendOtp: (email: string) => Promise<{ error: string | null }>;
-  onVerifyOtp: (email: string, token: string, profile: Omit<UserProfile, "email">) => Promise<{ error: string | null }>;
+  locale: Locale;
+  onSendOtp: (email: string) => Promise<AuthResult>;
+  onVerifyOtp: (email: string, token: string, profile: Omit<UserProfile, "email">) => Promise<AuthResult>;
   onClose: () => void;
+  onSuccess?: () => void;
 };
 
 export { COUNTRIES };
 
 type Step = "form" | "verify";
 
-export default function AuthFlow({ t, mode, onSendOtp, onVerifyOtp, onClose }: Props) {
+export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onClose, onSuccess }: Props) {
   const [step, setStep] = useState<Step>("form");
   const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -29,13 +32,15 @@ export default function AuthFlow({ t, mode, onSendOtp, onVerifyOtp, onClose }: P
   const [otpCode, setOtpCode] = useState("");
   const [error, setError] = useState("");
   const [sending, setSending] = useState(false);
+  const [localTestCode, setLocalTestCode] = useState("");
 
-  const locale = t("common.appName") === "MoneySpot" ? "en" : "ja";
+  const countrySelectLocale = locale === "ja" ? "ja" : "en";
   const phoneCode = getPhoneCodeByCountry(phoneCountry);
   const isLogin = mode === "login";
 
   const handleSubmitForm = async () => {
     setError("");
+    setLocalTestCode("");
     if (!isLogin) {
       if (!lastName.trim()) { setError(t("auth.errorLastName")); return; }
       if (!firstName.trim()) { setError(t("auth.errorFirstName")); return; }
@@ -53,6 +58,7 @@ export default function AuthFlow({ t, mode, onSendOtp, onVerifyOtp, onClose }: P
     if (result.error) {
       setError(result.error);
     } else {
+      setLocalTestCode(result.localTestCode ?? "");
       setStep("verify");
     }
   };
@@ -78,6 +84,7 @@ export default function AuthFlow({ t, mode, onSendOtp, onVerifyOtp, onClose }: P
     if (result.error) {
       setError(result.error);
     } else {
+      onSuccess?.();
       onClose();
     }
   };
@@ -176,7 +183,7 @@ export default function AuthFlow({ t, mode, onSendOtp, onVerifyOtp, onClose }: P
                     value={country}
                     onChange={setCountry}
                     placeholder={t("auth.countrySelect")}
-                    locale={locale as "ja" | "en"}
+                    locale={countrySelectLocale}
                   />
                 </div>
               )}
@@ -209,6 +216,11 @@ export default function AuthFlow({ t, mode, onSendOtp, onVerifyOtp, onClose }: P
                 </div>
                 <p className="text-sm text-gray-600">{t("auth.codeSent")}</p>
                 <p className="text-sm font-bold text-gray-800 mt-1">{email}</p>
+                {localTestCode && (
+                  <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs font-bold text-amber-700">
+                    ローカルテスト用コード: {localTestCode}
+                  </p>
+                )}
               </div>
 
               {/* OTP input */}

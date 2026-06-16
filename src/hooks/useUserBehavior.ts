@@ -12,9 +12,21 @@ type EventType =
   | "search"
   | "shop_detail_open"
   | "page_view"
-  | "simulation_open";
+  | "simulation_open"
+  | "area_select";
 
 type QueuedEvent = { event_type: string; event_data: Record<string, unknown> };
+
+function getStoredNumberArray(key: string): number[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const stored = localStorage.getItem(key);
+    const parsed = stored ? JSON.parse(stored) : [];
+    return Array.isArray(parsed) ? parsed.filter((item): item is number => typeof item === "number") : [];
+  } catch {
+    return [];
+  }
+}
 
 export function useUserBehavior(userId: string | null) {
   const [favorites, setFavorites] = useState<number[]>([]);
@@ -23,15 +35,17 @@ export function useUserBehavior(userId: string | null) {
   const queueRef = useRef<QueuedEvent[]>([]);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // 初回: localStorageから読み込み → Supabaseと同期
+  // 初回: ローカル保存値をhydration後に読み込み
   useEffect(() => {
-    try {
-      const storedFavs = localStorage.getItem("moneyspot_favorites");
-      if (storedFavs) setFavorites(JSON.parse(storedFavs));
-      const storedViewed = localStorage.getItem("moneyspot_viewed");
-      if (storedViewed) setViewedShopIds(JSON.parse(storedViewed));
-    } catch {}
+    const timer = window.setTimeout(() => {
+      setFavorites(getStoredNumberArray("moneyspot_favorites"));
+      setViewedShopIds(getStoredNumberArray("moneyspot_viewed"));
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
+  // ログイン後: localStorageから読み込み → Supabaseと同期
+  useEffect(() => {
     if (!HAS_SUPABASE || !userId) return;
 
     let mounted = true;

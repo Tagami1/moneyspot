@@ -6,6 +6,8 @@
     "error": "Se produjo un error",
     "retry": "Reintentar",
     "close": "Cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
     "back": "← Volver",
     "noResults": "No se encontraron resultados",
     "lastUpdated": "Última actualización: {time}",
@@ -53,7 +55,28 @@
     "currencyLabel": "Moneda",
     "updatedAgo": "Actualizado hace {time}",
     "justNow": "Recién actualizado",
-    "todayHours": "Today"
+    "todayHours": "Today",
+    "hoursUnknown": "Horario desconocido",
+    "estimatedRate": "Tipo de referencia estimado",
+    "promoted": "Recomendado",
+    "noRatesAvailable": "No hay información de tipos para esta tienda",
+    "referenceShort": "Ref.",
+    "actualRate": "Tipo de la tienda",
+    "referenceEstimate": "Tipo de referencia",
+    "userReportedRate": "Tipo reportado por usuarios",
+    "actualRateNote": "Este tipo proviene de la tienda o de una fuente oficial.",
+    "referenceRateNoteShort": "Es una estimación basada en el mercado y puede diferir del tipo de la tienda.",
+    "userReportedRateNote": "Este tipo fue compartido por un usuario. Confírmalo con la tienda antes de ir.",
+    "rateTrust": "Fiabilidad del tipo",
+    "jpyComparison": "¥{amount} dan {result}",
+    "jpyComparisonLabel": "Para ¥10,000",
+    "lastChecked": "Última revisión",
+    "lastCheckedAt": "hace {time}",
+    "trustScoreLabel": "Puntuación de confianza",
+    "trustScore": "{score}/100",
+    "trustHigh": "Alta confianza",
+    "trustMedium": "Confirma antes de ir",
+    "trustLow": "Solo como guía"
   },
   "currency": {
     "title": "Seleccionar moneda",
@@ -118,5 +141,110 @@
   },
   "languageSelect": {
     "title": "Seleccionar idioma"
+  },
+  "mypage": {
+    "title": "Mi página",
+    "overview": "Uso y ajustes",
+    "favorites": "Tiendas favoritas",
+    "favoritesEmpty": "Aún no tienes tiendas favoritas",
+    "favoritesHint": "Toca ♡ en una tienda para añadirla",
+    "history": "Visto recientemente",
+    "historyEmpty": "No hay historial de vistas",
+    "summary": "Resumen de uso",
+    "favoriteCount": "Favoritos",
+    "openFavorites": "Favoritos abiertos",
+    "historyCount": "Tiendas vistas recientemente",
+    "ratedShopCount": "Tiendas con tipos",
+    "bestFavoriteRate": "Mejor tipo favorito",
+    "noFavoriteRate": "Sin tipo favorito",
+    "rateAlert": "Alerta de tipo",
+    "rateAlertTitle": "Avisarme cuando {currency} llegue a mi objetivo",
+    "rateAlertDescription": "Guarda un tipo objetivo y MoneySpot mostrará una alerta en la app cuando aparezca un tipo que coincida",
+    "rateAlertOn": "Las alertas están activas. Los tipos que coincidan aparecerán en la app.",
+    "rateAlertOff": "Las alertas están desactivadas. Guarda un objetivo para activar una.",
+    "settings": "Ajustes",
+    "defaultCurrency": "Moneda predeterminada",
+    "language": "Idioma",
+    "country": "País",
+    "accountStatus": "Estado de sincronización",
+    "synced": "Sincronizado",
+    "localOnly": "Solo este dispositivo",
+    "clearHistory": "Borrar historial",
+    "clearHistoryConfirm": "¿Borrar el historial de vistas?",
+    "version": "Versión",
+    "loginPrompt": "Inicia sesión para sincronizar favoritos y ajustes",
+    "editProfile": "Editar perfil",
+    "freePlan": "Gratis",
+    "profileCompletion": "Perfil completado"
+  },
+  "premium": {
+    "sectionTitle": "Premium",
+    "title": "Plan Premium",
+    "subtitle": "Sin anuncios, alertas de tipo y más",
+    "benefitAdFree": "Experiencia sin anuncios",
+    "benefitAlerts": "Alertas de movimiento del tipo",
+    "benefitCharts": "Gráficos de historial de tipos",
+    "comingSoon": "Próximamente",
+    "active": "Premium activo"
+  },
+  "areaSeo": {
+    "link": "Páginas por zona"
+  },
+  "report": {
+    "button": "Comprobar / reportar este tipo",
+    "title": "Reportar un tipo",
+    "description": "Comparte el tipo que viste en la tienda o cualquier diferencia. El reporte se guarda en este dispositivo como pendiente de revisión para mejorar los datos.",
+    "sellRate": "Tipo de venta",
+    "buyRate": "Tipo de compra",
+    "note": "Nota",
+    "notePlaceholder": "Ejemplo: En el panel de la tienda USD venta era 151.80",
+    "submit": "Guardar reporte",
+    "thanks": "Gracias. Tu reporte se guardó como pendiente de revisión.",
+    "historyTitle": "Historial de reportes",
+    "historyEmpty": "Aún no hay reportes guardados",
+    "pendingReview": "Pendiente de revisión",
+    "approved": "Aprobado"
+  },
+  "rateAlert": {
+    "save": "Guardar",
+    "savedAlerts": "Alertas guardadas",
+    "noAlerts": "Aún no hay alertas guardadas",
+    "targetRate": "Objetivo ¥{rate}",
+    "triggered": "{currency} está dentro de tu objetivo: {shop} / ¥{rate}",
+    "active": "Activa",
+    "paused": "Pausada",
+    "remove": "Eliminar",
+    "invalidTarget": "Introduce un tipo objetivo válido"
+  },
+  "seo": {
+    "shopPageLink": "Abrir página de la tienda"
+  },
+  "nearby": {
+    "noShopsTitle": "No hay tiendas cercanas",
+    "noShopsDescription": "No se encontraron tiendas compatibles en un radio de {radius} km. ¿Ampliar el área?",
+    "expandSearch": "Ampliar a 50 km",
+    "viewAreas": "Ver páginas por zona"
+  },
+  "share": {
+    "button": "Compartir comparación",
+    "copied": "Enlace copiado",
+    "message": "Tipo de {shop}: {rate}. {comparison}"
+  },
+  "areaPicker": {
+    "title": "Buscar por zona",
+    "description": "Elige una zona para empezar rápido si no hay ubicación disponible o si estás planificando tu visita.",
+    "dismiss": "Cerrar"
+  },
+  "growth": {
+    "title": "Regístrate gratis para más funciones",
+    "subtitle": "Guarda favoritos, alertas de tipo de cambio e historial de reportes. Comparte MoneySpot con tus compañeros de viaje.",
+    "registerCta": "Crear cuenta gratis",
+    "shareCta": "Compartir con amigos",
+    "shareCopied": "Enlace de invitación copiado",
+    "shareMessage": "Antes de cambiar dinero en Japón, compara tiendas cercanas y tipos con MoneySpot.",
+    "prKit": "Página para compartir",
+    "benefitFavorites": "Guarda tiendas favoritas para revisarlas después",
+    "benefitAlerts": "Recibe avisos en la app cuando el tipo se acerque a tu objetivo",
+    "benefitReports": "Guarda reportes de tipos vistos en tienda"
   }
 }

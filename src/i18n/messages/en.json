@@ -6,6 +6,8 @@
     "error": "An error occurred",
     "retry": "Retry",
     "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
     "back": "← Back",
     "noResults": "No results found",
     "lastUpdated": "Last updated: {time}",
@@ -50,8 +52,26 @@
     "updatedAgo": "Updated {time} ago",
     "justNow": "Just updated",
     "hoursUnknown": "Hours unknown",
-    "estimatedRate": "Estimated rate",
-    "promoted": "Promoted"
+    "estimatedRate": "Estimated reference rate",
+    "promoted": "Recommended",
+    "noRatesAvailable": "No rate information is available for this shop",
+    "referenceShort": "Est.",
+    "actualRate": "Shop rate",
+    "referenceEstimate": "Reference rate",
+    "userReportedRate": "User-reported rate",
+    "actualRateNote": "This rate comes from the shop or an official source.",
+    "referenceRateNoteShort": "This is an estimate based on market rates and may differ from the shop rate.",
+    "userReportedRateNote": "This rate was shared by a user. Please confirm with the shop before visiting.",
+    "rateTrust": "Rate reliability",
+    "jpyComparison": "¥{amount} gives {result}",
+    "jpyComparisonLabel": "For ¥10,000",
+    "lastChecked": "Last checked",
+    "lastCheckedAt": "{time} ago",
+    "trustScoreLabel": "Trust score",
+    "trustScore": "{score}/100",
+    "trustHigh": "High confidence",
+    "trustMedium": "Check before visiting",
+    "trustLow": "Use as a guide"
   },
   "currency": {
     "title": "Select Currency",
@@ -186,20 +206,38 @@
   },
   "mypage": {
     "title": "My Page",
-    "favorites": "Favorite Shops",
+    "overview": "Usage and settings",
+    "favorites": "Favorite shops",
     "favoritesEmpty": "No favorite shops yet",
-    "favoritesHint": "Tap ♡ on a shop to add",
-    "history": "Recently Viewed",
-    "historyEmpty": "No browsing history",
+    "favoritesHint": "Tap ♡ on a shop to add it",
+    "history": "Recently viewed",
+    "historyEmpty": "No viewing history yet",
+    "summary": "Usage summary",
+    "favoriteCount": "Favorites",
+    "openFavorites": "Open favorites",
+    "historyCount": "Recently viewed shops",
+    "ratedShopCount": "Shops with rates",
+    "bestFavoriteRate": "Best favorite rate",
+    "noFavoriteRate": "No favorite rate yet",
+    "rateAlert": "Rate alert",
+    "rateAlertTitle": "Notify me when {currency} reaches my target rate",
+    "rateAlertDescription": "Save a target rate and MoneySpot will show an in-app alert when a matching rate appears",
+    "rateAlertOn": "Alerts are on. Matching rates will appear in the app.",
+    "rateAlertOff": "Alerts are off. Save a target rate to turn one on.",
     "settings": "Settings",
-    "defaultCurrency": "Default Currency",
+    "defaultCurrency": "Default currency",
     "language": "Language",
     "country": "Country",
-    "clearHistory": "Clear History",
-    "clearHistoryConfirm": "Clear browsing history?",
+    "accountStatus": "Sync status",
+    "synced": "Synced",
+    "localOnly": "This device only",
+    "clearHistory": "Clear history",
+    "clearHistoryConfirm": "Clear your viewing history?",
     "version": "Version",
-    "loginPrompt": "Login to sync favorites and settings",
-    "editProfile": "Edit Profile"
+    "loginPrompt": "Log in to sync favorites and settings",
+    "editProfile": "Edit profile",
+    "freePlan": "Free",
+    "profileCompletion": "Profile completion"
   },
   "disclaimer": {
     "text": "Rates shown are for reference only. Please confirm actual rates at the shop."
@@ -217,11 +255,72 @@
   },
   "premium": {
     "sectionTitle": "Premium",
-    "title": "Go Premium",
-    "subtitle": "No ads, rate alerts, and more",
+    "title": "Premium plan",
+    "subtitle": "Ad-free experience, rate alerts, and more",
     "benefitAdFree": "Ad-free experience",
-    "benefitAlerts": "Rate change notifications",
-    "benefitCharts": "Historical rate charts",
-    "comingSoon": "Coming Soon"
+    "benefitAlerts": "Rate movement alerts",
+    "benefitCharts": "Rate history charts",
+    "comingSoon": "Coming soon",
+    "active": "Premium active"
+  },
+  "areaSeo": {
+    "link": "Area pages"
+  },
+  "report": {
+    "button": "Check / report this rate",
+    "title": "Report a rate",
+    "description": "Share the rate you saw at the shop or note anything that looked different. Reports are saved on this device as pending review for future data improvement.",
+    "sellRate": "Sell rate",
+    "buyRate": "Buy rate",
+    "note": "Note",
+    "notePlaceholder": "Example: The shop board showed USD sell at 151.80",
+    "submit": "Save report",
+    "thanks": "Thank you. Your report has been saved as pending review.",
+    "historyTitle": "Rate report history",
+    "historyEmpty": "No saved rate reports yet",
+    "pendingReview": "Pending review",
+    "approved": "Approved"
+  },
+  "rateAlert": {
+    "save": "Save",
+    "savedAlerts": "Saved alerts",
+    "noAlerts": "No saved alerts yet",
+    "targetRate": "Target ¥{rate}",
+    "triggered": "{currency} is within your target: {shop} / ¥{rate}",
+    "active": "On",
+    "paused": "Paused",
+    "remove": "Remove",
+    "invalidTarget": "Enter a valid target rate"
+  },
+  "seo": {
+    "shopPageLink": "Open shop page"
+  },
+  "nearby": {
+    "noShopsTitle": "No nearby shops found",
+    "noShopsDescription": "No supported shops were found within {radius} km. Expand the search area?",
+    "expandSearch": "Expand to 50 km",
+    "viewAreas": "View area pages"
+  },
+  "share": {
+    "button": "Share comparison",
+    "copied": "Share link copied",
+    "message": "{shop} rate: {rate}. {comparison}"
+  },
+  "areaPicker": {
+    "title": "Search by area",
+    "description": "Choose an area to start quickly when location access is unavailable or you are planning ahead.",
+    "dismiss": "Close"
+  },
+  "growth": {
+    "title": "Create a free account for more",
+    "subtitle": "Save favorites, rate alerts, and report history. Share MoneySpot with travel friends and help it grow.",
+    "registerCta": "Create free account",
+    "shareCta": "Share with friends",
+    "shareCopied": "Invite link copied",
+    "shareMessage": "Before exchanging cash in Japan, compare nearby shops and rates with MoneySpot.",
+    "prKit": "Share page",
+    "benefitFavorites": "Save favorite shops and check them later",
+    "benefitAlerts": "Get in-app alerts when rates approach your target",
+    "benefitReports": "Save shop rate reports and report history"
   }
 }

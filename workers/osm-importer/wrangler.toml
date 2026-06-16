@@ -1,0 +1,9 @@
+name = "moneyspot-osm-importer"
+main = "index.ts"
+compatibility_date = "2024-01-01"
+
+[triggers]
+crons = ["0 4 * * 1"]  # Every Monday at 4:00 UTC (13:00 JST)
+
+[vars]
+ENVIRONMENT = "production"

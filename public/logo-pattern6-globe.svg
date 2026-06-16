@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Pattern 6: 地球 + MS（世界展開イメージ） -->
+  <g transform="translate(10, 12)">
+    <!-- Globe circle -->
+    <circle cx="40" cy="38" r="36" fill="#2563eb"/>
+    <!-- Globe lines (latitude/longitude) -->
+    <ellipse cx="40" cy="38" rx="18" ry="36" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+    <line x1="4" y1="38" x2="76" y2="38" stroke="white" stroke-width="1.5" opacity="0.3"/>
+    <line x1="10" y1="20" x2="70" y2="20" stroke="white" stroke-width="1" opacity="0.2"/>
+    <line x1="10" y1="56" x2="70" y2="56" stroke="white" stroke-width="1" opacity="0.2"/>
+    <!-- MS overlay -->
+    <text x="40" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="900" fill="white">MS</text>
+  </g>
+  <!-- Text -->
+  <text x="95" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#2563eb">Money</text>
+  <text x="240" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#1f2937">Spot</text>
+  <text x="95" y="66" font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">Global exchange rate comparison</text>
+</svg>
