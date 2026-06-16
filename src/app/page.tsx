@@ -1013,6 +1013,9 @@ export default function HomePage() {
           <Link href="/convert" className="ml-2 font-semibold text-blue-600">
             💱 Converter
           </Link>
+          <Link href="/guides" className="ml-2 font-semibold text-blue-600">
+            📖 Guides
+          </Link>
           <Link href="/areas" className="ml-2 font-semibold text-blue-500">
             {t("areaSeo.link")}
           </Link>
