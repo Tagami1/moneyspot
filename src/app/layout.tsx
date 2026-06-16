@@ -129,6 +129,17 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  verification: {
+    // One-time setup: visit https://search.google.com/search-console, add
+    // moneyspot.money as a domain property, copy the HTML-tag verification
+    // string here. Then redeploy. After that, Google auto-discovers the
+    // sitemap via robots.txt.
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+    // Bing verification (one-time): https://www.bing.com/webmasters
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "",
+    },
+  },
 };
 
 export default function RootLayout({
