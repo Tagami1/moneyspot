@@ -28,21 +28,24 @@ log "=== auto-grow start ==="
 
 cd "$SRC"
 
-# 1. Regenerate world cities from latest Supabase data
+# 1. Regenerate world cities + currency rates from upstream sources
 GEN="src/lib/world-cities.generated.json"
-# Content hash that ignores the generated_at timestamp, so we only deploy on
-# real data changes (new shops/cities), not on every run.
+RATES="src/lib/currency-rates.generated.json"
+# Combined content hash of cities + rates (ignores timestamps) → deploy only on
+# real data changes (new shops/cities OR changed rates).
 content_hash() {
-  node -e "const fs=require('fs'),c=require('crypto');try{const d=JSON.parse(fs.readFileSync('$1','utf8'));console.log(c.createHash('sha1').update(JSON.stringify(d.cities)).digest('hex'))}catch(e){console.log('')}" 2>/dev/null || true
+  node -e "const fs=require('fs'),c=require('crypto');function r(p,k){try{return JSON.stringify(JSON.parse(fs.readFileSync(p,'utf8'))[k])}catch(e){return ''}}console.log(c.createHash('sha1').update(r('$GEN','cities')+r('$RATES','rates')).digest('hex'))" 2>/dev/null || true
 }
-BEFORE_HASH="$(content_hash "$GEN")"
+BEFORE_HASH="$(content_hash)"
+
+node scripts/build-currency-rates.mjs >> "$LOG" 2>&1 && log "refreshed currency rates" || log "currency rates refresh failed (non-fatal)"
 if node scripts/build-world-cities.mjs >> "$LOG" 2>&1; then
   log "regenerated world-cities"
 else
   log "ERROR regenerating world-cities — aborting"
   exit 1
 fi
-AFTER_HASH="$(content_hash "$GEN")"
+AFTER_HASH="$(content_hash)"
 
 if [ "$BEFORE_HASH" = "$AFTER_HASH" ]; then
   log "no data change — still pinging IndexNow and exiting"

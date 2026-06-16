@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { areaPages } from "@/lib/areas";
 import { CITY_LOCALES } from "@/lib/cities-i18n";
+import { allPairs, pairSlug } from "@/lib/currencies-data";
 import { mockCurrencies, mockShops } from "@/lib/mock-data";
 import { getShopSlug } from "@/lib/shop-pages";
 import { worldCities } from "@/lib/world-cities";
@@ -23,9 +24,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily" as const,
       priority: 0.85,
     })),
+    { url: `${SITE_URL}/convert`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/areas`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/share`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
   ];
+
+  // Currency converter pairs (high search volume)
+  const convertRoutes: MetadataRoute.Sitemap = allPairs().map(({ from, to }) => ({
+    url: `${SITE_URL}/convert/${pairSlug(from, to)}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: from === "USD" || to === "USD" || from === "EUR" || to === "JPY" ? 0.7 : 0.6,
+  }));
 
   // Tokyo area pages (existing)
   const areaRoutes: MetadataRoute.Sitemap = areaPages.map((area) => ({
@@ -74,5 +84,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticRoutes, ...areaRoutes, ...cityRoutes, ...areaCurrencyRoutes, ...shopRoutes];
+  return [...staticRoutes, ...convertRoutes, ...areaRoutes, ...cityRoutes, ...areaCurrencyRoutes, ...shopRoutes];
 }
