@@ -3,6 +3,7 @@ import { areaPages } from "@/lib/areas";
 import { CITY_LOCALES } from "@/lib/cities-i18n";
 import { allPairs, pairSlug } from "@/lib/currencies-data";
 import { guideSlug, guides } from "@/lib/guides";
+import { jaGuideSlug, jaGuides } from "@/lib/guides-ja";
 import { mockCurrencies, mockShops } from "@/lib/mock-data";
 import { getShopSlug } from "@/lib/shop-pages";
 import { worldCities } from "@/lib/world-cities";
@@ -27,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: `${SITE_URL}/convert`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE_URL}/ja/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/areas`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/share`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
   ];
@@ -39,13 +41,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: from === "USD" || to === "USD" || from === "EUR" || to === "JPY" ? 0.7 : 0.6,
   }));
 
-  // Country travel-money guides
-  const guideRoutes: MetadataRoute.Sitemap = guides.map((g) => ({
-    url: `${SITE_URL}/guides/${guideSlug(g)}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.75,
-  }));
+  // Country travel-money guides (en + ja)
+  const guideRoutes: MetadataRoute.Sitemap = [
+    ...guides.map((g) => ({
+      url: `${SITE_URL}/guides/${guideSlug(g)}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+    ...jaGuides.map((g) => ({
+      url: `${SITE_URL}/ja/guides/${jaGuideSlug(g)}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
 
   // Tokyo area pages (existing)
   const areaRoutes: MetadataRoute.Sitemap = areaPages.map((area) => ({

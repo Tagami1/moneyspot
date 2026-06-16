@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">1. Introduction</h3>
                 <p>
-                  MoneySpot (&quot;we&quot;, &quot;our&quot;, or &quot;the App&quot;) is developed and operated by Yuto Tagami.
+                  MoneySpot (&quot;we&quot;, &quot;our&quot;, or &quot;the App&quot;) is developed and operated by Preflop Inc.
                   This Privacy Policy explains how we collect, use, and protect your information when you use MoneySpot
                   (Bundle ID: com.moneyspot.app). By using the App, you agree to the practices described in this policy.
                 </p>
@@ -121,8 +121,8 @@ export default function PrivacyPolicyPage() {
                   If you have any questions about this Privacy Policy, please contact us at:
                 </p>
                 <p className="mt-1">
-                  <strong>Developer:</strong> Yuto Tagami<br />
-                  <strong>Email:</strong> tagami@moneyspot.money
+                  <strong>Operator:</strong> Preflop Inc.<br />
+                  <strong>Email:</strong> support@moneyspot.money
                 </p>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function PrivacyPolicyPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">1. はじめに</h3>
                 <p>
-                  MoneySpot（以下「本アプリ」）は、田上雄斗が開発・運営しています。
+                  MoneySpot（以下「本アプリ」）は、Preflop Inc.（プリフロップ）が開発・運営しています。
                   本プライバシーポリシーは、MoneySpot（バンドルID: com.moneyspot.app）をご利用いただく際の
                   情報の収集、利用、保護について説明するものです。
                   本アプリをご利用いただくことで、本ポリシーに記載された内容に同意したものとみなされます。
@@ -241,8 +241,8 @@ export default function PrivacyPolicyPage() {
                   本プライバシーポリシーに関するご質問は、以下までお問い合わせください：
                 </p>
                 <p className="mt-1">
-                  <strong>開発者：</strong>田上雄斗<br />
-                  <strong>メール：</strong>tagami@moneyspot.money
+                  <strong>運営者：</strong>Preflop Inc.（プリフロップ）<br />
+                  <strong>メール：</strong>support@moneyspot.money
                 </p>
               </div>
             </div>
