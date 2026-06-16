@@ -109,7 +109,7 @@ async function configureSupabaseSmtp() {
         mailer_autoconfirm: false,
         smtp_admin_email: "no-reply@moneyspot.money",
         smtp_host: "smtp.resend.com",
-        smtp_port: 465,
+        smtp_port: "465",
         smtp_user: "resend",
         smtp_pass: RESEND_API_KEY,
         smtp_sender_name: "MoneySpot",
