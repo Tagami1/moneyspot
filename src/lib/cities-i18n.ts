@@ -3,9 +3,9 @@
  * Keep this lean and copy-shaped — full UI i18n stays in src/i18n/messages/.
  */
 
-export type CityLocale = "en" | "ja" | "zh" | "ko" | "es";
+export type CityLocale = "en" | "ja" | "zh" | "ko" | "es" | "th" | "vi" | "id";
 
-export const CITY_LOCALES: CityLocale[] = ["en", "ja", "zh", "ko", "es"];
+export const CITY_LOCALES: CityLocale[] = ["en", "ja", "zh", "ko", "es", "th", "vi", "id"];
 
 /** URL prefix for a non-default locale ("" for en, "/ja" for ja, etc.) */
 export function localePrefix(locale: CityLocale): string {
@@ -277,6 +277,144 @@ export const cityDicts: Record<CityLocale, CityDict> = {
       "Compara siempre el diferencial compra/venta; una tasa baja puede ocultar un margen amplio.",
       "Pregunta si hay comisión además de la tasa; las mejores casas la incluyen todo.",
       "Cuenta el efectivo antes de salir del mostrador y guarda el recibo.",
+    ],
+  },
+
+  th: {
+    hreflang: "th",
+    ogLocale: "th_TH",
+    back: "← เมืองทั้งหมด",
+    worldwide: "แผนที่ร้านแลกเงินทั่วโลก",
+    metaTitle: (city, shops) =>
+      `ร้านแลกเงินใน${city} — เทียบเรตดีที่สุด ${shops}+ ร้าน | MoneySpot`,
+    metaDesc: (city, shops, country, currency) =>
+      `ค้นหาร้านแลกเงินใน${city} ${country} เทียบเรต ${currency} ดูตำแหน่ง เวลาเปิด-ปิด มีร้านที่ตรวจสอบแล้ว ${shops} ร้าน`,
+    pageHeader: (city) => `ร้านแลกเงินใน${city}`,
+    pageIntro: () => null,
+    openMap: "ดูร้านบนแผนที่",
+    wiseCTA: (currency) => `โอนเงินเป็น ${currency} ด้วย Wise →`,
+    wiseCardTitle: (city, currency) =>
+      `โอน ${currency} ออนไลน์ — ถูกกว่าธนาคารถึง 8 เท่า`,
+    wiseCardBody: (city) =>
+      `Wise ใช้เรตกลางจริงและแสดงค่าธรรมเนียมล่วงหน้า เร็วกว่าการไปร้านใน${city}`,
+    wiseCardLabel: "💸 ข้ามคิว",
+    topShopsTitle: (city, n) => `ร้านแลกเงินยอดนิยม ${n} อันดับใน${city}`,
+    topShopsSub: "เรียงตามระยะจากใจกลางเมือง แตะเพื่อเปิดใน Google Maps",
+    noShops: (city) =>
+      `ยังไม่มีข้อมูลร้านที่ตรวจสอบแล้วใน${city} ระบบ OpenStreetMap อัปเดตทุกสัปดาห์`,
+    otherCitiesIn: (country) => `เมืองอื่นใน${country}`,
+    statsShops: "ร้านที่ตรวจสอบแล้ว",
+    statsCurrency: "สกุลเงินท้องถิ่น",
+    statsCountry: "ประเทศ",
+    indexTitle: "แผนที่ร้านแลกเงินทั่วโลก",
+    indexDesc: (countries, cities, shops) =>
+      `ค้นหาร้านแลกเงินใน ${countries}+ ประเทศ และ ${cities}+ เมือง เลือกตามภูมิภาคหรือประเทศ พบร้านกว่า ${shops.toLocaleString()}+ ร้าน`,
+    indexFooterLink: { label: "English version →", href: "/cities" },
+    byCountry: "ตามประเทศ",
+    countriesIndexed: (n) => `รวบรวม ${n} ประเทศ`,
+    saveLabel: "⭐ บัญชีฟรี",
+    saveTitle: (city) => `บันทึกร้านแลกเงินโปรดใน${city}`,
+    saveBody:
+      "สมัครฟรีเพื่อบันทึกร้าน รับการแจ้งเตือนเรต และซิงค์ข้ามอุปกรณ์ ไม่มีค่าธรรมเนียม ไม่มีโฆษณา",
+    saveCTA: "สมัครฟรีด้วยอีเมล →",
+    tipsTitle: (city) => `เคล็ดลับการแลกเงินใน${city}`,
+    tips: (city, currency) => [
+      `ร้านที่อยู่ห่างจากสนามบินและย่านท่องเที่ยวมักให้เรต ${currency} ดีกว่า`,
+      "เทียบส่วนต่างราคาซื้อ/ขายเสมอ เรตที่โชว์ดีอาจมีส่วนต่างกว้าง",
+      "ถามว่ามีค่าธรรมเนียมเพิ่มจากเรตหรือไม่ ร้านดีจะรวมทุกอย่างแล้ว",
+      "นับเงินก่อนออกจากเคาน์เตอร์และเก็บใบเสร็จไว้",
+    ],
+  },
+
+  vi: {
+    hreflang: "vi",
+    ogLocale: "vi_VN",
+    back: "← Tất cả thành phố",
+    worldwide: "Bản đồ điểm đổi tiền toàn cầu",
+    metaTitle: (city, shops) =>
+      `Đổi tiền tại ${city} — Tỷ giá tốt nhất & ${shops}+ điểm | MoneySpot`,
+    metaDesc: (city, shops, country, currency) =>
+      `Tìm điểm đổi tiền tại ${city}, ${country}. So sánh tỷ giá ${currency}, vị trí, giờ mở cửa. ${shops} điểm đã xác minh.`,
+    pageHeader: (city) => `Đổi tiền tại ${city}`,
+    pageIntro: () => null,
+    openMap: "Xem điểm trên bản đồ",
+    wiseCTA: (currency) => `Gửi ${currency} với Wise →`,
+    wiseCardTitle: (city, currency) =>
+      `Gửi ${currency} trực tuyến — rẻ hơn ngân hàng tới 8 lần`,
+    wiseCardBody: (city) =>
+      `Wise dùng tỷ giá giữa thực tế và hiển thị phí trước. Nhanh hơn đến điểm đổi ở ${city}.`,
+    wiseCardLabel: "💸 Bỏ qua xếp hàng",
+    topShopsTitle: (city, n) => `Top ${n} điểm đổi tiền tại ${city}`,
+    topShopsSub: "Sắp theo khoảng cách tới trung tâm. Chạm để mở Google Maps.",
+    noShops: (city) =>
+      `Chưa có điểm đã xác minh tại ${city}. Dữ liệu OpenStreetMap cập nhật hàng tuần.`,
+    otherCitiesIn: (country) => `Thành phố khác ở ${country}`,
+    statsShops: "Điểm đã xác minh",
+    statsCurrency: "Tiền tệ địa phương",
+    statsCountry: "Quốc gia",
+    indexTitle: "Bản đồ điểm đổi tiền toàn cầu",
+    indexDesc: (countries, cities, shops) =>
+      `Tìm điểm đổi tiền ở ${countries}+ quốc gia và ${cities}+ thành phố. Duyệt theo khu vực hoặc quốc gia, khám phá hơn ${shops.toLocaleString()}+ điểm.`,
+    indexFooterLink: { label: "English version →", href: "/cities" },
+    byCountry: "Theo quốc gia",
+    countriesIndexed: (n) => `${n} quốc gia được lập chỉ mục`,
+    saveLabel: "⭐ Tài khoản miễn phí",
+    saveTitle: (city) => `Lưu điểm đổi tiền yêu thích ở ${city}`,
+    saveBody:
+      "Tạo tài khoản miễn phí để lưu điểm đổi tiền, nhận cảnh báo tỷ giá và đồng bộ trên các thiết bị. Không phí, không quảng cáo.",
+    saveCTA: "Đăng ký miễn phí bằng email →",
+    tipsTitle: (city) => `Mẹo đổi tiền tại ${city}`,
+    tips: (city, currency) => [
+      `Các điểm xa sân bay và khu du lịch thường có tỷ giá ${currency} tốt hơn.`,
+      "Luôn so sánh chênh lệch mua/bán; tỷ giá niêm yết đẹp có thể giấu biên độ rộng.",
+      "Hỏi có phí ngoài tỷ giá không; điểm tốt báo giá trọn gói.",
+      "Đếm tiền trước khi rời quầy và giữ hóa đơn.",
+    ],
+  },
+
+  id: {
+    hreflang: "id",
+    ogLocale: "id_ID",
+    back: "← Semua kota",
+    worldwide: "Peta Penukaran Uang Global",
+    metaTitle: (city, shops) =>
+      `Penukaran Uang di ${city} — Kurs Terbaik & ${shops}+ Gerai | MoneySpot`,
+    metaDesc: (city, shops, country, currency) =>
+      `Temukan tempat penukaran uang di ${city}, ${country}. Bandingkan kurs ${currency}, lokasi, jam buka. ${shops} gerai terverifikasi.`,
+    pageHeader: (city) => `Penukaran Uang di ${city}`,
+    pageIntro: () => null,
+    openMap: "Lihat gerai di peta",
+    wiseCTA: (currency) => `Kirim ${currency} dengan Wise →`,
+    wiseCardTitle: (city, currency) =>
+      `Kirim ${currency} online — hingga 8× lebih murah dari bank`,
+    wiseCardBody: (city) =>
+      `Wise memakai kurs tengah asli dan menampilkan biaya di awal. Lebih cepat daripada ke gerai di ${city}.`,
+    wiseCardLabel: "💸 Lewati antrean",
+    topShopsTitle: (city, n) => `${n} Gerai Penukaran Teratas di ${city}`,
+    topShopsSub: "Diurutkan dari pusat kota. Ketuk untuk buka di Google Maps.",
+    noShops: (city) =>
+      `Belum ada gerai terverifikasi di ${city}. Data OpenStreetMap diperbarui mingguan.`,
+    otherCitiesIn: (country) => `Kota lain di ${country}`,
+    statsShops: "Gerai terverifikasi",
+    statsCurrency: "Mata uang lokal",
+    statsCountry: "Negara",
+    indexTitle: "Peta Penukaran Uang Global",
+    indexDesc: (countries, cities, shops) =>
+      `Temukan penukaran uang di ${countries}+ negara dan ${cities}+ kota. Telusuri per wilayah atau negara, temukan ${shops.toLocaleString()}+ gerai.`,
+    indexFooterLink: { label: "English version →", href: "/cities" },
+    byCountry: "Per negara",
+    countriesIndexed: (n) => `${n} negara terindeks`,
+    saveLabel: "⭐ Akun gratis",
+    saveTitle: (city) => `Simpan gerai penukaran favorit di ${city}`,
+    saveBody:
+      "Buat akun gratis untuk menyimpan gerai, dapatkan peringatan kurs, dan sinkron antarperangkat. Tanpa biaya, tanpa iklan.",
+    saveCTA: "Daftar gratis dengan email →",
+    tipsTitle: (city) => `Tips menukar uang di ${city}`,
+    tips: (city, currency) => [
+      `Gerai jauh dari bandara dan area wisata biasanya memberi kurs ${currency} lebih baik.`,
+      "Selalu bandingkan selisih beli/jual; kurs menarik bisa menyembunyikan margin lebar.",
+      "Tanyakan apakah ada komisi di luar kurs; gerai terbaik memberi harga all-in.",
+      "Hitung uang sebelum meninggalkan loket dan simpan struk.",
     ],
   },
 };
