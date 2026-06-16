@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { areaPages } from "@/lib/areas";
+import { CITY_LOCALES } from "@/lib/cities-i18n";
 import { mockCurrencies, mockShops } from "@/lib/mock-data";
 import { getShopSlug } from "@/lib/shop-pages";
 import { worldCities } from "@/lib/world-cities";
@@ -8,13 +9,20 @@ const SITE_URL = "https://moneyspot.money";
 
 export const dynamic = "force-static";
 
+const NON_EN_LOCALES = CITY_LOCALES.filter((l) => l !== "en");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${SITE_URL}/cities`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${SITE_URL}/ja/cities`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
+    ...NON_EN_LOCALES.map((l) => ({
+      url: `${SITE_URL}/${l}/cities`,
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.85,
+    })),
     { url: `${SITE_URL}/areas`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/share`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
   ];
@@ -37,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // World city pages — English (canonical) and Japanese
+  // World city pages — English (canonical) and all locales (ja/zh/ko/es)
   const cityRoutes: MetadataRoute.Sitemap = worldCities
     .filter((c) => c.shop_count > 0)
     .flatMap((city) => {
@@ -49,12 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
           changeFrequency: "weekly" as const,
           priority,
         },
-        {
-          url: `${SITE_URL}/ja/cities/${city.slug}`,
+        ...NON_EN_LOCALES.map((l) => ({
+          url: `${SITE_URL}/${l}/cities/${city.slug}`,
           lastModified: now,
           changeFrequency: "weekly" as const,
           priority: priority - 0.05,
-        },
+        })),
       ];
     });
 

@@ -22,7 +22,7 @@ export function CityPageContent({ city, dict, locale }: Props) {
   const neighbours = getCitiesByCountry(city.country)
     .filter((c) => c.slug !== city.slug && c.shop_count > 0)
     .slice(0, 8);
-  const indexHref = locale === "ja" ? "/ja/cities" : "/cities";
+  const indexHref = locale === "en" ? "/cities" : `/${locale}/cities`;
 
   // JSON-LD: BreadcrumbList + Place + FAQPage
   const jsonLd = {
