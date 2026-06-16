@@ -237,6 +237,81 @@ export function useAuth() {
     }
   }, []);
 
+  // Record a signup row for the 100-user monitor (idempotent, best-effort).
+  const recordSignup = useCallback(async (u: User, country: string) => {
+    if (!u?.id) return;
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      await (supabase.from("signups" as never) as ReturnType<typeof supabase.from>).upsert(
+        {
+          user_id: u.id,
+          country: country || null,
+          locale: typeof navigator !== "undefined" ? navigator.language.slice(0, 2) : null,
+        } as never,
+        { onConflict: "user_id", ignoreDuplicates: true }
+      );
+    } catch {
+      /* table may not exist yet — ignore */
+    }
+  }, []);
+
+  // Register with email + password (instant, no confirmation email needed).
+  const signUpWithPassword = useCallback(async (
+    email: string,
+    password: string,
+    profile: Omit<UserProfile, "email">
+  ): Promise<AuthResult> => {
+    if (!HAS_SUPABASE) {
+      setUser(makeLocalUser(email, profile));
+      return { error: null };
+    }
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: {
+            lastName: profile.lastName,
+            firstName: profile.firstName,
+            phone: profile.phone,
+            country: profile.country,
+          },
+        },
+      });
+      if (error) return { error: getAuthErrorMessage(error.message) };
+      const newUser = data.user as User | null;
+      if (newUser) {
+        setUser(newUser);
+        await recordSignup(newUser, profile.country);
+      }
+      return { error: null };
+    } catch (error) {
+      return { error: getAuthErrorMessage(error) };
+    }
+  }, [recordSignup]);
+
+  // Log in with email + password.
+  const signInWithPassword = useCallback(async (
+    email: string,
+    password: string
+  ): Promise<AuthResult> => {
+    if (!HAS_SUPABASE) {
+      const stored = getLocalStoredUser();
+      if (stored) { setUser(stored); return { error: null }; }
+      return { error: "アカウントが見つかりません。" };
+    }
+    try {
+      const { supabase } = await import("@/lib/supabase");
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) return { error: getAuthErrorMessage(error.message) };
+      if (data.user) setUser(data.user as User);
+      return { error: null };
+    } catch (error) {
+      return { error: getAuthErrorMessage(error) };
+    }
+  }, []);
+
   // Update profile
   const updateProfile = useCallback(async (updates: Partial<UserProfile>): Promise<AuthResult> => {
     if (!HAS_SUPABASE || isLocalAuthUser(user)) {
@@ -301,6 +376,8 @@ export function useAuth() {
     isAnonymous: user?.is_anonymous ?? true,
     sendOtp,
     verifyOtp,
+    signUpWithPassword,
+    signInWithPassword,
     updateProfile,
     signOut,
   };

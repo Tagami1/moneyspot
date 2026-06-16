@@ -202,7 +202,11 @@
     "register": "新規登録",
     "logout": "ログアウト",
     "logoutConfirm": "ログアウトしますか？",
-    "profile": "プロフィール"
+    "profile": "プロフィール",
+    "password": "パスワード",
+    "passwordPlaceholder": "6文字以上",
+    "errorPassword": "パスワードは6文字以上で入力してください",
+    "createAccount": "無料で登録"
   },
   "mypage": {
     "title": "マイページ",

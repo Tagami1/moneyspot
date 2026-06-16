@@ -246,5 +246,11 @@
     "benefitFavorites": "관심 매장을 저장하고 나중에 확인",
     "benefitAlerts": "목표 환율에 가까워지면 앱에서 알림",
     "benefitReports": "매장 환율 제보와 내역 저장"
+  },
+  "auth": {
+    "password": "비밀번호",
+    "passwordPlaceholder": "6자 이상",
+    "errorPassword": "비밀번호는 6자 이상이어야 합니다",
+    "createAccount": "무료 가입"
   }
 }

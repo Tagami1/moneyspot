@@ -36,8 +36,8 @@ type Props = {
   // Auth props
   isLoggedIn: boolean;
   profile: UserProfile | null;
-  onSendOtp: (email: string) => Promise<AuthResult>;
-  onVerifyOtp: (email: string, token: string, profile: Omit<UserProfile, "email">) => Promise<AuthResult>;
+  onSignUp: (email: string, password: string, profile: Omit<UserProfile, "email">) => Promise<AuthResult>;
+  onSignIn: (email: string, password: string) => Promise<AuthResult>;
   onAuthSuccess?: () => void;
   onUpdateProfile: (updates: Partial<UserProfile>) => Promise<AuthResult>;
   onSignOut: () => Promise<void>;
@@ -84,8 +84,8 @@ export default function MyPage({
   initialAuthMode,
   isLoggedIn,
   profile,
-  onSendOtp,
-  onVerifyOtp,
+  onSignUp,
+  onSignIn,
   onAuthSuccess,
   onUpdateProfile,
   onSignOut,
@@ -608,8 +608,8 @@ export default function MyPage({
           t={t}
           mode={showAuth}
           locale={locale}
-          onSendOtp={onSendOtp}
-          onVerifyOtp={onVerifyOtp}
+          onSignUp={onSignUp}
+          onSignIn={onSignIn}
           onSuccess={onAuthSuccess}
           onClose={() => setShowAuth(null)}
         />

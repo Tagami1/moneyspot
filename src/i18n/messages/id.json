@@ -246,5 +246,11 @@
     "benefitFavorites": "Simpan toko favorit untuk dicek nanti",
     "benefitAlerts": "Dapatkan notifikasi dalam aplikasi saat kurs mendekati target",
     "benefitReports": "Simpan laporan kurs toko dan riwayatnya"
+  },
+  "auth": {
+    "password": "Kata sandi",
+    "passwordPlaceholder": "Minimal 6 karakter",
+    "errorPassword": "Kata sandi minimal 6 karakter",
+    "createAccount": "Daftar gratis"
   }
 }

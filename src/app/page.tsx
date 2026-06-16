@@ -99,8 +99,8 @@ export default function HomePage() {
     isLoggedIn,
     profile,
     loading: authLoading,
-    sendOtp,
-    verifyOtp,
+    signUpWithPassword,
+    signInWithPassword,
     updateProfile,
     signOut,
   } = useAuth();
@@ -1067,8 +1067,8 @@ export default function HomePage() {
           isPremium={isPremium}
           isLoggedIn={isLoggedIn}
           profile={profile}
-          onSendOtp={sendOtp}
-          onVerifyOtp={verifyOtp}
+          onSignUp={signUpWithPassword}
+          onSignIn={signInWithPassword}
           onAuthSuccess={handleAuthSuccess}
           onUpdateProfile={updateProfile}
           onSignOut={signOut}

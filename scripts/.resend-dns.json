@@ -1,0 +1,30 @@
+{
+  "domainId": "b183eb27-c2c8-4bd3-9627-e85db94d767c",
+  "records": [
+    {
+      "record": "DKIM",
+      "name": "resend._domainkey",
+      "value": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDchNbZrC4xd5hIlwX9oVOetalKNpZNzo5CgIu9UbVtbtdGkyPx8GRV4/w9E6kv4eQUi/nMzlusyvJevPIwm+vGesk1i99MoyOydsVcd5AA4zxipV2PuaX+vJAFXyX5j2mIRuNpUX/8qZfjD/QHLjaw5akj3g8Morh3HSKRA1s86wIDAQAB",
+      "type": "TXT",
+      "status": "failed",
+      "ttl": "Auto"
+    },
+    {
+      "record": "SPF",
+      "name": "send",
+      "type": "MX",
+      "ttl": "Auto",
+      "status": "failed",
+      "value": "feedback-smtp.ap-northeast-1.amazonses.com",
+      "priority": 10
+    },
+    {
+      "record": "SPF",
+      "name": "send",
+      "value": "v=spf1 include:amazonses.com ~all",
+      "type": "TXT",
+      "ttl": "Auto",
+      "status": "failed"
+    }
+  ]
+}

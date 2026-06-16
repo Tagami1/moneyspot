@@ -11,28 +11,24 @@ type Props = {
   t: TFunction;
   mode: "register" | "login";
   locale: Locale;
-  onSendOtp: (email: string) => Promise<AuthResult>;
-  onVerifyOtp: (email: string, token: string, profile: Omit<UserProfile, "email">) => Promise<AuthResult>;
+  onSignUp: (email: string, password: string, profile: Omit<UserProfile, "email">) => Promise<AuthResult>;
+  onSignIn: (email: string, password: string) => Promise<AuthResult>;
   onClose: () => void;
   onSuccess?: () => void;
 };
 
 export { COUNTRIES };
 
-type Step = "form" | "verify";
-
-export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onClose, onSuccess }: Props) {
-  const [step, setStep] = useState<Step>("form");
+export default function AuthFlow({ t, mode, locale, onSignUp, onSignIn, onClose, onSuccess }: Props) {
   const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [phoneCountry, setPhoneCountry] = useState("JP");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [country, setCountry] = useState("");
-  const [otpCode, setOtpCode] = useState("");
   const [error, setError] = useState("");
   const [sending, setSending] = useState(false);
-  const [localTestCode, setLocalTestCode] = useState("");
 
   const countrySelectLocale = locale === "ja" ? "ja" : "en";
   const phoneCode = getPhoneCodeByCountry(phoneCountry);
@@ -40,45 +36,27 @@ export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onCl
 
   const handleSubmitForm = async () => {
     setError("");
-    setLocalTestCode("");
     if (!isLogin) {
       if (!lastName.trim()) { setError(t("auth.errorLastName")); return; }
       if (!firstName.trim()) { setError(t("auth.errorFirstName")); return; }
     }
     if (!email.trim() || !email.includes("@")) { setError(t("auth.errorEmail")); return; }
+    if (!password.trim() || password.length < 6) { setError(t("auth.errorPassword")); return; }
     if (!isLogin) {
       if (!phoneNumber.trim()) { setError(t("auth.errorPhone")); return; }
       if (!country) { setError(t("auth.errorCountry")); return; }
     }
 
     setSending(true);
-    const result = await onSendOtp(email.trim());
-    setSending(false);
-
-    if (result.error) {
-      setError(result.error);
-    } else {
-      setLocalTestCode(result.localTestCode ?? "");
-      setStep("verify");
-    }
-  };
-
-  const handleVerify = async () => {
-    setError("");
-    if (!otpCode.trim() || otpCode.length < 6) {
-      setError(t("auth.errorCode"));
-      return;
-    }
-
     const fullPhone = isLogin ? "" : `${phoneCode}${phoneNumber.replace(/^0+/, "")}`;
-
-    setSending(true);
-    const result = await onVerifyOtp(email.trim(), otpCode.trim(), {
-      lastName: lastName.trim(),
-      firstName: firstName.trim(),
-      phone: fullPhone,
-      country,
-    });
+    const result = isLogin
+      ? await onSignIn(email.trim(), password)
+      : await onSignUp(email.trim(), password, {
+          lastName: lastName.trim(),
+          firstName: firstName.trim(),
+          phone: fullPhone,
+          country,
+        });
     setSending(false);
 
     if (result.error) {
@@ -104,7 +82,7 @@ export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onCl
         </div>
 
         <div className="p-5 overflow-y-auto flex-1">
-          {step === "form" ? (
+          {(
             <div className="space-y-4">
               {/* Registration fields (name, phone, country) */}
               {!isLogin && (
@@ -142,6 +120,19 @@ export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onCl
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="example@email.com"
+                  className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+
+              {/* Password */}
+              <div>
+                <label className="text-sm font-medium text-gray-700 block mb-1">{t("auth.password")}</label>
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder={t("auth.passwordPlaceholder")}
+                  autoComplete={isLogin ? "current-password" : "new-password"}
                   className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
@@ -195,7 +186,7 @@ export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onCl
                 disabled={sending}
                 className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors disabled:opacity-50"
               >
-                {sending ? t("auth.sending") : isLogin ? t("auth.loginSend") : t("auth.sendCode")}
+                {sending ? t("auth.sending") : isLogin ? t("auth.loginSend") : t("auth.createAccount")}
               </button>
 
               {/* Back button */}
@@ -204,59 +195,6 @@ export default function AuthFlow({ t, mode, locale, onSendOtp, onVerifyOtp, onCl
                 className="w-full text-gray-500 text-sm py-2 hover:text-gray-700"
               >
                 {t("common.back")}
-              </button>
-            </div>
-          ) : (
-            <div className="space-y-4">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#2563eb" strokeWidth="2">
-                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-600">{t("auth.codeSent")}</p>
-                <p className="text-sm font-bold text-gray-800 mt-1">{email}</p>
-                {localTestCode && (
-                  <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs font-bold text-amber-700">
-                    ローカルテスト用コード: {localTestCode}
-                  </p>
-                )}
-              </div>
-
-              {/* OTP input */}
-              <div>
-                <label className="text-sm font-medium text-gray-700 block mb-1">{t("auth.codeLabel")}</label>
-                <input
-                  type="text"
-                  inputMode="numeric"
-                  pattern="[0-9]*"
-                  maxLength={6}
-                  value={otpCode}
-                  onChange={(e) => {
-                    const v = e.target.value.replace(/\D/g, "");
-                    setOtpCode(v);
-                  }}
-                  placeholder="123456"
-                  className="w-full px-3 py-3 border border-gray-300 rounded-lg text-center text-2xl font-bold tracking-[0.3em] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  autoFocus
-                />
-              </div>
-
-              {error && <p className="text-red-500 text-xs text-center">{error}</p>}
-
-              <button
-                onClick={handleVerify}
-                disabled={sending || otpCode.length < 6}
-                className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors disabled:opacity-50"
-              >
-                {sending ? t("auth.verifying") : t("auth.verify")}
-              </button>
-
-              <button
-                onClick={() => { setStep("form"); setOtpCode(""); setError(""); }}
-                className="w-full text-gray-500 text-sm py-2 hover:text-gray-700"
-              >
-                {t("auth.backToForm")}
               </button>
             </div>
           )}

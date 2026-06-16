@@ -246,5 +246,11 @@
     "benefitFavorites": "Lưu cửa hàng yêu thích để xem lại sau",
     "benefitAlerts": "Nhận cảnh báo trong ứng dụng khi tỷ giá gần mục tiêu",
     "benefitReports": "Lưu báo cáo tỷ giá tại cửa hàng và lịch sử"
+  },
+  "auth": {
+    "password": "Mật khẩu",
+    "passwordPlaceholder": "Ít nhất 6 ký tự",
+    "errorPassword": "Mật khẩu phải có ít nhất 6 ký tự",
+    "createAccount": "Đăng ký miễn phí"
   }
 }

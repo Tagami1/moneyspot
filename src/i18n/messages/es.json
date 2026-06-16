@@ -246,5 +246,11 @@
     "benefitFavorites": "Guarda tiendas favoritas para revisarlas después",
     "benefitAlerts": "Recibe avisos en la app cuando el tipo se acerque a tu objetivo",
     "benefitReports": "Guarda reportes de tipos vistos en tienda"
+  },
+  "auth": {
+    "password": "Contraseña",
+    "passwordPlaceholder": "Mínimo 6 caracteres",
+    "errorPassword": "La contraseña debe tener al menos 6 caracteres",
+    "createAccount": "Crear cuenta gratis"
   }
 }

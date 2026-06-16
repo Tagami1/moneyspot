@@ -202,7 +202,11 @@
     "register": "Register",
     "logout": "Logout",
     "logoutConfirm": "Are you sure you want to logout?",
-    "profile": "Profile"
+    "profile": "Profile",
+    "password": "Password",
+    "passwordPlaceholder": "At least 6 characters",
+    "errorPassword": "Password must be at least 6 characters",
+    "createAccount": "Create free account"
   },
   "mypage": {
     "title": "My Page",

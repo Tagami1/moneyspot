@@ -246,5 +246,11 @@
     "benefitFavorites": "保存收藏店铺，之后快速查看",
     "benefitAlerts": "当汇率接近目标时收到应用内提醒",
     "benefitReports": "保存店内汇率报告和记录"
+  },
+  "auth": {
+    "password": "密码",
+    "passwordPlaceholder": "至少6个字符",
+    "errorPassword": "密码至少需要6个字符",
+    "createAccount": "免费注册"
   }
 }
