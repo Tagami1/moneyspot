@@ -30,14 +30,19 @@ cd "$SRC"
 
 # 1. Regenerate world cities from latest Supabase data
 GEN="src/lib/world-cities.generated.json"
-BEFORE_HASH="$(shasum "$GEN" 2>/dev/null | awk '{print $1}')"
+# Content hash that ignores the generated_at timestamp, so we only deploy on
+# real data changes (new shops/cities), not on every run.
+content_hash() {
+  node -e "const fs=require('fs'),c=require('crypto');try{const d=JSON.parse(fs.readFileSync('$1','utf8'));console.log(c.createHash('sha1').update(JSON.stringify(d.cities)).digest('hex'))}catch(e){console.log('')}" 2>/dev/null || true
+}
+BEFORE_HASH="$(content_hash "$GEN")"
 if node scripts/build-world-cities.mjs >> "$LOG" 2>&1; then
   log "regenerated world-cities"
 else
   log "ERROR regenerating world-cities — aborting"
   exit 1
 fi
-AFTER_HASH="$(shasum "$GEN" 2>/dev/null | awk '{print $1}')"
+AFTER_HASH="$(content_hash "$GEN")"
 
 if [ "$BEFORE_HASH" = "$AFTER_HASH" ]; then
   log "no data change — still pinging IndexNow and exiting"
