@@ -1,0 +1,1130 @@
+[
+  {
+    "code": "JP",
+    "country_es": "Japón",
+    "currency_code": "JPY",
+    "intro": "Japón sigue siendo un país muy ligado al efectivo, aunque las tarjetas y los pagos sin contacto crecen con rapidez en las grandes ciudades. El yen no tiene decimales, así que todos los precios se manejan en cifras redondas. Conviene llevar siempre algo de efectivo, sobre todo fuera de Tokio y Osaka.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el yen japonés (¥, JPY) y no usa decimales. Hay billetes de 1.000, 2.000 (muy raro), 5.000 y 10.000 yenes, y monedas de 1, 5, 10, 50, 100 y 500 yenes. La moneda de 500 yenes tiene bastante valor, así que no la confundas con calderilla."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo sigue siendo el rey en templos, mercados, restaurantes pequeños, taxis rurales y máquinas expendedoras antiguas. En cambio, las tiendas de conveniencia (konbini), grandes almacenes, hoteles y cadenas aceptan tarjeta sin problema. Las tarjetas IC recargables como Suica o Pasmo son muy útiles para transporte y compras pequeñas."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Por lo general sale más a cuenta sacar yenes en un cajero japonés con tu tarjeta que cambiar billetes en casa. Si necesitas cambiar efectivo, las casas de cambio especializadas en ciudad suelen dar mejor tipo que los bancos o el aeropuerto. Evita cambiar grandes cantidades antes de viajar."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio de los aeropuertos aplican tipos poco favorables y comisiones altas. Cambia solo lo justo para el primer trayecto (tren o taxi) si lo necesitas. Es mejor sacar el grueso del efectivo en un cajero de 7-Eleven o Japan Post nada más llegar."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "No todos los cajeros japoneses aceptan tarjetas extranjeras; los que sí funcionan están en las tiendas 7-Eleven (7Bank) y en las oficinas de correos (Japan Post Bank). Tienen menú en inglés y operan casi a cualquier hora. Avisa a tu banco antes de viajar y revisa la comisión por retirada en el extranjero."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En Japón no se dan propinas y puede resultar incómodo o incluso ofensivo intentarlo. El servicio excelente es la norma y ya está incluido en el precio. Si dejas dinero en la mesa, es probable que el personal salga corriendo a devolvértelo."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Japón es muy seguro y las estafas son raras, pero ojo con los bares de copas en zonas como Kabukicho (Tokio) que cobran cifras abusivas. El error más común es quedarse sin efectivo en zonas rurales o asumir que todo acepta tarjeta. Lleva siempre un colchón de billetes para imprevistos."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Para el día a día en ciudad, llevar entre 10.000 y 20.000 yenes en efectivo suele ser suficiente. Si vas a zonas rurales, templos o pueblos pequeños, aumenta el colchón porque allí casi todo es en metálico. Recargar una Suica/Pasmo te evita andar buscando cambio para el transporte."
+      }
+    ],
+    "quick_tips": [
+      "Saca yenes en cajeros de 7-Eleven o correos: aceptan tarjetas extranjeras.",
+      "Consigue una tarjeta Suica o Pasmo para transporte y konbini.",
+      "No dejes propina: no se usa y puede incomodar.",
+      "Lleva efectivo extra si sales de las grandes ciudades.",
+      "Guarda las monedas de 500 yenes; valen bastante."
+    ]
+  },
+  {
+    "code": "TH",
+    "country_es": "Tailandia",
+    "currency_code": "THB",
+    "intro": "Tailandia funciona mucho con efectivo, especialmente en mercados, puestos callejeros y transporte local. Las tarjetas se aceptan en hoteles, centros comerciales y restaurantes grandes, pero conviene tener baht en el bolsillo a diario. Los cajeros locales cobran una comisión fija por retirada que conviene tener en cuenta.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el baht tailandés (฿, THB), que se divide en 100 satang (poco usados). Hay billetes de 20, 50, 100, 500 y 1.000 baht, y monedas de 1, 2, 5 y 10 baht. Conviene llevar billetes pequeños para puestos callejeros y tuk-tuks."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo es imprescindible para comida callejera, mercados, transporte local y propinas. Las tarjetas funcionan bien en centros comerciales, hoteles y restaurantes turísticos. El pago por QR (PromptPay) es muy popular entre locales, pero suele requerir cuenta bancaria tailandesa."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio independientes como SuperRich suelen ofrecer mejores tipos que los bancos o el aeropuerto. Llevar billetes grandes y nuevos de tu divisa suele dar mejor tipo que los pequeños o gastados. Compara el tipo y comprueba que no cobren comisión añadida."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Los mostradores de la zona de llegadas del aeropuerto dan tipos pobres; cambia solo lo justo para el traslado. Curiosamente, algunas casas de cambio dentro del aeropuerto de Bangkok (como SuperRich, planta de salidas o el nivel de tren) ofrecen mejores tipos que la zona de llegadas. Para el grueso, espera a una sucursal en ciudad."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Casi todos los cajeros tailandeses cobran una comisión fija por retirada a tarjetas extranjeras (suele rondar los 200-220 baht), independientemente del importe. Por eso conviene sacar cantidades más grandes de una vez en lugar de muchas retiradas pequeñas. Cuando el cajero te ofrezca cobrar en tu divisa, rechaza siempre la conversión (DCC) y elige baht."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria pero sí habitual y bien recibida en contextos turísticos. En restaurantes se suele redondear o dejar un 5-10% si no incluyen cargo por servicio. A masajistas, conductores y maleteros se les da una pequeña cantidad en metálico."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Desconfía de tuk-tuks o taxis que ofrecen tours baratos: suelen llevarte a tiendas con comisión. Acepta siempre el taxímetro o acuerda el precio antes de subir. Otro error común es aceptar la conversión a tu divisa (DCC) en cajeros y tarjetas, que encarece el cambio."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Para un día normal, llevar entre 1.000 y 2.000 baht en efectivo suele bastar para comida, transporte y compras pequeñas. Saca cantidades más grandes por retirada para amortizar la comisión fija del cajero. Reparte el dinero y no lleves todo en un mismo sitio."
+      }
+    ],
+    "quick_tips": [
+      "Usa casas de cambio tipo SuperRich para mejor tipo.",
+      "Saca mucho de una vez: el cajero cobra comisión fija por retirada.",
+      "Rechaza la conversión a tu divisa (DCC) en cajeros y datáfonos.",
+      "Lleva billetes pequeños para tuk-tuks y comida callejera.",
+      "Acuerda el precio antes de subir a un taxi o tuk-tuk."
+    ]
+  },
+  {
+    "code": "US",
+    "country_es": "Estados Unidos",
+    "currency_code": "USD",
+    "intro": "Estados Unidos es un país muy orientado a la tarjeta, donde puedes pagar casi todo sin contacto o con el móvil. Aun así, la cultura de la propina es fuerte y conviene llevar algo de efectivo. Los precios anunciados suelen ser sin impuestos, que se añaden al pagar.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el dólar estadounidense ($, USD), dividido en 100 centavos. Hay billetes de 1, 5, 10, 20, 50 y 100 dólares, todos del mismo tamaño y color verdoso, así que mira bien la cifra. Las monedas comunes son penny (1¢), nickel (5¢), dime (10¢) y quarter (25¢)."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta y los pagos por móvil se aceptan prácticamente en todas partes, incluso para importes pequeños. El efectivo es útil sobre todo para propinas, food trucks, mercadillos y algunos negocios pequeños. Recuerda que el precio en la etiqueta no incluye el impuesto de ventas, que varía según el estado."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Lo más rentable suele ser pagar directamente con tarjeta sin comisiones por uso en el extranjero o sacar dólares de un cajero bancario. Cambiar billetes en casa o en casas de cambio suele salir caro. Si pagas con tarjeta, elige siempre que te cobren en dólares, no en tu divisa."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio del aeropuerto (como Travelex) aplican tipos muy desfavorables y comisiones altas. No cambies allí salvo una mínima cantidad de emergencia. Es mejor sacar dólares en un cajero a la llegada o simplemente tirar de tarjeta."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros abundan, pero los independientes de tiendas y bares cobran comisiones altas; usa mejor cajeros de bancos grandes (Chase, Bank of America, Wells Fargo). Tu banco también puede cobrarte por la retirada en el extranjero, así que saca cantidades razonables. Rechaza la conversión a tu divisa cuando te la ofrezcan."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina es esperada y forma parte del sueldo del personal: en restaurantes con servicio de mesa se deja entre el 15% y el 20%. También se da propina a taxistas, repartidores, bármanes (1-2 $ por copa) y personal de hotel. Revisa la cuenta por si ya incluyen un cargo por servicio (gratuity), sobre todo en grupos."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Un error frecuente es no contar con el impuesto y la propina, que pueden subir bastante el total. Cuidado con los datáfonos que sugieren propinas del 25-30% por defecto: puedes ajustar o poner cero si no procede. Evita los cajeros independientes con comisiones abusivas y rechaza siempre la conversión de divisa (DCC)."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con la tarjeta cubres casi todo, así que basta con llevar entre 50 y 100 dólares en metálico para propinas e imprevistos. Lleva billetes pequeños (1, 5 y 10) para propinas cómodas. Reponer efectivo es fácil con cualquier cajero bancario."
+      }
+    ],
+    "quick_tips": [
+      "Suma siempre impuesto y propina: el precio en la etiqueta no es el final.",
+      "Lleva billetes de 1 y 5 dólares para propinas.",
+      "Deja 15-20% de propina en restaurantes con servicio de mesa.",
+      "Usa cajeros de bancos grandes y evita los independientes con altas comisiones.",
+      "Paga siempre en dólares, no en tu divisa (rechaza el DCC)."
+    ]
+  },
+  {
+    "code": "GB",
+    "country_es": "Reino Unido",
+    "currency_code": "GBP",
+    "intro": "El Reino Unido es uno de los países más avanzados en pagos sin contacto: puedes recorrer un viaje entero casi sin tocar efectivo. La tarjeta y el móvil se aceptan en casi todas partes, incluido el transporte público. Aun así, conviene tener unas pocas libras para casos puntuales.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es la libra esterlina (£, GBP), dividida en 100 peniques (pence). Hay billetes de 5, 10, 20 y 50 libras, hoy de polímero, y monedas de 1p, 2p, 5p, 10p, 20p, 50p, £1 y £2. Escocia e Irlanda del Norte emiten sus propios billetes, válidos pero a veces rechazados fuera de su zona."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta sin contacto es el método dominante y se acepta hasta para compras mínimas. Muchos negocios son ya cashless (solo tarjeta), así que el efectivo casi nunca es imprescindible. Aun así, algún mercadillo, pub pequeño o taxi rural puede pedir metálico."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Lo más barato suele ser pagar con una tarjeta sin comisiones por uso en el extranjero o sacar libras de un cajero bancario. Si cambias efectivo, las casas de cambio de ciudad con tarifa 'sin comisión' y buen tipo superan al aeropuerto. Evita cambiar grandes sumas en casa."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio de los aeropuertos británicos ofrecen tipos especialmente malos, de los peores de Europa. Reservar online para recoger en el aeropuerto mejora algo el tipo, pero sigue sin compensar. Mejor llega con tu tarjeta lista y saca efectivo en un cajero si hace falta."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros (cash machines) de bancos suelen ser gratuitos para retirar libras, aunque tu banco extranjero puede aplicar su comisión. Evita los cajeros independientes que avisan de un 'cargo' (suelen estar en tiendas y cobran varias libras). Rechaza siempre la conversión a tu divisa y elige libras."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina es más moderada que en EE. UU. En restaurantes se deja un 10-12,5%, pero muchos ya añaden un 'service charge' a la cuenta, así que comprueba antes de duplicar. En pubs donde pides en barra no se deja propina, y a taxistas se suele redondear."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más común es pagar dos veces el servicio cuando ya viene incluido en la cuenta del restaurante. Cuidado también con los cajeros independientes que cobran comisión y con aceptar la conversión a tu divisa (DCC). Los billetes escoceses pueden darte algún problema al gastarlos en Inglaterra."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con tarjeta cubres casi todo, así que con 30-50 libras en efectivo vas sobrado para imprevistos. Lleva algo de calderilla para mercadillos o pubs pequeños. Repostar efectivo es fácil en cualquier cajero bancario."
+      }
+    ],
+    "quick_tips": [
+      "Paga con tarjeta sin contacto casi todo, incluido el transporte.",
+      "Revisa el 'service charge' antes de añadir propina en restaurantes.",
+      "Evita las casas de cambio del aeropuerto: tipos pésimos.",
+      "Usa cajeros de bancos y rechaza el cargo de los independientes.",
+      "Gasta los billetes escoceses antes de salir de Escocia."
+    ]
+  },
+  {
+    "code": "FR",
+    "country_es": "Francia",
+    "currency_code": "EUR",
+    "intro": "Francia usa el euro y está muy adaptada al pago con tarjeta y sin contacto, incluso para importes pequeños. El efectivo sigue siendo útil para mercados, panaderías y propinas, pero no es imprescindible. Para viajeros de la eurozona, no hay que preocuparse por el cambio de divisa.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el euro (€, EUR), dividido en 100 céntimos. Hay billetes de 5, 10, 20, 50, 100, 200 y 500 euros (los grandes apenas se aceptan), y monedas de 1, 2, 5, 10, 20 y 50 céntimos, además de 1 y 2 euros. Para el día a día, los billetes de 50 euros o menos son los más prácticos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta sin contacto se acepta casi en todas partes, incluso en panaderías y cafés. El efectivo viene bien para mercados al aire libre, pequeños comercios, propinas y algún museo o aseo de pago. Muchos sitios pequeños exigen un importe mínimo para pagar con tarjeta."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Si vienes de la eurozona, no necesitas cambiar nada. Si vienes de fuera, lo más barato es pagar con una tarjeta sin comisiones por uso en el extranjero o sacar euros de un cajero bancario. Las casas de cambio turísticas de París suelen tener tipos y comisiones poco favorables."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio de los aeropuertos franceses aplican tipos pobres y comisiones; evítalas salvo emergencia. Si llegas de fuera de la eurozona, saca euros en un cajero del aeropuerto o ya en la ciudad. No cambies grandes cantidades de golpe en estos mostradores."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros (distributeurs) de bancos son los más fiables y suelen no añadir comisión propia, aunque tu banco puede cobrarte la retirada en el extranjero. Hay cajeros independientes de marca (como Euronet) que cobran comisiones altas y ofrecen mal tipo: mejor evítalos. Rechaza siempre la conversión a tu divisa y cobra en euros."
+      },
+      {
+        "heading": "Propinas",
+        "body": "El servicio ya está incluido por ley en la cuenta (service compris), así que la propina es opcional. En restaurantes es habitual redondear o dejar un 5-10% si el servicio ha sido bueno. En cafés se suele dejar la calderilla del cambio."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "En zonas turísticas de París hay carteristas: vigila el bolso y la cartera, sobre todo en el metro y junto a monumentos. Evita los cajeros Euronet y rechaza la conversión a tu divisa (DCC), que encarece la operación. Desconfía de quien te pide firmar peticiones o te 'encuentra' un anillo de oro en la calle."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con tarjeta cubres casi todo, así que con 40-60 euros en efectivo basta para mercados, propinas e imprevistos. Lleva billetes pequeños y algo de calderilla para comercios con importe mínimo. Reponer efectivo es sencillo en cualquier cajero bancario."
+      }
+    ],
+    "quick_tips": [
+      "Paga con tarjeta sin contacto incluso en panaderías y cafés.",
+      "El servicio va incluido: la propina es opcional, redondea si quieres.",
+      "Evita los cajeros Euronet: comisiones altas y mal tipo.",
+      "Cuidado con carteristas en el metro de París y junto a monumentos.",
+      "Rechaza la conversión a tu divisa (DCC) en cajeros y datáfonos."
+    ]
+  },
+  {
+    "code": "IT",
+    "country_es": "Italia",
+    "currency_code": "EUR",
+    "intro": "Italia usa el euro y, aunque cada vez se paga más con tarjeta, sigue siendo más amiga del efectivo que el norte de Europa. Conviene llevar billetes pequeños para bares, mercados y pueblos. Atención a cargos típicos como el 'coperto' en restaurantes.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el euro (€, EUR), dividido en 100 céntimos. Hay billetes de 5, 10, 20, 50, 100, 200 y 500 euros (los grandes casi no se aceptan), y monedas de 1 y 2 euros más las de céntimos. Para el día a día, mejor manejar billetes de 50 euros o menos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta se acepta en hoteles, restaurantes y tiendas, y por ley los comercios deben permitir el pago con tarjeta. Aun así, bares pequeños, mercados, taxis y negocios familiares prefieren el efectivo y algunos ponen importe mínimo. Lleva siempre algo de metálico, especialmente fuera de las grandes ciudades."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Si vienes de la eurozona no necesitas cambiar. Si vienes de fuera, lo más barato es pagar con tarjeta sin comisiones por uso en el extranjero o sacar euros de un cajero bancario. Las casas de cambio de zonas turísticas de Roma, Venecia o Florencia suelen ofrecer tipos pobres."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio de los aeropuertos italianos aplican tipos desfavorables y comisiones; úsalas solo para una mínima emergencia. Si llegas de fuera de la eurozona, saca euros en un cajero bancario del aeropuerto o ya en la ciudad. Evita cambiar grandes cantidades en estos mostradores."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros (bancomat) de bancos italianos son los más fiables y suelen no añadir comisión propia, aunque tu banco puede cobrar la retirada en el extranjero. Evita los cajeros independientes de marca (como Euronet), que cobran comisiones altas y dan mal tipo. Rechaza siempre la conversión a tu divisa y cobra en euros."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria y suele ser modesta; con redondear o dejar 1-2 euros por persona basta en un restaurante normal. Muchos sitios cobran el 'coperto' (cubierto, un cargo fijo por comensal) y a veces 'servizio', que no son propina. Revisa la cuenta antes de añadir nada extra."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Cuidado con carteristas en el transporte y zonas turísticas de Roma, Nápoles y Venecia. Otro clásico es el restaurante junto a un monumento que infla la cuenta o cobra coperto sin avisar: mira el menú y los precios antes de sentarte. Evita los cajeros Euronet y rechaza la conversión a tu divisa (DCC)."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con tarjeta cubres mucho, pero en Italia conviene llevar algo más de efectivo: unos 50-80 euros al día según el plan. Lleva billetes pequeños y monedas para cafés en barra, mercados y pueblos. Reponer es fácil en cualquier bancomat de banco."
+      }
+    ],
+    "quick_tips": [
+      "Lleva efectivo: bares, mercados y pueblos lo prefieren.",
+      "Revisa el 'coperto' y el 'servizio' en la cuenta antes de dejar propina.",
+      "El café cuesta más sentado en mesa que de pie en barra.",
+      "Evita cajeros Euronet y casas de cambio turísticas.",
+      "Cuidado con carteristas en el transporte de Roma, Nápoles y Venecia."
+    ]
+  },
+  {
+    "code": "ES",
+    "country_es": "España",
+    "currency_code": "EUR",
+    "intro": "España usa el euro y es un destino muy cómodo para el viajero en lo que a dinero se refiere. La tarjeta se acepta en casi todos los sitios, aunque conviene llevar algo de efectivo para bares pequeños, mercados y pueblos. El sistema bancario es moderno y los cajeros abundan.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el euro (EUR), dividido en 100 céntimos. Los billetes habituales son de 5, 10, 20, 50, 100, 200 y 500 euros, aunque los de 200 y 500 casi no circulan y muchos comercios no los aceptan. Las monedas van de 1 céntimo a 2 euros. Para el día a día, lleva billetes pequeños y medianos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta se acepta en la inmensa mayoría de tiendas, restaurantes y hoteles, y el pago contactless está muy extendido. Aun así, conviene llevar efectivo para bares de tapas, mercados, taxis pequeños y pueblos rurales, donde a veces hay mínimo de importe. Una combinación de tarjeta para lo grande y algo de efectivo para lo pequeño funciona muy bien."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "La mejor opción suele ser sacar euros directamente de un cajero con tu tarjeta o pagar con tarjeta sin comisión de divisa. Las casas de cambio del centro turístico suelen tener tipos peores y comisiones ocultas. Evita cambiar grandes cantidades en efectivo antes del viaje si tu banco aplica márgenes altos."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio del aeropuerto ofrecen casi siempre los peores tipos y comisiones altas, aprovechando que el viajero llega sin opciones. Cambia solo lo mínimo imprescindible allí si lo necesitas. Es preferible usar un cajero del propio aeropuerto o esperar a la ciudad."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son abundantes y fiables; busca los de bancos grandes y evita los independientes de zonas turísticas, que cobran más. Rechaza siempre la conversión a tu moneda que ofrece la pantalla (DCC): elige pagar o cobrar en euros para conseguir mejor tipo. Saca cantidades mayores de una vez para reducir el número de comisiones."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina en España no es obligatoria y los salarios no dependen de ella, a diferencia de otros países. En restaurantes es habitual dejar un pequeño extra o redondear si el servicio ha gustado, en torno al 5-10% como mucho. En bares y cafés basta con dejar las monedas sueltas del cambio."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más común es aceptar la conversión a tu moneda (DCC) en cajeros y datáfonos, que encarece el pago. Cuidado con los carteristas en zonas turísticas de Madrid y Barcelona, especialmente en metro y plazas concurridas. Revisa la cuenta en restaurantes turísticos por cargos de 'cubierto' o pan que no pediste."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Para un viaje normal basta con llevar una cantidad moderada de efectivo en euros para gastos pequeños del primer día y reponer en cajeros locales. Como referencia general, suele bastar con efectivo para uno o dos días e ir sacando según haga falta. No hace falta llevar grandes sumas porque la tarjeta cubre casi todo."
+      }
+    ],
+    "quick_tips": [
+      "Rechaza la conversión a tu moneda (DCC) y paga siempre en euros.",
+      "Lleva billetes pequeños para bares de tapas y mercados.",
+      "Usa cajeros de bancos grandes y evita los de zonas turísticas.",
+      "La propina es opcional: redondear o un 5-10% es más que suficiente.",
+      "Cuidado con los carteristas en el metro y plazas de Madrid y Barcelona."
+    ]
+  },
+  {
+    "code": "DE",
+    "country_es": "Alemania",
+    "currency_code": "EUR",
+    "intro": "Alemania usa el euro, pero sorprende a muchos viajeros por su fuerte cultura del efectivo. Aunque la tarjeta cada vez se acepta más, todavía hay muchos sitios donde solo aceptan dinero en mano. Conviene viajar siempre con algo de efectivo encima.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el euro (EUR), con 100 céntimos por euro. Los billetes van de 5 a 500 euros, aunque los grandes apenas se usan y pueden no aceptarse. Las monedas de 1 y 2 euros son muy útiles para el día a día. Lleva billetes pequeños porque en comercios modestos cuesta cambiar los grandes."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "Alemania es famosa por su preferencia por el efectivo: muchos bares, restaurantes pequeños, panaderías y mercados solo aceptan dinero en mano. La tarjeta se acepta en cadenas, hoteles y grandes comercios, pero no des por hecho que funcionará en todas partes. La regla práctica es llevar siempre efectivo suficiente para el día."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Lo más rentable es sacar euros de un cajero de un banco alemán reconocido o pagar con una tarjeta sin comisión de divisa. Las casas de cambio turísticas dan tipos peores. Evita cambiar mucho efectivo antes de viajar si tu banco aplica un margen elevado."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Como en casi todo el mundo, las oficinas de cambio del aeropuerto aplican tipos malos y comisiones altas. Cambia solo lo justo para llegar a la ciudad si no tienes nada de efectivo. Lo ideal es sacar euros en un cajero bancario al llegar."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Usa cajeros de bancos establecidos (Sparkasse, Volksbank, bancos comerciales) y desconfía de los cajeros independientes con marcas como Euronet, que cobran comisiones altas y peores tipos. Rechaza siempre la conversión a tu moneda (DCC) y elige cobrar en euros. Saca cantidades mayores para aprovechar mejor cada operación, dado que el efectivo es muy necesario."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En Alemania se deja propina, normalmente redondeando o un 5-10% en restaurantes si el servicio ha sido bueno. Lo habitual es decir la cantidad total que quieres pagar al entregar el dinero, en lugar de dejarlo en la mesa. En cafés y bares basta con redondear al euro más cercano."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El mayor error es asumir que se puede pagar con tarjeta en todas partes y quedarse sin efectivo en un sitio que no la acepta. Otro fallo común es aceptar la conversión a tu moneda en cajeros y datáfonos. Evita los cajeros independientes de aeropuertos y zonas turísticas por sus comisiones abusivas."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Por la cultura del efectivo, conviene llevar siempre más dinero en mano del que llevarías en otros países europeos. Una buena referencia es tener efectivo cómodo para uno o dos días e ir reponiendo en cajeros bancarios. Así evitas el apuro de encontrar un local que no acepte tarjeta."
+      }
+    ],
+    "quick_tips": [
+      "Lleva siempre efectivo: muchos sitios no aceptan tarjeta.",
+      "Evita los cajeros Euronet y usa bancos como Sparkasse o Volksbank.",
+      "Rechaza la conversión a tu moneda (DCC) en cajeros y datáfonos.",
+      "Para la propina, di el total al pagar en vez de dejar dinero en la mesa.",
+      "Cambia poco en el aeropuerto y saca euros en un cajero bancario."
+    ]
+  },
+  {
+    "code": "KR",
+    "country_es": "Corea del Sur",
+    "currency_code": "KRW",
+    "intro": "Corea del Sur es uno de los países más avanzados del mundo en pagos con tarjeta, hasta el punto de que el efectivo se usa muy poco. Casi todo se paga con tarjeta o móvil, incluso importes minúsculos. Aun así, conviene llevar algo de wones para casos puntuales.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el won surcoreano (KRW), que no usa decimales. Los billetes son de 1.000, 5.000, 10.000 y 50.000 wones, y las monedas de 10, 50, 100 y 500 wones. Como las cifras son grandes, conviene acostumbrarse a contar los ceros. Lleva algunos billetes pequeños para mercados y transporte."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "Corea es extremadamente 'de tarjeta': se puede pagar con plástico prácticamente en cualquier sitio, incluso un café o un taxi por importes muy bajos. El móvil y las tarjetas contactless están por todas partes. El efectivo solo hace falta en mercados tradicionales, algún puesto callejero y zonas muy locales."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Sacar wones de un cajero con tu tarjeta o pagar directamente con tarjeta suele dar el mejor resultado. En Seúl, las casas de cambio de barrios como Myeongdong suelen ofrecer tipos competitivos, mejores que los bancos para efectivo. Compara antes de cambiar grandes cantidades y evita hacerlo en el aeropuerto."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio del aeropuerto de Incheon ofrecen tipos peores que las del centro de la ciudad. Cambia solo lo justo para el transporte hasta el hotel si lo necesitas. Para el resto, usa cajeros o las casas de cambio del centro, que son más ventajosas."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Busca cajeros marcados como 'Global ATM' o de bancos grandes, ya que no todos aceptan tarjetas extranjeras. Los hay en aeropuertos, tiendas de conveniencia abiertas 24 horas y estaciones. Rechaza la conversión a tu moneda (DCC) y elige cobrar en wones para mejor tipo."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En Corea del Sur no existe la cultura de la propina y, en general, no se espera ni se da. Intentar dejar propina puede incluso resultar incómodo o confuso para el personal. El precio que ves ya incluye el servicio, así que paga la cantidad indicada sin más."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más típico es llevar demasiado efectivo y luego no usarlo, porque casi todo se paga con tarjeta. Asegúrate de que tu tarjeta funciona en el extranjero y usa cajeros que acepten tarjetas internacionales. Como siempre, rechaza la conversión a tu moneda en cajeros y datáfonos."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Dado lo extendida que está la tarjeta, no hace falta cargar con mucho efectivo. Basta con una cantidad pequeña de wones para mercados tradicionales, algún puesto callejero o emergencias. Para todo lo demás, la tarjeta o el móvil te servirán sin problema."
+      }
+    ],
+    "quick_tips": [
+      "Paga casi todo con tarjeta: Corea es muy de tarjeta hasta para importes mínimos.",
+      "No se dan propinas; no se esperan y pueden incomodar.",
+      "Busca cajeros 'Global ATM' que acepten tarjetas extranjeras.",
+      "Lleva poco efectivo, solo para mercados tradicionales y puestos callejeros.",
+      "Rechaza la conversión a tu moneda (DCC) y cobra en wones."
+    ]
+  },
+  {
+    "code": "CN",
+    "country_es": "China",
+    "currency_code": "CNY",
+    "intro": "China funciona en gran medida con pagos móviles a través de Alipay y WeChat Pay, que dominan el día a día por encima del efectivo y las tarjetas extranjeras. El viajero debe prepararse antes de llegar, porque muchas tarjetas internacionales no se aceptan. Llevar efectivo de respaldo es muy recomendable.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el yuan o renminbi (CNY), también llamado coloquialmente 'kuai'. Los billetes habituales son de 1, 5, 10, 20, 50 y 100 yuanes, y hay monedas y billetes pequeños de jiao (décimas de yuan). El billete de 100 es el de mayor valor común. Lleva billetes pequeños porque cambiar uno de 100 puede ser difícil en sitios modestos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "China depende muchísimo de los pagos móviles con Alipay y WeChat Pay; muchos comercios pequeños ya casi no manejan efectivo y rara vez aceptan tarjetas extranjeras. Ahora estas apps permiten vincular algunas tarjetas internacionales, lo que facilita mucho la vida al viajero. Aun así, conviene llevar efectivo como respaldo porque no todo funciona siempre."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Sacar yuanes de un cajero de un banco grande chino suele dar buen tipo, igual que pagar mediante las apps vinculadas a tu tarjeta. Los bancos oficiales cambian efectivo de forma fiable, aunque con algo de papeleo. Evita cambiar con particulares que se ofrezcan en la calle, una práctica arriesgada."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio del aeropuerto aplican tipos desfavorables y comisiones, como en el resto del mundo. Cambia solo lo justo para el transporte inicial si lo necesitas. Después, usa cajeros de bancos grandes o las apps de pago para el resto de gastos."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros de bancos grandes como Bank of China o ICBC suelen aceptar tarjetas internacionales y permiten sacar yuanes. Lleva el pasaporte por si hace falta y rechaza la conversión a tu moneda (DCC). No todos los cajeros aceptan tarjetas extranjeras, así que prueba en sucursales de bancos importantes."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En China, la propina tradicionalmente no forma parte de la cultura y en la mayoría de sitios no se espera. En restaurantes locales y servicios cotidianos no es necesario dejar nada extra. En hoteles muy turísticos o con guías puede haber alguna expectativa, pero sigue sin ser la norma general."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Un error grave es llegar sin haber preparado Alipay o WeChat Pay y descubrir que muchos sitios no aceptan tarjetas extranjeras ni quieren efectivo. Cuidado con la clásica estafa de la 'casa de té' o invitaciones de desconocidos que terminan en cuentas desorbitadas. Revisa siempre que recibes billetes auténticos al obtener cambio en efectivo."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Aunque domina el pago móvil, conviene llevar una reserva de efectivo en yuanes por si las apps o tu tarjeta fallan. Una cantidad moderada para taxis, puestos pequeños y emergencias da tranquilidad. Lo ideal es combinar Alipay o WeChat Pay con un colchón de efectivo de respaldo."
+      }
+    ],
+    "quick_tips": [
+      "Configura Alipay o WeChat Pay antes de viajar; son casi imprescindibles.",
+      "Lleva efectivo de respaldo: las tarjetas extranjeras se aceptan poco.",
+      "Usa cajeros de bancos grandes como Bank of China o ICBC con tu pasaporte.",
+      "No se espera propina en la mayoría de sitios.",
+      "Desconfía de las 'casas de té' e invitaciones de desconocidos por estafa."
+    ]
+  },
+  {
+    "code": "TW",
+    "country_es": "Taiwán",
+    "currency_code": "TWD",
+    "intro": "Taiwán mantiene una cultura bastante orientada al efectivo, sobre todo en sus famosos mercados nocturnos y pequeños comercios. La tarjeta se acepta en grandes tiendas y cadenas, pero no en todas partes. Es un país seguro y cómodo para manejar dinero con un poco de previsión.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el nuevo dólar taiwanés (TWD), a veces escrito como NT$. Los billetes habituales son de 100, 500 y 1.000 nuevos dólares, con monedas de 1, 5, 10 y 50. Para los mercados nocturnos y puestos pequeños conviene llevar billetes pequeños y monedas. Es una de las monedas más fáciles de manejar de la región."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo sigue siendo el rey en Taiwán, especialmente en mercados nocturnos, puestos de comida y pequeños negocios familiares. La tarjeta funciona bien en centros comerciales, cadenas, hoteles y tiendas de conveniencia. La tarjeta EasyCard, recargable con efectivo, es muy útil para transporte y compras pequeñas."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Los bancos taiwaneses ofrecen tipos de cambio justos y fiables para cambiar efectivo, y sacar de cajeros también suele salir bien. Las tiendas de conveniencia y hoteles pueden cambiar, pero a peor tipo. Para grandes cantidades, un banco oficial es la opción más segura."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Curiosamente, los mostradores bancarios del aeropuerto de Taoyuan suelen ofrecer tipos razonables, aunque cobran una pequeña comisión por operación. Aun así, cambia solo lo que necesites para empezar y deja el grueso para bancos de la ciudad o cajeros. Evita las casas de cambio privadas con tipos llamativos."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros de bancos y de las tiendas de conveniencia (como 7-Eleven o FamilyMart) están por todas partes y muchos aceptan tarjetas internacionales. Busca el logo de tu red (Visa/Plus, Mastercard/Cirrus) y rechaza la conversión a tu moneda (DCC). Sacar dólares taiwaneses de cajeros suele dar mejor tipo que cambiar efectivo."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En Taiwán no hay cultura de propina y en general no se espera dejar nada extra. Algunos restaurantes de gama alta añaden un 10% de cargo por servicio a la cuenta, así que revisa el ticket. Fuera de eso, paga el importe indicado sin necesidad de propina."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Taiwán es muy seguro y las estafas con dinero son poco frecuentes; el mayor error es quedarse sin efectivo en un mercado nocturno donde no aceptan tarjeta. Aceptar la conversión a tu moneda en cajeros y datáfonos también encarece el pago. Lleva siempre billetes pequeños porque en puestos cuesta cambiar uno de 1.000."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Como el efectivo es muy usado, conviene llevar una cantidad cómoda en dólares taiwaneses para comer en mercados y moverte. Una buena estrategia es tener efectivo para uno o dos días y recargar la EasyCard para el transporte. Repón en cajeros de tiendas de conveniencia, que están abiertos a todas horas."
+      }
+    ],
+    "quick_tips": [
+      "El efectivo manda en mercados nocturnos y puestos de comida.",
+      "Consigue una EasyCard para transporte y compras pequeñas.",
+      "Saca dinero en cajeros de 7-Eleven o FamilyMart, abiertos 24 horas.",
+      "No hay propina, pero revisa si el restaurante añade 10% de servicio.",
+      "Lleva billetes pequeños; cuesta cambiar los de 1.000 en puestos."
+    ]
+  },
+  {
+    "code": "HK",
+    "country_es": "Hong Kong",
+    "currency_code": "HKD",
+    "intro": "Hong Kong combina una banca muy desarrollada con la omnipresente tarjeta Octopus, que se usa para casi todo, desde el metro hasta una tienda de conveniencia. La tarjeta de crédito se acepta ampliamente y el efectivo sigue siendo útil. Es una ciudad muy cómoda para el viajero en cuanto a dinero.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el dólar de Hong Kong (HKD), abreviado HK$. Curiosamente, los billetes los emiten varios bancos, por lo que verás diseños distintos para un mismo valor; todos son válidos. Los billetes habituales van de 10 a 1.000 dólares, con monedas para los importes pequeños. Lleva billetes pequeños para taxis y comercios modestos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta de crédito se acepta en gran parte de tiendas, restaurantes y hoteles, y la Octopus cubre transporte, tiendas de conveniencia y muchos pequeños pagos. El efectivo sigue siendo necesario en puestos de comida, mercados, taxis y negocios pequeños. La combinación de Octopus para lo cotidiano y tarjeta o efectivo para el resto funciona perfectamente."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio del barrio de Tsim Sha Tsui (en Chungking Mansions y alrededores) son famosas por ofrecer tipos muy competitivos para efectivo. Sacar de cajeros de bancos grandes también da buen resultado. Compara siempre el tipo y pregunta si hay comisión antes de cerrar la operación."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio del aeropuerto de Hong Kong tienen fama de aplicar tipos especialmente malos. Cambia solo lo justo para el transporte hasta la ciudad si lo necesitas. Es mucho mejor sacar de un cajero o cambiar en las casas de Tsim Sha Tsui."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros de bancos grandes como HSBC, Hang Seng o Bank of China están por toda la ciudad y aceptan tarjetas internacionales. Rechaza la conversión a tu moneda (DCC) y elige cobrar en dólares de Hong Kong. Saca cantidades algo mayores para reducir comisiones, ya que el efectivo sigue siendo útil."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En Hong Kong la propina no es una obligación fuerte como en otros países. Muchos restaurantes ya añaden un 10% de cargo por servicio a la cuenta, así que revisa el ticket antes de dejar nada más. En taxis se suele redondear, y en cafés y puestos no se espera propina."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Un error común es asustarse al ver billetes de distintos diseños para el mismo valor: son legales y emitidos por varios bancos. En casas de cambio, desconfía de los carteles con tipos demasiado buenos que luego esconden comisiones; confirma la cantidad neta antes de pagar. Aceptar la conversión a tu moneda en cajeros también encarece el pago."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con la Octopus cargada para el transporte y los pequeños gastos, no necesitas demasiado efectivo. Aun así, lleva una cantidad razonable en dólares de Hong Kong para taxis, mercados y puestos de comida. Repón en cajeros bancarios y recarga la Octopus cuando baje el saldo."
+      }
+    ],
+    "quick_tips": [
+      "Consigue una Octopus: sirve para metro, buses y tiendas de conveniencia.",
+      "Cambia efectivo en Tsim Sha Tsui, no en el aeropuerto.",
+      "No te alarmes: hay varios diseños de billete para un mismo valor.",
+      "Revisa si el restaurante ya añade un 10% de cargo por servicio.",
+      "Usa cajeros de HSBC, Hang Seng o Bank of China y rechaza el DCC."
+    ]
+  },
+  {
+    "code": "SG",
+    "country_es": "Singapur",
+    "currency_code": "SGD",
+    "intro": "Singapur es uno de los destinos más modernos de Asia para el manejo del dinero. Casi todo se paga con tarjeta o móvil, y el efectivo es cada vez menos necesario. Aun así, conviene llevar algo de dólares de Singapur para puestos callejeros y mercados.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el dólar de Singapur (SGD), que se divide en 100 centavos. Los billetes habituales van de 2 a 100 dólares, aunque existen denominaciones mayores poco usadas en el día a día. Las monedas van de 5 centavos a 1 dólar."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta y los pagos sin contacto se aceptan prácticamente en todos lados, incluidos taxis y muchos centros de comida. Lleva algo de efectivo solo para puestos pequeños, mercados húmedos y propinas ocasionales. Para la mayoría de turistas, la tarjeta cubre casi todos los gastos."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio (money changers) en centros comerciales y barrios como Chinatown o Little India suelen ofrecer tasas competitivas y transparentes. Compara un par de mostradores cercanos antes de cambiar grandes sumas. Pagar con tarjeta sin comisión por divisa también suele dar buen tipo."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Cambiar en el aeropuerto suele dar peores tasas que en la ciudad. Cambia solo lo justo para el transporte inicial y deja el resto para una casa de cambio urbana. En Singapur la diferencia es menor que en otros países, pero sigue existiendo."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son abundantes, seguros y fiables en toda la ciudad. Usa preferiblemente cajeros de bancos grandes dentro de sucursales o centros comerciales. Si la máquina ofrece convertir a tu moneda (DCC), rechaza esa opción y elige cobrar en dólares de Singapur."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es costumbre en Singapur y muchos restaurantes ya añaden un cargo por servicio del 10%. No se espera dejar dinero extra en la mayoría de los casos. Puedes redondear si el servicio fue excelente, pero es totalmente opcional."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Singapur es muy seguro y las estafas con dinero son raras. El error más común es aceptar la conversión de moneda (DCC) en datáfonos y cajeros, que encarece el pago. Verifica siempre que te cobran en dólares de Singapur."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con una cantidad modesta de efectivo para puestos y transporte suele bastar, ya que casi todo se paga con tarjeta. Lleva billetes pequeños para mercados y comida callejera. Reponer en cajeros es fácil, así que no necesitas cargar grandes sumas."
+      }
+    ],
+    "quick_tips": [
+      "Rechaza siempre la conversión a tu moneda (DCC) en cajeros y datáfonos.",
+      "La tarjeta y el pago sin contacto sirven casi en todas partes.",
+      "Cambia solo lo justo en el aeropuerto y el resto en la ciudad.",
+      "No hace falta propina; muchos sitios ya cobran servicio.",
+      "Lleva billetes pequeños para puestos de comida y mercados."
+    ]
+  },
+  {
+    "code": "MY",
+    "country_es": "Malasia",
+    "currency_code": "MYR",
+    "intro": "Malasia combina ciudades modernas con mercados y zonas rurales donde el efectivo sigue siendo rey. La tarjeta funciona bien en Kuala Lumpur y centros turísticos, pero conviene llevar ringgit para el día a día. Las casas de cambio urbanas ofrecen buenas tasas.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el ringgit malayo (MYR), dividido en 100 sen. Los billetes habituales van de 1 a 100 ringgit, con colores distintos para cada valor. Las monedas van de 5 a 50 sen."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "En ciudades y centros comerciales la tarjeta se acepta sin problema, pero en mercados, puestos y transporte local se necesita efectivo. Lleva siempre algo de ringgit en billetes pequeños. Para comida callejera y taxis, el efectivo es lo más práctico."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio autorizadas en centros comerciales suelen dar mejores tasas que los bancos. Compara dos o tres mostradores cercanos antes de cambiar. Evita cambiar en hoteles, donde el tipo suele ser desfavorable."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las tasas en el aeropuerto suelen ser peores que en la ciudad. Cambia únicamente lo necesario para el transporte hasta tu alojamiento. Reserva el grueso del cambio para una casa de cambio en el centro."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son comunes en ciudades y zonas turísticas y son fiables en bancos grandes. Algunos cobran una comisión fija por retirada con tarjeta extranjera, así que conviene sacar cantidades medianas en lugar de muchas pequeñas. Rechaza la conversión a tu moneda y cobra en ringgit."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria ni esperada en la mayoría de los lugares. Muchos restaurantes añaden un cargo por servicio a la cuenta. Redondear o dejar un poco de cambio se valora, pero es opcional."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Acepta solo cambio en casas autorizadas y cuenta el dinero antes de salir del mostrador. Evita la conversión a tu moneda en cajeros y datáfonos, que reduce el valor recibido. En taxis sin taxímetro, acuerda el precio antes de subir."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Lleva efectivo suficiente para comidas, transporte local y mercados, donde la tarjeta no siempre sirve. En las ciudades puedes reponer fácilmente en cajeros. Mantén billetes pequeños para puestos y trayectos cortos."
+      }
+    ],
+    "quick_tips": [
+      "Usa casas de cambio autorizadas en centros comerciales, no hoteles.",
+      "Lleva billetes pequeños para mercados, comida y transporte.",
+      "Saca cantidades medianas en cajeros para reducir comisiones fijas.",
+      "Rechaza la conversión a tu moneda en cajeros y datáfonos.",
+      "Acuerda el precio del taxi si no tiene taxímetro."
+    ]
+  },
+  {
+    "code": "ID",
+    "country_es": "Indonesia",
+    "currency_code": "IDR",
+    "intro": "Indonesia, y especialmente Bali, es un destino donde hay que prestar atención al cambio de moneda. El efectivo domina fuera de las zonas turísticas y las cifras tienen muchos ceros. Conviene elegir bien dónde cambiar para evitar trampas.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es la rupia indonesia (IDR), con billetes que llegan a cifras altas y muchos ceros. Los billetes habituales van desde valores bajos hasta los de mayor denominación, usados para compras grandes. Acostúmbrate a contar ceros con calma para no confundirte."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo es esencial fuera de hoteles, restaurantes grandes y centros comerciales. Warungs, mercados y transporte local funcionan casi solo con rupias en mano. La tarjeta sirve en establecimientos turísticos, pero no confíes en ella en todas partes."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Usa casas de cambio autorizadas y con buena reputación, idealmente dentro de locales fijos y no en quioscos callejeros con tasas demasiado buenas. En Bali abundan las casas de cambio tramposas que usan trucos al contar el dinero. Cuenta siempre tú mismo el efectivo antes de irte."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "El aeropuerto ofrece tasas poco favorables, así que cambia solo lo justo para llegar a tu alojamiento. Deja el cambio principal para una casa de cambio fiable en la ciudad. No te apresures a cambiar grandes sumas nada más aterrizar."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Hay cajeros en zonas turísticas, pero úsalos con precaución y de preferencia dentro de bancos o centros comerciales vigilados. Fíjate en el límite de retirada por operación y en posibles comisiones. Rechaza la conversión a tu moneda y retira en rupias."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria, pero se aprecia por buen servicio en restaurantes y con guías o conductores. Algunos restaurantes ya incluyen un cargo por servicio. Dejar un pequeño extra en efectivo es un gesto bien recibido."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "La estafa clásica son las casas de cambio que ofrecen tasas excelentes y luego cuentan mal el dinero o lo retiran con disimulo. Cuenta siempre el efectivo tú mismo y no entregues los billetes de vuelta. Desconfía de tasas demasiado buenas para ser ciertas."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Conviene llevar efectivo suficiente porque muchos lugares no aceptan tarjeta. Lleva billetes variados para pagos pequeños y grandes, y cuenta con los muchos ceros. Repón en cajeros fiables cuando estés en zonas urbanas o turísticas."
+      }
+    ],
+    "quick_tips": [
+      "Cuenta siempre tú mismo el efectivo antes de salir de la casa de cambio.",
+      "Desconfía de tasas demasiado buenas, sobre todo en Bali.",
+      "Lleva bastante efectivo: muchos sitios no aceptan tarjeta.",
+      "Usa cajeros dentro de bancos o centros comerciales vigilados.",
+      "Presta atención a los ceros para no confundir denominaciones."
+    ]
+  },
+  {
+    "code": "PH",
+    "country_es": "Filipinas",
+    "currency_code": "PHP",
+    "intro": "Filipinas es un país muy dependiente del efectivo, sobre todo fuera de Manila y las grandes ciudades. El peso filipino se usa para casi todo en el día a día, desde transporte hasta comida. Conviene llevar billetes pequeños y planificar las retiradas.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el peso filipino (PHP), dividido en 100 céntimos. Los billetes habituales van de 20 a 1000 pesos, con colores diferenciados. Las monedas se usan mucho para pagos pequeños y transporte."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo es indispensable, especialmente en islas, mercados, jeepneys y zonas rurales. La tarjeta se acepta en hoteles, centros comerciales y restaurantes grandes de las ciudades. Lleva siempre pesos en billetes pequeños para el día a día."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio en centros comerciales de las ciudades suelen ofrecer mejores tasas que los hoteles. Compara mostradores y cuenta el dinero antes de salir. En islas pequeñas las opciones son limitadas, así que cambia antes de viajar a zonas remotas."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las tasas del aeropuerto suelen ser desfavorables. Cambia solo lo necesario para el transporte inicial y busca una casa de cambio en la ciudad. Evita cambiar grandes sumas al llegar."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son comunes en ciudades pero escasos en islas pequeñas, donde pueden quedarse sin efectivo. Muchos cobran una comisión fija por retirada con tarjeta extranjera y tienen límites bajos por operación. Saca efectivo en las ciudades antes de ir a destinos remotos y rechaza la conversión a tu moneda."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina se aprecia y es habitual dejar un pequeño porcentaje por buen servicio. Algunos restaurantes ya añaden un cargo por servicio a la cuenta. Para guías, conductores y personal de hotel, un extra en efectivo es bien recibido."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El mayor error es viajar a islas sin suficiente efectivo y encontrar cajeros vacíos o inexistentes. Cuenta el cambio antes de salir del mostrador y usa cajeros en lugares seguros. Rechaza la conversión a tu moneda en datáfonos y cajeros."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Lleva efectivo suficiente, sobre todo si vas a islas o zonas rurales con pocos cajeros. Mantén una reserva de billetes pequeños para transporte y comida. Planifica tus retiradas en las ciudades antes de moverte a destinos remotos."
+      }
+    ],
+    "quick_tips": [
+      "Saca efectivo en las ciudades antes de ir a islas pequeñas.",
+      "Lleva muchos billetes pequeños para jeepneys, mercados y comida.",
+      "Rechaza la conversión a tu moneda en cajeros y datáfonos.",
+      "Cuenta el dinero antes de salir de la casa de cambio.",
+      "No confíes en encontrar cajeros con efectivo en zonas remotas."
+    ]
+  },
+  {
+    "code": "VN",
+    "country_es": "Vietnam",
+    "currency_code": "VND",
+    "intro": "Vietnam es un destino mayormente de efectivo, con billetes de cifras altas y muchos ceros. Los billetes grandes se parecen entre sí, lo que provoca confusiones frecuentes. Conviene revisar bien el dinero al pagar y recibir cambio.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el dong vietnamita (VND), con denominaciones altas y muchos ceros. Varios billetes grandes son de plástico y de colores parecidos, lo que facilita confundirlos. Familiarízate con los valores antes de pagar."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo domina en mercados, puestos callejeros, transporte y pequeños negocios. La tarjeta se acepta en hoteles, restaurantes y tiendas de ciudades, pero no en todas partes. Lleva siempre dong en efectivo para el día a día."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio y joyerías autorizadas en las ciudades suelen ofrecer buenas tasas. Compara y cuenta el dinero antes de salir. Evita cambiar en hoteles y aeropuertos, donde el tipo suele ser peor."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las tasas en el aeropuerto son desfavorables. Cambia solo lo justo para el transporte hasta tu alojamiento. Reserva el cambio principal para una casa de cambio fiable en la ciudad."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son comunes en ciudades y zonas turísticas. Algunos cobran comisión por retirada con tarjeta extranjera y tienen límites por operación. Rechaza la conversión a tu moneda y retira en dong."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es tradicional, pero se valora cada vez más en zonas turísticas. Para guías, conductores y personal de hotel, un pequeño extra en efectivo es bien recibido. En restaurantes, redondear es suficiente."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más frecuente es confundir billetes grandes parecidos y pagar de más o recibir mal el cambio. Revisa siempre la denominación de cada billete al pagar y al recibir vuelto. Cuenta el dinero con calma y desconfía de prisas en el cobro."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Lleva efectivo suficiente porque la mayoría de pagos pequeños son en dong. Mantén billetes de distintos valores organizados para no confundirte. Repón en cajeros de las ciudades cuando lo necesites."
+      }
+    ],
+    "quick_tips": [
+      "Revisa la denominación de cada billete: los grandes se parecen mucho.",
+      "Cuenta el cambio con calma y sin prisas al pagar.",
+      "Lleva efectivo: muchos pagos pequeños no aceptan tarjeta.",
+      "Cambia en casas autorizadas de ciudad, no en aeropuertos ni hoteles.",
+      "Rechaza la conversión a tu moneda en cajeros y datáfonos."
+    ]
+  },
+  {
+    "code": "IN",
+    "country_es": "India",
+    "currency_code": "INR",
+    "intro": "India es un destino enorme y diverso donde el efectivo sigue siendo muy importante, aunque los pagos digitales crecen rápido. La rupia india tiene restricciones de importación, por lo que conviene cambiar al llegar. Planifica bien tus retiradas y lleva billetes pequeños.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es la rupia india (INR), dividida en 100 paisa. Los billetes habituales van de 10 a 500 rupias, con denominaciones mayores para compras grandes. Conviene tener billetes pequeños para pagos cotidianos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "El efectivo es clave en mercados, transporte, puestos y zonas rurales. La tarjeta y los pagos digitales funcionan en ciudades, hoteles y comercios grandes. Lleva siempre rupias en efectivo para el día a día y para pequeños vendedores."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Cambia en casas de cambio autorizadas o bancos, que ofrecen tasas fiables y recibos. Como la rupia es difícil de conseguir fuera del país, lo habitual es cambiar al llegar. Cuenta el dinero y guarda el comprobante de la operación."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las tasas del aeropuerto suelen ser peores que en la ciudad. Cambia solo lo justo para el transporte y los primeros gastos. Busca una casa de cambio o banco en la ciudad para el grueso del cambio."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son comunes en ciudades, aunque algunos tienen límites bajos por retirada y pueden cobrar comisión a tarjetas extranjeras. Usa cajeros de bancos grandes dentro de sucursales por seguridad. Rechaza la conversión a tu moneda y retira en rupias."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina es habitual y esperada en muchos servicios, como restaurantes, hoteles y guías. Un pequeño porcentaje o redondeo es lo común en restaurantes. Para maleteros, conductores y personal, dejar algo de efectivo es la norma."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Cuidado con casas de cambio no autorizadas y con recibir billetes muy rotos, que algunos comercios rechazan. Cuenta siempre el dinero y guarda los recibos de cambio. Rechaza la conversión a tu moneda en cajeros y datáfonos."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Lleva efectivo suficiente para transporte, propinas y pequeños vendedores. Mantén una buena reserva de billetes pequeños, difíciles de conseguir como cambio. Repón en cajeros de ciudad y conserva los recibos por si los necesitas."
+      }
+    ],
+    "quick_tips": [
+      "Cambia al llegar: la rupia es difícil de conseguir fuera del país.",
+      "Usa casas de cambio o bancos autorizados y guarda los recibos.",
+      "Lleva muchos billetes pequeños para transporte y propinas.",
+      "Rechaza billetes muy rotos: algunos comercios no los aceptan.",
+      "Rechaza la conversión a tu moneda en cajeros y datáfonos."
+    ]
+  },
+  {
+    "code": "AE",
+    "country_es": "Emiratos Árabes Unidos",
+    "currency_code": "AED",
+    "intro": "Emiratos Árabes Unidos, con Dubái y Abu Dabi a la cabeza, es uno de los destinos más modernos y orientados al pago digital del mundo. Casi todo se paga con tarjeta, pero los zocos tradicionales y los taxis pequeños siguen funcionando con efectivo y regateo. Conviene combinar ambos métodos.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el dírham de los Emiratos (AED), dividido en 100 fils. Los billetes van de 5 a 1000 dírhams y vienen en colores distintos para diferenciarlos. El dírham está vinculado de forma estable al dólar estadounidense, lo que da previsibilidad al cambio."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "Dubái y Abu Dabi son destinos muy de tarjeta: hoteles, centros comerciales, restaurantes y taxis con app aceptan pago digital sin problema. Sin embargo, en los zocos (oro, especias, textiles), pequeños puestos y algunos taxis conviene llevar efectivo. Reserva billetes pequeños para propinas y compras de bajo importe."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio establecidas en centros comerciales y zonas comerciales suelen ofrecer tasas competitivas y comisiones bajas. Compara la tasa ofrecida con la tarifa interbancaria de referencia antes de cambiar. Evita cambiar grandes sumas en el primer mostrador que veas."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Los mostradores de cambio del aeropuerto aplican tasas peores y comisiones más altas que las casas de cambio de la ciudad. Cambia solo lo justo para el transporte inicial al llegar. Deja el grueso del cambio para una casa de cambio urbana o un cajero."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Hay cajeros por todas partes en centros comerciales, bancos y hoteles. Elige siempre que te cobren en dírhams, no en tu moneda de origen, para evitar la conversión dinámica (DCC), que encarece la operación. Revisa la comisión de tu banco por retirada en el extranjero."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria pero sí habitual y bien recibida. En restaurantes suele dejarse alrededor del 10% si no viene ya incluido un cargo por servicio. Para taxistas, maleteros y personal de hotel, unos pocos dírhams son un gesto apreciado."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más común es aceptar la conversión a tu moneda en cajeros y datáfonos (DCC), que casi siempre sale más cara. En los zocos, los precios iniciales son altos: regatear es esperado y normal. Cuenta siempre el cambio en compras en efectivo."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Para un día con pagos mayoritariamente con tarjeta, basta con una cantidad modesta de dírhams para taxis, zocos y propinas. Si planeas compras en mercados tradicionales, lleva algo más en efectivo para regatear con ventaja. Evita cargar grandes sumas; los cajeros son fiables y abundantes."
+      }
+    ],
+    "quick_tips": [
+      "Paga siempre en dírhams en cajeros y datáfonos, nunca en tu moneda (evita el DCC).",
+      "Lleva efectivo para los zocos y el regateo; la tarjeta no siempre se acepta allí.",
+      "Compara tasas en casas de cambio de la ciudad antes de cambiar grandes sumas.",
+      "Cambia poco en el aeropuerto, solo para el primer trayecto.",
+      "Reserva billetes pequeños para propinas a taxistas y personal de hotel."
+    ]
+  },
+  {
+    "code": "TR",
+    "country_es": "Turquía",
+    "currency_code": "TRY",
+    "intro": "Turquía es un destino fascinante donde el dinero requiere atención especial por su alta inflación. La moneda local pierde valor con rapidez, así que conviene cambiar poco y a menudo en lugar de grandes sumas de golpe. El efectivo sigue siendo muy útil en bazares y zonas turísticas.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es la lira turca (TRY), dividida en 100 kuruş. Los billetes van de 5 a 200 liras. Debido a la inflación elevada, el valor real de la lira cambia con frecuencia, por lo que conviene estar atento a las tasas del día."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "Las tarjetas se aceptan ampliamente en hoteles, restaurantes y tiendas de ciudades grandes. Sin embargo, en bazares, puestos callejeros, taxis y zonas rurales el efectivo es rey y permite regatear. Llevar una combinación de ambos es lo más práctico."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio (döviz) en zonas comerciales suelen ofrecer mejores tasas que los bancos y, a menudo, sin comisión. Por la alta inflación, cambia importes pequeños con frecuencia en lugar de una gran suma al inicio. Compara siempre la tasa antes de entregar tu dinero."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "El cambio en el aeropuerto ofrece tasas claramente desfavorables y debe evitarse para grandes cantidades. Cambia únicamente lo mínimo para llegar a la ciudad o el hotel. Una vez en el centro, busca una casa de cambio con mejor tasa."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros son abundantes en ciudades y zonas turísticas. Rechaza siempre la conversión dinámica (DCC) y elige cobrar en liras turcas para obtener mejor tipo. Por la inflación, retira cantidades moderadas según las necesites en vez de acumular liras."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina es habitual: en restaurantes suele dejarse alrededor del 10% si no está incluida. En cafés, taxis y servicios pequeños se redondea o se deja una cantidad simbólica. El personal de hoteles también agradece una propina modesta."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Un error frecuente es cambiar mucho dinero de una vez y perder valor por la inflación. En los bazares, los precios de salida son altos y el regateo es parte del juego. Cuidado con el cambio mal devuelto y con datáfonos que ofrecen cobrar en tu moneda."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Lleva efectivo suficiente para el día a día (comidas, taxis, bazares) pero sin acumular grandes reservas de liras por la inflación. Es mejor reponer en cajeros o casas de cambio cada pocos días. Mantén billetes pequeños para puestos y propinas."
+      }
+    ],
+    "quick_tips": [
+      "Cambia poco y a menudo: la inflación hace perder valor a las liras acumuladas.",
+      "Usa casas de cambio (döviz) en la ciudad, no el aeropuerto ni los bancos.",
+      "Lleva efectivo para bazares y regatea: los precios de salida son altos.",
+      "En cajeros y datáfonos, cobra siempre en liras turcas, no en tu moneda.",
+      "Guarda billetes pequeños para taxis, propinas y puestos callejeros."
+    ]
+  },
+  {
+    "code": "MX",
+    "country_es": "México",
+    "currency_code": "MXN",
+    "intro": "México combina grandes ciudades muy bancarizadas con mercados, pueblos y playas donde el efectivo manda. El peso mexicano es la moneda oficial y conviene usarla siempre en vez de pagar en dólares. Llevar efectivo para lo cotidiano y tarjeta para lo grande es la mejor estrategia.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el peso mexicano (MXN), dividido en 100 centavos. Los billetes van de 20 a 1000 pesos y las monedas de 1 a 20 pesos son de uso diario. Conviene tener billetes pequeños porque muchos comercios no cambian los grandes."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "En ciudades, hoteles, supermercados y restaurantes la tarjeta funciona bien. Pero en mercados, taquerías, taxis, propinas y pueblos pequeños el efectivo es imprescindible. Paga siempre en pesos y no en dólares, ya que el cambio que ofrecen los comercios suele ser malo."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio establecidas en zonas urbanas suelen dar mejores tasas que los hoteles. Compara la tasa con la referencia interbancaria y revisa si cobran comisión. Retirar pesos directamente en cajeros suele ser una de las opciones más convenientes."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "Las casas de cambio del aeropuerto aplican tipos poco favorables y deben usarse solo para urgencias. Cambia lo justo para el transporte al hotel. Deja el resto para un cajero o una casa de cambio en la ciudad."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Usa preferiblemente cajeros de bancos reconocidos y ubicados dentro de sucursales o lugares vigilados. Rechaza la conversión dinámica (DCC) y elige cobrar en pesos. Ten en cuenta las comisiones que aplican algunos cajeros, especialmente los independientes en zonas turísticas."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina es importante en México: en restaurantes ronda el 10-15% del total. A maleteros, personal de limpieza y empacadores de supermercado se les da una pequeña cantidad en efectivo. Para taxis no es obligatoria, pero se agradece redondear."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Evita cajeros aislados o en mal estado por riesgo de clonación; usa los de bancos. No aceptes pagar en dólares ni la conversión a tu moneda en el datáfono. En taxis sin taxímetro, acuerda el precio antes de subir y desconfía de cambios mal devueltos."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Lleva efectivo en pesos para el día a día: comida callejera, mercados, taxis y propinas. Para hoteles, restaurantes grandes y compras importantes, usa tarjeta. Reabastece en cajeros según necesites y mantén siempre billetes pequeños a mano."
+      }
+    ],
+    "quick_tips": [
+      "Paga siempre en pesos, nunca en dólares: el cambio del comercio sale peor.",
+      "Lleva billetes pequeños; muchos puestos no cambian los de 500 o 1000.",
+      "Usa cajeros de bancos reconocidos y rechaza la conversión a tu moneda (DCC).",
+      "Cambia poco en el aeropuerto, solo para llegar a tu alojamiento.",
+      "Reserva efectivo para propinas (10-15%) y comida en mercados."
+    ]
+  },
+  {
+    "code": "BR",
+    "country_es": "Brasil",
+    "currency_code": "BRL",
+    "intro": "Brasil es un país muy bancarizado donde la tarjeta y los pagos digitales funcionan casi en cualquier lugar. Aun así, conviene llevar algo de efectivo para mercados, playas y trayectos cortos. El real brasileño es la moneda oficial y siempre debe ser la moneda de pago.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el real brasileño (BRL), dividido en 100 centavos. Los billetes van de 2 a 200 reales y tienen colores distintos para identificarlos fácilmente. Las monedas de centavos y de 1 real son comunes para el cambio diario."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "Brasil es muy de tarjeta: se acepta hasta en pequeños comercios, y los pagos digitales están muy extendidos. Sin embargo, en playas, ferias, mercados y trayectos en transporte informal el efectivo sigue siendo útil. Combina una tarjeta con algo de efectivo para imprevistos."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio en zonas urbanas y centros comerciales suelen ofrecer mejores tasas que los hoteles. Compara siempre la tasa y la comisión antes de cambiar. Retirar reales en cajeros suele ser cómodo y con buen tipo si evitas el DCC."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "El cambio en el aeropuerto suele tener tasas desfavorables y comisiones altas. Cambia solo lo mínimo para el transporte inicial. Reserva el resto para una casa de cambio en la ciudad o un cajero de banco."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Usa cajeros de bancos grandes y, preferiblemente, ubicados en lugares seguros y de día. Rechaza la conversión dinámica (DCC) y cobra en reales. Algunos cajeros tienen límites de retirada bajos para extranjeros, así que planifica varias retiradas si necesitas más."
+      },
+      {
+        "heading": "Propinas",
+        "body": "En restaurantes suele incluirse un cargo por servicio de alrededor del 10% en la cuenta; si está incluido, no hace falta añadir más. Si no aparece, dejar un 10% es lo habitual. Para taxis se redondea y al personal de hotel se le da una pequeña propina."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "Evita mostrar grandes cantidades de efectivo en la calle o en la playa por seguridad. Usa cajeros dentro de bancos o centros comerciales para reducir el riesgo de clonación. Rechaza pagar en tu moneda en el datáfono y confirma el cargo antes de aprobarlo."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Como la tarjeta funciona en casi todo, basta con llevar efectivo moderado para ferias, playas, propinas y transporte informal. Evita cargar grandes sumas por seguridad. Reabastece en cajeros de banco a medida que lo necesites."
+      }
+    ],
+    "quick_tips": [
+      "La tarjeta funciona casi en todo; lleva efectivo solo para ferias y playas.",
+      "Revisa si el 10% de servicio ya viene incluido en la cuenta del restaurante.",
+      "Usa cajeros dentro de bancos o centros comerciales, mejor de día.",
+      "Rechaza la conversión a tu moneda (DCC) y paga siempre en reales.",
+      "No exhibas grandes cantidades de efectivo en la calle por seguridad."
+    ]
+  },
+  {
+    "code": "AU",
+    "country_es": "Australia",
+    "currency_code": "AUD",
+    "intro": "Australia es uno de los países más avanzados en pagos sin efectivo del mundo: la tarjeta y el contactless funcionan prácticamente en todas partes. El dólar australiano es la moneda oficial. Llevar mucho efectivo no es necesario, pero una pequeña reserva siempre viene bien.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el dólar australiano (AUD), dividido en 100 centavos. Los billetes (de 5 a 100 dólares) son de polímero, resistentes al agua y de colores vivos. Las monedas van de 5 centavos a 2 dólares, útiles para máquinas y pequeños pagos."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "Australia es muy de tarjeta y pago contactless: se acepta incluso para importes pequeños en cafeterías, transporte y tiendas. El efectivo es cada vez menos necesario, aunque útil en mercados rurales, algunos puestos y zonas remotas. Una tarjeta sin comisiones de extranjería es la mejor aliada."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio en zonas urbanas suelen superar a los hoteles en tasa, pero retirar dólares en cajeros suele ser de lo más conveniente. Compara siempre tasa y comisión. Como casi todo se paga con tarjeta, quizá necesites cambiar muy poco."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "El cambio en el aeropuerto ofrece tasas poco favorables y debe evitarse para sumas grandes. Cambia solo lo justo si lo necesitas al llegar. En la práctica, con tarjeta apenas necesitarás efectivo nada más aterrizar."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros de bancos principales son fiables y están extendidos en ciudades. Rechaza la conversión dinámica (DCC) y cobra en dólares australianos. Ten en cuenta la comisión que pueda aplicar tu banco por retirada en el extranjero."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria ni esperada en Australia, ya que los sueldos del sector servicios son altos. En restaurantes de nivel se puede dejar alrededor del 10% si el servicio fue excelente, pero es opcional. En cafés y bares basta con redondear si quieres."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más caro es aceptar la conversión a tu moneda en datáfonos y cajeros (DCC). Otro fallo común es usar tarjetas con altas comisiones de extranjería en cada compra pequeña. Evita cambiar grandes sumas a efectivo que apenas usarás."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Con que lleves una pequeña reserva para mercados, zonas rurales o imprevistos es suficiente. La inmensa mayoría de pagos los harás con tarjeta o contactless. Evita cambiar mucho efectivo que luego te sobrará."
+      }
+    ],
+    "quick_tips": [
+      "La tarjeta y el contactless funcionan en casi todo; lleva poco efectivo.",
+      "Rechaza la conversión a tu moneda (DCC) y paga en dólares australianos.",
+      "Usa una tarjeta sin comisiones de extranjería para compras pequeñas.",
+      "La propina es opcional: no se espera como en otros países.",
+      "Cambia muy poco en el aeropuerto; apenas necesitarás efectivo al llegar."
+    ]
+  },
+  {
+    "code": "CH",
+    "country_es": "Suiza",
+    "currency_code": "CHF",
+    "intro": "Suiza es un destino caro y muy bancarizado donde la tarjeta funciona casi en todas partes. Un detalle clave: usa francos suizos, no euros, aunque algunos comercios acepten euros con un cambio poco favorable. Llevar algo de efectivo en francos resulta útil para pequeños gastos.",
+    "sections": [
+      {
+        "heading": "Moneda y billetes",
+        "body": "La moneda es el franco suizo (CHF), dividido en 100 céntimos (rappen). Los billetes van de 10 a 1000 francos y son muy seguros y reconocibles por sus colores. Las monedas de francos y céntimos se usan a diario para transporte y pequeñas compras."
+      },
+      {
+        "heading": "Efectivo vs tarjeta",
+        "body": "La tarjeta y el contactless se aceptan ampliamente en tiendas, restaurantes, transporte y hoteles. Aun así, conviene llevar algo de efectivo en francos para mercados, máquinas, propinas y pueblos pequeños. Aunque algunos sitios acepten euros, el cambio que aplican suele ser desfavorable, así que paga en francos."
+      },
+      {
+        "heading": "Dónde conseguir el mejor cambio",
+        "body": "Las casas de cambio y los bancos suizos suelen tener tasas razonables, pero comparar antes siempre ayuda. Retirar francos en cajeros locales evitando el DCC suele ser de lo más conveniente. No cambies euros en comercios, que aplican tipos pobres."
+      },
+      {
+        "heading": "La trampa del cambio en el aeropuerto",
+        "body": "El cambio en el aeropuerto ofrece tasas poco favorables, como en casi todo el mundo. Cambia solo lo necesario para el primer trayecto si lo requieres. Con tarjeta y un cajero en la ciudad cubrirás el resto a mejor precio."
+      },
+      {
+        "heading": "Uso de cajeros (ATM)",
+        "body": "Los cajeros suizos son fiables, seguros y abundantes. Rechaza la conversión dinámica (DCC) y elige cobrar en francos suizos para mejor tipo. Revisa la comisión que tu banco aplica por cada retirada para no acumular costes."
+      },
+      {
+        "heading": "Propinas",
+        "body": "La propina no es obligatoria porque el servicio suele estar incluido en el precio. Aun así, es habitual redondear la cuenta hacia arriba o dejar un pequeño extra si el servicio fue bueno. En restaurantes, redondear unos francos es un gesto suficiente y bien visto."
+      },
+      {
+        "heading": "Estafas y errores comunes con el dinero",
+        "body": "El error más común es pagar en euros y aceptar el cambio del comercio, que sale caro: usa francos. También evita la conversión a tu moneda (DCC) en datáfonos y cajeros. Dado lo caro del país, revisa siempre la cuenta para no llevarte sorpresas."
+      },
+      {
+        "heading": "¿Cuánto efectivo llevar?",
+        "body": "Como casi todo se paga con tarjeta, basta con una reserva moderada de francos para máquinas, propinas y pequeños comercios. Ten en cuenta que Suiza es cara, así que calcula tu presupuesto con holgura. Reabastece en cajeros locales según lo necesites."
+      }
+    ],
+    "quick_tips": [
+      "Paga en francos suizos, no en euros: el cambio del comercio sale caro.",
+      "La tarjeta funciona en casi todo; lleva algo de efectivo para extras.",
+      "Rechaza la conversión a tu moneda (DCC) en cajeros y datáfonos.",
+      "La propina es opcional: basta con redondear la cuenta hacia arriba.",
+      "Presupuesta con holgura: Suiza es uno de los países más caros."
+    ]
+  }
+]

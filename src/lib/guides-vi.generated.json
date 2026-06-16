@@ -1,0 +1,1130 @@
+[
+  {
+    "code": "JP",
+    "country_vi": "Nhật Bản",
+    "currency_code": "JPY",
+    "intro": "Nhật Bản dùng đồng Yên (¥), một trong những đồng tiền ổn định nhất thế giới. Dù nổi tiếng công nghệ, Nhật vẫn là xã hội chuộng tiền mặt, nhất là ở quán nhỏ, đền chùa và vùng nông thôn. Du khách nên luôn có sẵn một ít tiền mặt bên người.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Yên Nhật (JPY, ký hiệu ¥), không có đơn vị lẻ trong thực tế hàng ngày. Tiền giấy gồm 1.000, 2.000 (hiếm), 5.000 và 10.000 yên. Tiền xu gồm 1, 5, 10, 50, 100 và 500 yên; bạn sẽ dùng xu rất nhiều nên hãy giữ một ví đựng xu."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ Visa và Mastercard được chấp nhận rộng rãi ở thành phố lớn, khách sạn, cửa hàng tiện lợi và ga tàu. Tuy nhiên nhiều quán ăn nhỏ, chợ địa phương và đền chùa chỉ nhận tiền mặt. Thẻ IC như Suica/Pasmo rất tiện cho tàu điện và mua đồ ở konbini, nên nạp tiền vào đó."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Tỷ giá tốt nhất thường có khi rút Yên trực tiếp từ ATM bằng thẻ ghi nợ quốc tế. Đổi sẵn một ít Yên ở Việt Nam để có tiền dùng ngay khi tới nơi, phần còn lại rút tại Nhật. Tránh đổi số lượng lớn ở khách sạn vì tỷ giá kém."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay Narita, Haneda, Kansai có tỷ giá kém và phí cao hơn trong thành phố. Chỉ nên đổi số nhỏ đủ đi tàu hoặc taxi về khách sạn. Ưu tiên rút tiền tại ATM của 7-Eleven hoặc Japan Post ngay tại sân bay để được tỷ giá tốt hơn."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Không phải ATM nào ở Nhật cũng nhận thẻ nước ngoài; hãy tìm ATM của 7-Eleven (7-Bank) hoặc bưu điện Japan Post, hai nơi chấp nhận thẻ quốc tế tốt nhất. Chúng có giao diện tiếng Anh và hoạt động gần như 24/7 tại konbini. Báo trước cho ngân hàng của bạn về việc đi nước ngoài để thẻ không bị khóa."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Nhật Bản KHÔNG có văn hóa tip; tip thậm chí có thể bị coi là khiếm nhã hoặc gây bối rối. Dịch vụ tốt là điều mặc định, đã tính trong giá. Đừng để lại tiền thừa trên bàn nhà hàng hay đưa thêm cho tài xế taxi."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Nhật rất an toàn, lừa đảo hiếm gặp, nhưng cảnh giác ở khu giải trí về đêm như Kabukicho (Tokyo) với các quán mời chào kiểu \"bắt khách\" tính giá cắt cổ. Tránh để người lạ dẫn vào quán bar không rõ bảng giá. Luôn kiểm tra hóa đơn trước khi thanh toán ở những nơi này."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Nên giữ trong người khoảng tiền mặt đủ chi tiêu 1-2 ngày cho ăn uống, đi lại lặt vặt và những nơi không nhận thẻ. Vì Nhật rất an toàn nên mang tiền mặt khá thoải mái, nhưng vẫn nên chia tiền ra nhiều nơi. Rút bổ sung tại konbini khi cần thay vì cầm quá nhiều một lúc."
+      }
+    ],
+    "quick_tips": [
+      "Sắm thẻ IC Suica/Pasmo để đi tàu và mua đồ ở konbini nhanh gọn.",
+      "Luôn thủ sẵn tiền mặt vì nhiều quán nhỏ và đền chùa không nhận thẻ.",
+      "Rút tiền ở ATM 7-Eleven hoặc Japan Post để được tỷ giá tốt nhất.",
+      "Đừng tip ở bất cứ đâu, kể cả nhà hàng và taxi.",
+      "Giữ một ví riêng đựng xu vì bạn sẽ dùng xu rất nhiều."
+    ]
+  },
+  {
+    "code": "TH",
+    "country_vi": "Thái Lan",
+    "currency_code": "THB",
+    "intro": "Thái Lan dùng đồng Baht (฿), một đồng tiền dễ đổi và phổ biến với du khách Việt. Tiền mặt vẫn là vua ở chợ, quán ăn đường phố và các tỉnh, dù thanh toán quét mã QR đang lan rộng. Du khách nên kết hợp tiền mặt với thẻ để chủ động.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Baht Thái (THB, ký hiệu ฿), mỗi baht chia thành 100 satang nhưng satang gần như không dùng. Tiền giấy gồm 20, 50, 100, 500 và 1.000 baht, mỗi mệnh giá một màu khác nhau. Tiền xu gồm 1, 2, 5 và 10 baht, tiện cho xe buýt và xe songthaew."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ được chấp nhận ở trung tâm thương mại, khách sạn và nhà hàng lớn tại Bangkok, Phuket, Chiang Mai. Nhưng chợ đêm, quán ăn đường phố, tuk-tuk và đảo nhỏ gần như chỉ nhận tiền mặt. Luôn mang đủ tiền lẻ vì nhiều nơi không thối được tờ 1.000 baht."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Các quầy đổi tiền chuyên nghiệp như SuperRich (màu cam/xanh) ở Bangkok nổi tiếng tỷ giá rất tốt, hơn hẳn ngân hàng và khách sạn. Mang theo USD tờ mới, mệnh giá lớn để được tỷ giá cao hơn. Đổi tiền tại các quầy này thay vì đổi sẵn quá nhiều ở Việt Nam."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ngay sảnh đến sân bay Suvarnabhumi và Don Mueang có tỷ giá kém. Chỉ đổi số nhỏ đủ đi taxi về trung tâm. Tầng dưới (tầng đi/trệt) của sân bay đôi khi có quầy tỷ giá tốt hơn sảnh đến, hoặc chờ vào thành phố đổi ở SuperRich."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM ở Thái Lan thu phí cố định khá cao cho mỗi lần rút bằng thẻ nước ngoài, cộng thêm phí của ngân hàng bạn. Vì vậy nên rút số tiền lớn mỗi lần để giảm số lần chịu phí. Khi máy hỏi chọn tỷ giá, luôn từ chối quy đổi sang VND/USD (chọn tính bằng THB) để tránh tỷ giá xấu."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip ở Thái Lan không bắt buộc nhưng được hoan nghênh cho dịch vụ tốt. Ở nhà hàng, làm tròn hóa đơn hoặc để lại vài chục baht là đủ; nhiều nơi đã tính phí dịch vụ. Với massage, hướng dẫn viên hay khuân vác hành lý, tip một khoản nhỏ là lịch sự."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Cảnh giác chiêu tuk-tuk hoặc taxi rủ \"tour rẻ\" rồi chở tới tiệm vàng, may đo để ăn hoa hồng; hãy yêu cầu dùng đồng hồ tính cước (meter). Trò \"điểm tham quan đóng cửa, để tôi đưa anh chỗ khác\" thường là lừa. Đếm kỹ tiền thối và đừng đưa tờ tiền mệnh giá lớn cho người bán hàng rong khi mua món rẻ."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Nên cầm theo lượng tiền mặt đủ chi tiêu trong ngày cho ăn uống đường phố, đi lại và mua sắm chợ. Vì phí ATM cao, hãy rút khoản lớn rồi cất an toàn trong khách sạn, chỉ mang theo phần cần dùng. Giữ nhiều tiền lẻ 20-100 baht để trả tuk-tuk, hàng rong và tip."
+      }
+    ],
+    "quick_tips": [
+      "Đổi tiền ở SuperRich tại Bangkok để có tỷ giá tốt nhất.",
+      "Mang USD tờ mới mệnh giá lớn sẽ được tỷ giá cao hơn.",
+      "Rút ATM số tiền lớn mỗi lần vì phí cố định khá cao.",
+      "Luôn yêu cầu taxi/tuk-tuk dùng đồng hồ tính cước và đếm kỹ tiền thối.",
+      "Thủ nhiều tiền lẻ vì hàng rong khó thối tờ 500-1.000 baht."
+    ]
+  },
+  {
+    "code": "US",
+    "country_vi": "Hoa Kỳ",
+    "currency_code": "USD",
+    "intro": "Hoa Kỳ dùng đồng Đô la Mỹ (USD, $), đồng tiền dự trữ phổ biến nhất thế giới. Đây là xã hội gần như không tiền mặt: thẻ tín dụng dùng cho mọi thứ, nhưng tip lại là phần chi phí bắt buộc về mặt văn hóa. Du khách cần hiểu rõ thuế và tip vì chúng không có trong giá niêm yết.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Đô la Mỹ (USD, $), mỗi đô chia thành 100 cent. Tiền giấy gồm 1, 5, 10, 20, 50 và 100 đô, tất cả cùng kích thước và màu xanh lục nên dễ nhầm. Tiền xu gồm penny (1¢), nickel (5¢), dime (10¢) và quarter (25¢); quarter rất hữu ích cho máy tự động và bãi đỗ xe."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ tín dụng và thẻ ghi nợ được chấp nhận gần như ở mọi nơi, kể cả khoản nhỏ; thanh toán không tiếp xúc và Apple/Google Pay rất phổ biến. Bạn có thể đi cả chuyến mà gần như không cần tiền mặt. Tuy vậy hãy giữ ít tiền mặt cho tip, xe đẩy hành lý và vài chỗ nhỏ chỉ nhận tiền mặt."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách lợi nhất là dùng thẻ tín dụng không tính phí giao dịch quốc tế cho mọi chi tiêu, vì tỷ giá thẻ rất sát thị trường. Nếu cần tiền mặt, rút USD tại ATM ngân hàng lớn thay vì đổi tiền mặt. Đổi sẵn một ít USD ở Việt Nam để có ngay khi tới, nhưng đừng đổi quá nhiều."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Vì bạn vốn dùng USD, không cần đổi tiền tại Mỹ, nên các quầy như Travelex ở sân bay hầu như chỉ dành cho người đổi ngoại tệ khác và tỷ giá rất xấu. Đừng đổi tiền ở đó. Nếu cần thêm tiền mặt, dùng ATM ngân hàng trong sảnh sân bay."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Ưu tiên ATM của các ngân hàng lớn (Chase, Bank of America, Wells Fargo) thay vì máy ATM lẻ ở cửa hàng tiện lợi vốn thu phí rất cao. Mỗi lần rút thường mất một khoản phí cố định, nên rút lượng vừa đủ và hợp lý. Khi được hỏi, luôn chọn tính bằng USD chứ đừng cho máy quy đổi."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip ở Mỹ gần như bắt buộc và là thu nhập chính của nhân viên phục vụ: nhà hàng phục vụ tại bàn thường tip 15-20% trên tổng tiền trước thuế. Cũng tip cho tài xế taxi/Uber, bartender (1-2 đô mỗi ly), nhân viên khuân hành lý và dọn phòng khách sạn. Không tip hoặc tip quá ít bị xem là thô lỗ."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Giá niêm yết KHÔNG bao gồm thuế bán hàng, nên hóa đơn cuối luôn cao hơn bảng giá; hãy tính nhẩm thêm. Một số nhà hàng tự cộng sẵn \"service charge\" rồi vẫn để ô tip trống, hãy đọc kỹ để khỏi tip hai lần. Cảnh giác máy ATM lạ gắn thiết bị đánh cắp thẻ (skimmer) ở khu du lịch."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì thẻ dùng được khắp nơi, chỉ cần mang một lượng tiền mặt nhỏ chủ yếu để tip và các khoản lặt vặt. Giữ sẵn nhiều tờ 1 và 5 đô để tip cho tiện. Đừng cầm nhiều tiền mặt vì ít dùng tới và rủi ro mất mát cao hơn lợi ích."
+      }
+    ],
+    "quick_tips": [
+      "Dùng thẻ tín dụng không phí giao dịch quốc tế cho gần như mọi chi tiêu.",
+      "Luôn nhớ giá niêm yết chưa gồm thuế, hóa đơn sẽ cao hơn.",
+      "Thủ sẵn nhiều tờ 1 và 5 đô để tip dễ dàng.",
+      "Tip 15-20% ở nhà hàng phục vụ tại bàn là chuẩn mực.",
+      "Rút tiền ở ATM ngân hàng lớn, tránh máy ATM lẻ trong cửa hàng."
+    ]
+  },
+  {
+    "code": "GB",
+    "country_vi": "Anh",
+    "currency_code": "GBP",
+    "intro": "Vương quốc Anh dùng đồng Bảng Anh (£), không dùng Euro dù thuộc châu Âu. Đây là một trong những nơi tiến gần nhất tới không tiền mặt: thanh toán không tiếp xúc gần như ở mọi nơi. Du khách có thể đi cả chuyến chỉ với một chiếc thẻ.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Bảng Anh (GBP, ký hiệu £), mỗi bảng chia thành 100 pence (penny). Tiền giấy phổ biến gồm 5, 10, 20 và 50 bảng (loại polymer hiện đại). Tiền xu gồm 1p, 2p, 5p, 10p, 20p, 50p, 1 bảng và 2 bảng; lưu ý Scotland phát hành tờ tiền riêng vẫn hợp lệ."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ và thanh toán không tiếp xúc được chấp nhận gần như mọi nơi, kể cả xe buýt, tàu điện ngầm London và quán nhỏ. Apple/Google Pay rất phổ biến và tiện. Tiền mặt giờ ít cần, nhưng vẫn nên có ít bảng lẻ cho chợ phiên, tip hay vài quán pub nhỏ."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách lợi nhất là dùng thẻ ghi nợ/tín dụng không phí giao dịch quốc tế và để tỷ giá thẻ tự áp dụng. Nếu cần tiền mặt, rút trực tiếp từ ATM (cash machine). Tránh đổi nhiều tiền mặt vì bạn sẽ hiếm khi dùng tới ở Anh."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở Heathrow, Gatwick có tỷ giá rất tệ và đôi khi thu thêm phí hoa hồng. Tuyệt đối đừng đổi số lớn ở đây. Vì thẻ dùng được khắp nơi, tốt nhất bỏ qua quầy đổi tiền và rút một ít từ ATM nếu thật sự cần."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM của các ngân hàng lớn thường miễn phí rút tiền (ghi \"free cash withdrawals\"), nhưng vẫn có thể bị ngân hàng của bạn ở Việt Nam tính phí. Tránh các máy ATM tư nhân màu sắc lạ trong cửa hàng tiện lợi vì chúng thu phí. Luôn chọn tính bằng GBP khi máy hỏi để khỏi bị tỷ giá xấu."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip ở Anh khiêm tốn hơn Mỹ nhiều. Ở nhà hàng phục vụ tại bàn, tip khoảng 10-12,5% nếu chưa có \"service charge\" trên hóa đơn; nếu đã có thì không cần thêm. Ở pub khi gọi đồ tại quầy thì không tip; taxi thường chỉ làm tròn tiền."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Khi quẹt thẻ hoặc rút ATM, luôn từ chối \"dynamic currency conversion\" (đề nghị tính bằng VND/USD) vì tỷ giá rất xấu. Một số nhà hàng tự cộng \"service charge\" rồi vẫn để ô tip, hãy đọc kỹ. Cảnh giác móc túi ở khu đông như Oxford Street, ga tàu và các điểm du lịch."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Chỉ cần mang một lượng tiền mặt nhỏ vì thẻ dùng được gần như mọi nơi. Vài chục bảng đủ cho tip, chợ phiên và những chỗ hiếm hoi chỉ nhận tiền mặt. Đừng cầm nhiều bảng tiền mặt vì sẽ thừa và khó tiêu hết."
+      }
+    ],
+    "quick_tips": [
+      "Anh dùng Bảng (£), KHÔNG dùng Euro dù ở châu Âu.",
+      "Thanh toán không tiếp xúc dùng được khắp nơi, kể cả tàu và xe buýt.",
+      "Luôn từ chối quy đổi sang VND/USD khi quẹt thẻ hoặc rút ATM.",
+      "Tip nhà hàng chỉ ~10-12,5%, và bỏ qua nếu đã có service charge.",
+      "Bỏ qua quầy đổi tiền sân bay, dùng thẻ và rút ATM ngân hàng lớn."
+    ]
+  },
+  {
+    "code": "FR",
+    "country_vi": "Pháp",
+    "currency_code": "EUR",
+    "intro": "Pháp dùng đồng Euro (€), chung với phần lớn châu Âu nên rất tiện nếu bạn đi nhiều nước. Thẻ được chấp nhận rộng rãi, nhưng tiền mặt vẫn hữu ích ở chợ, tiệm bánh và quán nhỏ. Du khách nên kết hợp thẻ và một ít tiền mặt.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Euro (EUR, ký hiệu €), mỗi euro chia thành 100 cent. Tiền giấy gồm 5, 10, 20, 50, 100, 200 euro; tờ 200 và 500 hiếm và nhiều nơi ngại nhận. Tiền xu gồm 1, 2, 5, 10, 20, 50 cent và 1, 2 euro, dùng nhiều cho tiệm bánh và quán cà phê."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ Visa/Mastercard và thanh toán không tiếp xúc được chấp nhận ở hầu hết cửa hàng, nhà hàng và siêu thị. Tuy nhiên một số tiệm nhỏ, chợ trời và quán có quy định số tiền tối thiểu mới cho quẹt thẻ. Giữ ít tiền mặt cho bánh mì, cà phê, tip và chợ."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách lợi nhất là dùng thẻ không phí giao dịch quốc tế hoặc rút Euro từ ATM ngân hàng. Nếu mua tiền mặt, các văn phòng đổi tiền (bureau de change) ở trung tâm Paris cạnh tranh hơn khách sạn. Đổi sẵn một ít Euro ở Việt Nam để dùng ngay, phần còn lại rút tại Pháp."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở Charles de Gaulle và Orly có tỷ giá kém và phí cao. Chỉ đổi số nhỏ đủ đi tàu RER hoặc taxi về trung tâm. Tốt hơn là rút Euro từ ATM ngân hàng ngay tại sân bay để được tỷ giá sát thực tế hơn."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Ưu tiên ATM gắn với ngân hàng thật (BNP Paribas, Société Générale, Crédit Agricole) thay vì máy Euronet màu xanh/vàng vốn thu phí cao và đẩy tỷ giá xấu. Khi máy đề nghị quy đổi sang VND, luôn chọn \"không\" để tính bằng EUR. Báo trước cho ngân hàng để thẻ không bị khóa."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Ở Pháp, phí dịch vụ (\"service compris\") đã bao gồm trong giá theo luật, nên tip không bắt buộc. Nếu hài lòng, để lại tiền lẻ hoặc làm tròn vài euro ở nhà hàng là đủ và được đánh giá lịch sự. Với cà phê hay quán nhỏ, để lại ít xu là được."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Paris nổi tiếng móc túi ở metro, tháp Eiffel, Louvre và Montmartre, hãy giữ chặt ví và túi. Cảnh giác trò \"nhặt được nhẫn vàng\", \"ký tên ủng hộ\" hay vòng tay buộc tay ở Sacré-Cœur rồi đòi tiền. Luôn từ chối dynamic currency conversion khi quẹt thẻ và đếm kỹ tiền thối."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Một lượng tiền mặt vừa phải đủ cho ăn uống, chợ và chi tiêu nhỏ trong 1-2 ngày là hợp lý, phần lớn còn lại dùng thẻ. Vì có rủi ro móc túi, đừng cầm nhiều tiền mặt và nên chia ra nhiều nơi. Rút bổ sung khi cần thay vì cầm quá nhiều một lúc."
+      }
+    ],
+    "quick_tips": [
+      "Rút Euro ở ATM ngân hàng thật, tránh máy Euronet phí cao.",
+      "Phí dịch vụ đã gồm trong giá nên tip chỉ là làm tròn tùy tâm.",
+      "Cảnh giác móc túi và các trò xin tiền quanh điểm du lịch Paris.",
+      "Luôn từ chối quy đổi sang VND khi quẹt thẻ hoặc rút tiền.",
+      "Giữ tiền xu và tờ nhỏ cho tiệm bánh, cà phê và chợ trời."
+    ]
+  },
+  {
+    "code": "IT",
+    "country_vi": "Ý",
+    "currency_code": "EUR",
+    "intro": "Ý dùng đồng Euro (€) như nhiều nước châu Âu khác. Thẻ ngày càng phổ biến, nhưng Ý vẫn chuộng tiền mặt hơn ở quán nhỏ, vùng nông thôn và miền Nam. Du khách nên luôn có sẵn tiền mặt bên mình.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Euro (EUR, ký hiệu €), mỗi euro chia thành 100 cent. Tiền giấy gồm 5, 10, 20, 50, 100, 200 euro; tờ 100 trở lên đôi khi bị quán nhỏ từ chối. Tiền xu gồm 1, 2, 5, 10, 20, 50 cent và 1, 2 euro, rất cần cho cà phê espresso và vé."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ và thanh toán không tiếp xúc được chấp nhận ở thành phố lớn và nơi du lịch, nhưng nhiều quán cà phê, trattoria gia đình và cửa hàng nhỏ vẫn thích hoặc chỉ nhận tiền mặt. Một số nơi đặt mức tối thiểu mới cho quẹt thẻ. Luôn mang tiền mặt, nhất là khi ra ngoài thành phố lớn."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách lợi nhất là dùng thẻ không phí giao dịch quốc tế và rút Euro từ ATM (bancomat) của ngân hàng. Tránh các quầy đổi tiền (cambio) ở khu du lịch vì tỷ giá xấu và phí ẩn. Đổi sẵn ít Euro ở Việt Nam để dùng ngay khi tới."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở Fiumicino (Rome), Malpensa (Milan) có tỷ giá kém. Chỉ đổi số nhỏ đủ đi tàu Leonardo Express hoặc taxi. Ưu tiên rút Euro từ ATM ngân hàng tại sân bay thay vì đổi tiền mặt ở quầy cambio."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Tìm ATM (bancomat) gắn với ngân hàng thật như Intesa Sanpaolo, UniCredit thay vì máy Euronet vốn thu phí cao và áp tỷ giá xấu. Khi máy hỏi quy đổi sang VND, luôn chọn tính bằng EUR. Rút vào ban ngày tại máy trong sảnh ngân hàng để an toàn hơn."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip ở Ý không bắt buộc và khiêm tốn. Nhiều nhà hàng tính sẵn \"coperto\" (phí phục vụ/khăn bàn) trên hóa đơn, nên bạn không cần tip thêm nhiều; làm tròn hoặc để lại vài euro là đủ. Ở quầy bar uống cà phê đứng thì không cần tip."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Coi chừng nhà hàng khu du lịch quanh đấu trường Colosseo hay quảng trường lớn tính \"coperto\" cao hoặc thực đơn không ghi giá; hãy hỏi giá trước. Móc túi rất nhiều ở Rome, metro và quanh nhà ga Termini. Cảnh giác trò buộc vòng tay ép tiền và người chèo kéo bán đồ ở điểm du lịch."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Nên cầm theo lượng tiền mặt đủ chi tiêu trong ngày cho cà phê, ăn uống và những quán chỉ nhận tiền mặt, đặc biệt khi đi tỉnh nhỏ. Vì có rủi ro móc túi, chia tiền ra nhiều nơi và đừng cầm quá nhiều. Rút bổ sung từ bancomat khi cần."
+      }
+    ],
+    "quick_tips": [
+      "Luôn mang tiền mặt vì nhiều quán nhỏ và miền Nam chuộng tiền mặt.",
+      "Rút Euro ở bancomat ngân hàng thật, tránh máy Euronet.",
+      "Kiểm tra hóa đơn xem có phí \"coperto\" để khỏi tip thừa.",
+      "Cảnh giác móc túi quanh ga Termini và các điểm du lịch ở Rome.",
+      "Hỏi giá trước ở nhà hàng khu du lịch để tránh hóa đơn cắt cổ."
+    ]
+  },
+  {
+    "code": "ES",
+    "country_vi": "Tây Ban Nha",
+    "currency_code": "EUR",
+    "intro": "Tây Ban Nha dùng đồng Euro và là điểm đến rất thân thiện với thẻ. Hầu hết nhà hàng, cửa hàng và phương tiện công cộng đều chấp nhận thẻ tín dụng/ghi nợ, kể cả những giao dịch nhỏ. Bạn chỉ cần mang ít tiền mặt để phòng các quán nhỏ, chợ hoặc tip.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Euro (EUR), ký hiệu €, 1 Euro = 100 cent. Tiền giấy có các mệnh giá 5, 10, 20, 50, 100, 200 và 500 €, nhưng tờ 200 và 500 hiếm gặp và nhiều nơi từ chối nhận. Tiền xu gồm 1, 2, 5, 10, 20, 50 cent và 1, 2 €."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Visa và Mastercard được chấp nhận gần như mọi nơi; American Express ít phổ biến hơn. Thanh toán không tiếp xúc (contactless) và ví điện thoại như Apple Pay, Google Pay rất thông dụng. Nên giữ một ít tiền mặt cho quán bar nhỏ, chợ truyền thống và các thị trấn nhỏ."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách lợi nhất thường là rút Euro trực tiếp từ ATM bằng thẻ ghi nợ có phí quốc tế thấp, hoặc thanh toán thẳng bằng thẻ. Tránh đổi nhiều tiền mặt ở Việt Nam với tỷ giá xấu rồi mang theo. Nếu cần đổi, hãy so sánh tỷ giá ở vài nơi và hỏi rõ phí trước khi giao dịch."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay và khu du lịch thường có tỷ giá rất tệ kèm phí cao ẩn. Chỉ nên đổi một khoản nhỏ đủ đi tàu, taxi về trung tâm nếu thật sự cần. Sau đó dùng ATM của ngân hàng trong thành phố sẽ lợi hơn nhiều."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Ưu tiên ATM gắn liền với ngân hàng lớn (như CaixaBank, BBVA, Santander) thay vì các máy độc lập màu mè kiểu Euronet vì chúng tính phí và tỷ giá xấu. Khi máy hỏi 'có muốn quy đổi sang tiền của bạn không' (DCC), luôn chọn KHÔNG, tức tính bằng Euro. Rút số tiền lớn hơn một lần để giảm số lần chịu phí."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc ở Tây Ban Nha và người địa phương thường tip rất ít. Ở nhà hàng, làm tròn hóa đơn hoặc để lại vài Euro là đủ; bữa ăn lớn có thể để 5-10%. Taxi chỉ cần làm tròn tiền lẻ."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Cảnh giác móc túi ở khu đông như Barcelona (Las Ramblas), tàu điện ngầm và quanh các điểm du lịch. Một số quán ở khu du lịch có 'menu giá khách Tây' đắt hơn, nên hỏi giá trước. Coi chừng máy ATM bị gắn thiết bị skimming và luôn che tay khi nhập mã PIN."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Mang khoảng 50-100 € tiền mặt cho mỗi vài ngày đầu là đủ vì thẻ dùng được khắp nơi. Phần lớn chi tiêu nên thanh toán bằng thẻ và rút thêm tiền mặt từ ATM khi cần. Không cần ôm theo nhiều tiền mặt vì rủi ro mất cắp cao hơn lợi ích."
+      }
+    ],
+    "quick_tips": [
+      "Luôn chọn thanh toán bằng Euro, từ chối DCC khi máy hỏi quy đổi sang tiền nước bạn.",
+      "Dùng ATM của ngân hàng lớn, tránh máy Euronet độc lập.",
+      "Mang theo thẻ contactless hoặc Apple/Google Pay để tiện và an toàn.",
+      "Giữ tiền mặt và thẻ ở hai chỗ khác nhau để phòng móc túi.",
+      "Đổi tối thiểu ở sân bay, rút tiền trong thành phố sẽ lợi hơn."
+    ]
+  },
+  {
+    "code": "DE",
+    "country_vi": "Đức",
+    "currency_code": "EUR",
+    "intro": "Đức dùng đồng Euro nhưng văn hóa tiền mặt vẫn rất mạnh so với nhiều nước châu Âu khác. Nhiều quán ăn, tiệm bánh, chợ và cửa hàng nhỏ vẫn ưu tiên hoặc chỉ nhận tiền mặt. Vì vậy ở Đức bạn nên luôn có sẵn một ít tiền mặt trong người.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Euro (EUR), ký hiệu €, 1 Euro = 100 cent. Tiền giấy gồm 5, 10, 20, 50, 100, 200, 500 €, trong đó tờ lớn 200 và 500 ít dùng. Tiền xu gồm 1, 2, 5, 10, 20, 50 cent và 1, 2 €, người Đức dùng tiền xu khá nhiều."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Khác với suy nghĩ chung, nhiều nơi ở Đức vẫn thích tiền mặt và một số quán nhỏ không nhận thẻ tín dụng. Thẻ ghi nợ (Girocard) phổ biến với người địa phương; Visa/Mastercard được chấp nhận ở siêu thị, khách sạn, cửa hàng lớn. Luôn hỏi 'có nhận thẻ không' trước khi gọi món ở quán nhỏ."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách lợi nhất là rút Euro từ ATM bằng thẻ có phí quốc tế thấp, hoặc dùng thẻ ở nơi chấp nhận. Hạn chế đổi tiền mặt ở Việt Nam với tỷ giá kém. Nếu cần đổi, so sánh vài quầy và hỏi rõ phí, tránh quầy ở khu du lịch."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi ở sân bay Frankfurt, Munich, Berlin thường tỷ giá xấu và phí cao. Chỉ đổi một khoản nhỏ để đi tàu hoặc taxi nếu cần. Tốt nhất là rút tiền tại ATM ngân hàng khi vào thành phố."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Ưu tiên ATM của ngân hàng lớn như Sparkasse, Deutsche Bank, Commerzbank, Volksbank. Tránh máy độc lập như Euronet vì phí cao và tỷ giá xấu. Khi máy hỏi quy đổi sang tiền nước bạn (DCC), luôn chọn tính bằng Euro."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip ở Đức là thông lệ nhưng khiêm tốn, thường làm tròn lên hoặc thêm khoảng 5-10% ở nhà hàng. Cách tip thông dụng là nói tổng số tiền muốn trả khi đưa tiền cho phục vụ, chứ không để tiền trên bàn rồi đi. Với taxi và quán cà phê chỉ cần làm tròn tiền lẻ."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Đức tương đối an toàn nhưng vẫn có móc túi ở ga tàu lớn và khu du lịch đông. Cảnh giác trò 'ký tên ủng hộ' hoặc người giả vờ nhờ giúp để phân tâm. Luôn che tay khi nhập PIN ở ATM và kiểm tra hóa đơn ở quán đông khách."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì văn hóa tiền mặt mạnh, nên luôn giữ khoảng 80-150 € trong người. Dùng tiền mặt cho quán ăn nhỏ, chợ, nhà vệ sinh công cộng (thường mất phí) và tip. Thẻ vẫn nên dùng cho khoản lớn ở siêu thị, khách sạn."
+      }
+    ],
+    "quick_tips": [
+      "Luôn mang tiền mặt vì nhiều quán nhỏ ở Đức không nhận thẻ.",
+      "Hỏi 'nhận thẻ không' trước khi gọi món để khỏi bất ngờ.",
+      "Khi tip, nói tổng số tiền muốn trả lúc đưa tiền cho phục vụ.",
+      "Giữ tiền lẻ cho nhà vệ sinh công cộng thường thu phí.",
+      "Dùng ATM ngân hàng lớn và từ chối DCC để tránh tỷ giá xấu."
+    ]
+  },
+  {
+    "code": "KR",
+    "country_vi": "Hàn Quốc",
+    "currency_code": "KRW",
+    "intro": "Hàn Quốc gần như là xã hội không tiền mặt, thẻ dùng được ở khắp nơi kể cả những giao dịch vài nghìn won. Hầu hết quán ăn, cửa hàng tiện lợi, taxi và tàu điện đều nhận thẻ. Bạn chỉ cần một ít tiền mặt cho chợ truyền thống và vài quán nhỏ.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Won Hàn Quốc (KRW), ký hiệu ₩, không có đơn vị nhỏ hơn dùng trong thực tế. Tiền giấy gồm 1.000, 5.000, 10.000 và 50.000 won. Tiền xu gồm 10, 50, 100 và 500 won."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ tín dụng/ghi nợ quốc tế (Visa, Mastercard) được chấp nhận rộng rãi, kể cả tại cửa hàng tiện lợi và taxi. Thanh toán contactless và ví điện thoại khá phổ biến. Một thẻ rất tiện là thẻ giao thông T-money để đi tàu điện, xe buýt và mua đồ ở cửa hàng tiện lợi, nạp tiền dễ dàng."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Ở Seoul, các quầy đổi tiền tư nhân tại khu Myeongdong hoặc Itaewon thường cho tỷ giá tốt hơn ngân hàng và sân bay. Cách tiện khác là rút won từ ATM hỗ trợ thẻ quốc tế hoặc thanh toán thẳng bằng thẻ. So sánh vài quầy và hỏi rõ có thu thêm phí không."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay Incheon có tỷ giá kém hơn các quầy trong thành phố. Chỉ nên đổi một khoản nhỏ đủ đi tàu AREX hoặc mua thẻ T-money. Để dành phần lớn đổi tại các quầy ở Myeongdong sẽ lợi hơn."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Tìm ATM ghi rõ 'Global' hoặc có logo Visa/Mastercard/Plus/Cirrus, thường có ở cửa hàng tiện lợi (GS25, CU, 7-Eleven) và ngân hàng. Không phải ATM nào cũng nhận thẻ nước ngoài nên hãy thử máy có nhãn quốc tế. Chọn tính bằng Won, từ chối DCC khi máy hỏi quy đổi."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Hàn Quốc về cơ bản không có văn hóa tip và bạn không cần để lại tiền boa ở nhà hàng hay taxi. Một số khách sạn cao cấp đã tính sẵn phí phục vụ vào hóa đơn. Cố tip đôi khi còn khiến nhân viên bối rối."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Hàn Quốc rất an toàn và lừa đảo tiền bạc hiếm gặp, nhưng vẫn nên cẩn thận ở khu du lịch đông. Một vài quán bar về đêm ở Itaewon, Hongdae có thể tính giá mập mờ nên hỏi giá trước khi gọi. Luôn từ chối DCC ở ATM và máy POS để khỏi chịu tỷ giá xấu."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì thẻ dùng được gần như mọi nơi, chỉ cần mang khoảng 50.000-100.000 won tiền mặt. Dùng tiền mặt cho chợ truyền thống, quán hàng rong và vài tiệm nhỏ chỉ nhận tiền mặt. Rút thêm từ ATM quốc tế khi cần."
+      }
+    ],
+    "quick_tips": [
+      "Mua thẻ T-money để đi tàu, xe buýt và mua đồ ở cửa hàng tiện lợi.",
+      "Đổi tiền ở quầy Myeongdong thường lợi hơn sân bay và ngân hàng.",
+      "Dùng ATM có nhãn 'Global' tại cửa hàng tiện lợi để rút bằng thẻ nước ngoài.",
+      "Không cần tip; cố tip có thể khiến nhân viên lúng túng.",
+      "Luôn chọn tính bằng Won và từ chối DCC khi thanh toán."
+    ]
+  },
+  {
+    "code": "CN",
+    "country_vi": "Trung Quốc",
+    "currency_code": "CNY",
+    "intro": "Trung Quốc là xã hội thanh toán di động bậc nhất thế giới, nơi Alipay và WeChat Pay được dùng cho gần như mọi thứ. Tiền mặt và thẻ quốc tế đôi khi bị từ chối ở quán nhỏ, nên cài và liên kết được hai ví này là chìa khóa. Du khách giờ đã có thể gắn thẻ Visa/Mastercard vào hai ví này để thanh toán.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Nhân Dân Tệ (CNY), còn gọi là Renminbi, ký hiệu ¥, đơn vị nói thường là 'kuai'. Tiền giấy gồm 1, 5, 10, 20, 50 và 100 nhân dân tệ. Còn có đơn vị nhỏ 'jiao' (1 nhân dân tệ = 10 jiao) nhưng ngày càng ít dùng."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thực tế hằng ngày chủ yếu dùng Alipay và WeChat Pay quét mã QR; thẻ tín dụng quốc tế chỉ được chấp nhận ở khách sạn lớn và một số nơi cao cấp. Du khách nên cài hai ví và liên kết thẻ nước ngoài trước hoặc ngay khi đến. Luôn giữ một ít tiền mặt vì theo luật nơi bán vẫn phải nhận tiền mặt dù nhiều chỗ ngại nhận."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Cách thực dụng nhất là dùng Alipay/WeChat Pay liên kết thẻ quốc tế và để hệ thống tự quy đổi. Nếu cần tiền mặt, đổi tại ngân hàng lớn như Bank of China thường cho tỷ giá chính thức minh bạch. Mang theo hộ chiếu vì đổi tiền tại ngân hàng yêu cầu xuất trình giấy tờ."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay có tỷ giá kém và phí cao. Chỉ đổi một khoản nhỏ đủ đi taxi hoặc tàu nếu cần. Phần lớn chi tiêu nên qua ví di động, còn đổi tiền mặt thì làm tại ngân hàng trong thành phố."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM của Bank of China, ICBC và các ngân hàng lớn thường nhận thẻ quốc tế có logo Visa/Mastercard/Plus/Cirrus. Có thể có giới hạn rút mỗi lần và phí, nên rút khoản lớn hơn để đỡ phí. Chọn tính bằng nhân dân tệ, từ chối DCC khi máy hỏi quy đổi."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Trung Quốc truyền thống không có văn hóa tip và đa số nơi không mong đợi tiền boa. Ở nhà hàng bình dân và taxi không cần tip. Một số khách sạn quốc tế hoặc tour hướng dẫn dành cho khách nước ngoài có thể nhận tip nhỏ."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Cảnh giác trò 'mời uống trà' hay 'mời đi quán bar' ở khu du lịch như Bắc Kinh, Thượng Hải, nơi khách bị dắt vào chỗ tính hóa đơn cắt cổ. Coi chừng tiền giả khi nhận tiền thối, nhất là tờ 100. Chỉ đi taxi có đồng hồ chính hãng hoặc đặt qua app như DiDi để tránh chặt chém."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì ví di động thống trị, chỉ cần mang khoảng 300-500 nhân dân tệ tiền mặt phòng nơi không quét được mã. Ưu tiên thanh toán qua Alipay/WeChat Pay cho hầu hết giao dịch. Giữ tiền mặt nhỏ lẻ cho quán hàng rong và xe ôm/taxi cũ."
+      }
+    ],
+    "quick_tips": [
+      "Cài Alipay và WeChat Pay, liên kết thẻ Visa/Mastercard trước chuyến đi.",
+      "Mang theo hộ chiếu để đổi tiền và đăng ký ví thanh toán.",
+      "Đặt taxi qua app DiDi để tránh bị chặt chém.",
+      "Tránh trò 'mời uống trà' hoặc dắt vào quán bar ở khu du lịch.",
+      "Kiểm tra tiền thối, cảnh giác tiền giả với tờ 100 nhân dân tệ."
+    ]
+  },
+  {
+    "code": "TW",
+    "country_vi": "Đài Loan",
+    "currency_code": "TWD",
+    "intro": "Đài Loan vẫn là nơi tiền mặt đóng vai trò quan trọng, đặc biệt ở chợ đêm và quán ăn đường phố nổi tiếng. Thẻ được chấp nhận ở cửa hàng lớn, siêu thị và nhà hàng, nhưng nhiều hàng quán nhỏ chỉ nhận tiền mặt. Thẻ EasyCard rất tiện cho di chuyển và mua sắm nhỏ.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Tân Đài Tệ (TWD), ký hiệu NT$ hoặc $. Tiền giấy thông dụng gồm 100, 500 và 1.000, ngoài ra có 200 và 2.000 ít gặp hơn. Tiền xu gồm 1, 5, 10, 50 và đôi khi 20 Đài tệ."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Tiền mặt vẫn là vua ở chợ đêm, quán ăn nhỏ và taxi, nên luôn mang đủ trong người. Thẻ tín dụng dùng tốt ở trung tâm thương mại, khách sạn, siêu thị và cửa hàng tiện lợi. Nên sắm thẻ EasyCard (hoặc iPASS) để đi MRT, xe buýt và thanh toán ở cửa hàng tiện lợi."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Đổi tiền tại ngân hàng ở Đài Loan thường cho tỷ giá tốt và phí thấp, minh bạch. Sân bay Đào Viên cũng có quầy ngân hàng với tỷ giá khá hợp lý so với nhiều nước. Rút từ ATM bằng thẻ quốc tế cũng là lựa chọn tiện và sòng phẳng."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "So với nhiều nước, quầy ngân hàng ở sân bay Đài Loan có tỷ giá tương đối ổn, nhưng vẫn có phí giao dịch cố định mỗi lần. Vì vậy nên đổi một khoản đủ lớn một lần thay vì đổi nhiều lần nhỏ. Giữ lại biên lai đổi tiền để có thể đổi ngược khi rời đi."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM tại cửa hàng tiện lợi (7-Eleven, FamilyMart) và ngân hàng thường nhận thẻ quốc tế có logo Plus/Cirrus. Tìm máy ghi rõ chấp nhận thẻ nước ngoài và chọn ngôn ngữ tiếng Anh cho dễ. Từ chối DCC, chọn tính bằng Tân Đài Tệ để tránh tỷ giá xấu."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Đài Loan không có văn hóa tip và bạn không cần để tiền boa ở nhà hàng hay taxi. Nhiều nhà hàng lớn đã cộng sẵn 10% phí phục vụ vào hóa đơn. Không cần thêm tiền ngoài hóa đơn."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Đài Loan rất an toàn và lừa đảo tiền bạc với du khách hiếm gặp. Ở chợ đêm cứ hỏi giá trước khi mua đồ không niêm yết để khỏi hiểu lầm. Đi taxi nên dùng xe có đồng hồ hoặc đặt qua app để rõ ràng."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì chợ đêm và quán nhỏ chuộng tiền mặt, nên mang khoảng 2.000-4.000 Đài tệ trong người. Nạp thêm vào EasyCard để tiện di chuyển và mua sắm nhỏ. Dùng thẻ tín dụng cho khoản lớn ở trung tâm thương mại và khách sạn."
+      }
+    ],
+    "quick_tips": [
+      "Sắm thẻ EasyCard để đi MRT, xe buýt và mua đồ ở cửa hàng tiện lợi.",
+      "Luôn mang tiền mặt vì chợ đêm và quán nhỏ ít nhận thẻ.",
+      "Đổi một khoản lớn một lần để tiết kiệm phí giao dịch cố định.",
+      "Không cần tip; nhiều nhà hàng đã tính sẵn 10% phí phục vụ.",
+      "Rút tiền ở ATM cửa hàng tiện lợi và từ chối DCC."
+    ]
+  },
+  {
+    "code": "HK",
+    "country_vi": "Hồng Kông",
+    "currency_code": "HKD",
+    "intro": "Hồng Kông là trung tâm tài chính nên việc dùng thẻ và đổi tiền đều rất thuận tiện. Thẻ Octopus là vật bất ly thân của người dân, dùng cho tàu điện, xe buýt và vô số cửa hàng. Bạn nên kết hợp thẻ Octopus, thẻ tín dụng và một ít tiền mặt cho quán nhỏ.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là Đô la Hồng Kông (HKD), ký hiệu HK$. Tiền giấy gồm 10, 20, 50, 100, 500 và 1.000, do nhiều ngân hàng phát hành nên cùng mệnh giá có thể khác hình. Tiền xu gồm 10, 20, 50 cent và 1, 2, 5, 10 đô la."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ tín dụng được chấp nhận rộng rãi ở nhà hàng, cửa hàng và khách sạn, nhưng nhiều quán ăn địa phương (cha chaan teng) và quầy nhỏ chỉ nhận tiền mặt hoặc Octopus. Thẻ Octopus là cách tiện nhất cho di chuyển và mua sắm nhỏ, chỉ cần chạm là xong. Nên mang theo cả tiền mặt lẫn Octopus đã nạp tiền."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Khu Tsim Sha Tsui và Chungking Mansions nổi tiếng có nhiều quầy đổi tiền tư nhân với tỷ giá cạnh tranh, tốt hơn ngân hàng và sân bay. Luôn hỏi rõ tỷ giá cuối cùng và xác nhận không có phí ẩn trước khi đưa tiền. So sánh vài quầy gần nhau vì tỷ giá chênh nhau đáng kể."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay Hồng Kông có tỷ giá khá tệ và phí cao. Chỉ nên đổi một khoản nhỏ đủ đi Airport Express hoặc taxi và mua thẻ Octopus. Để dành phần lớn đổi tại các quầy ở Tsim Sha Tsui sẽ lợi hơn nhiều."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM của HSBC, Hang Seng, Bank of China và các ngân hàng lớn rất sẵn và nhận thẻ quốc tế. Chọn tính bằng Đô la Hồng Kông và từ chối DCC để khỏi chịu tỷ giá xấu. Che tay khi nhập PIN dù Hồng Kông nhìn chung an toàn."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc; nhiều nhà hàng đã cộng 10% phí phục vụ vào hóa đơn nên không cần thêm. Ở quán cao cấp có thể để lại tiền lẻ nếu hài lòng. Taxi chỉ cần làm tròn tiền lẻ cho tiện."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Ở các quầy đổi tiền, cảnh giác chiêu báo tỷ giá đẹp nhưng trừ phí cao lúc cuối, nên luôn xác nhận số tiền thực nhận. Một số tiệm điện tử ở khu du lịch (như Mong Kok) có thể nói thách hoặc đổi hàng, hãy mua nơi uy tín. Kiểm tra tiền thối vì có nhiều kiểu tờ tiền khác nhau."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Nên mang khoảng 500-1.000 HKD tiền mặt cộng với thẻ Octopus đã nạp sẵn. Tiền mặt và Octopus lo các quán địa phương và giao thông, còn thẻ tín dụng dùng cho khoản lớn. Nạp lại Octopus dễ dàng ở ga tàu và cửa hàng tiện lợi."
+      }
+    ],
+    "quick_tips": [
+      "Mua và nạp thẻ Octopus ngay khi đến để đi lại và mua sắm nhỏ.",
+      "Đổi tiền ở Tsim Sha Tsui thường lợi hơn sân bay và ngân hàng.",
+      "Luôn xác nhận số tiền thực nhận tại quầy đổi để tránh phí ẩn.",
+      "Mang tiền mặt cho quán ăn địa phương chỉ nhận tiền mặt hoặc Octopus.",
+      "Từ chối DCC ở ATM và máy POS, chọn tính bằng Đô la Hồng Kông."
+    ]
+  },
+  {
+    "code": "SG",
+    "country_vi": "Singapore",
+    "currency_code": "SGD",
+    "intro": "Singapore dùng đồng đô la Singapore (SGD), một trong những đồng tiền ổn định và đáng tin nhất châu Á. Đây là quốc gia gần như không tiền mặt, nơi thẻ và ví điện tử được chấp nhận ở khắp mọi nơi. Du khách hầu như không cần lo lắng về lừa đảo tiền tệ ở đây.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là đô la Singapore (SGD, ký hiệu S$), 1 đô la chia thành 100 cent. Tiền giấy có các mệnh giá phổ biến 2, 5, 10, 50, 100 đô la; tiền xu gồm 5, 10, 20, 50 cent và 1 đô la. Đô la Brunei cũng được lưu hành ngang giá nhưng ít gặp, du khách không cần bận tâm."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Singapore là xã hội gần như không tiền mặt, thẻ Visa/Mastercard và ví điện tử (PayNow, GrabPay) được chấp nhận từ nhà hàng lớn đến quán ăn lề đường. Bạn nên ưu tiên dùng thẻ để hưởng tỷ giá ngân hàng tốt. Tuy vậy vẫn nên giữ một ít tiền mặt cho hawker center nhỏ hoặc chợ truyền thống."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Các tiệm đổi tiền (money changer) ở khu Mustafa Centre, Lucky Plaza hay The Arcade gần Raffles Place nổi tiếng tỷ giá tốt và minh bạch. Tỷ giá ở đây thường tốt hơn ngân hàng và hơn hẳn sân bay. Hãy so sánh vài quầy gần nhau vì chênh lệch rất nhỏ và không có trò gian lận."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay Changi tiện lợi nhưng tỷ giá kém hơn các money changer trong thành phố. Chỉ nên đổi một khoản nhỏ đủ đi taxi hoặc tàu về khách sạn. Phần còn lại hãy để đổi tại trung tâm hoặc rút ATM."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM hiện diện khắp nơi và rất an toàn, các ngân hàng lớn gồm DBS, OCBC, UOB. Máy có thể hỏi bạn chọn rút bằng tiền địa phương hay tiền của thẻ bạn; luôn chọn SGD để tránh phí chuyển đổi động (DCC) bất lợi. Kiểm tra phí rút từ ngân hàng phát hành thẻ của bạn trước khi đi."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Singapore không có văn hóa tip; nhiều nhà hàng đã tính sẵn phí phục vụ 10% và thuế GST vào hóa đơn. Bạn không cần tip thêm cho taxi hay nhà hàng. Việc tip hoàn toàn tùy tâm và không bị kỳ vọng."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Singapore là một trong những nơi an toàn nhất thế giới về tiền bạc, lừa đảo trực tiếp gần như không có. Rủi ro chính là phí chuyển đổi động (DCC) khi quẹt thẻ hoặc rút ATM nếu bạn chọn thanh toán bằng tiền nước mình. Luôn chọn thanh toán bằng SGD để được tỷ giá tốt nhất."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì thẻ và ví điện tử phủ sóng gần như toàn bộ, bạn chỉ cần một lượng tiền mặt nhỏ. Một khoản đủ cho vài bữa ăn hawker, đi lại lặt vặt và phòng khi cần là quá đủ. Mọi chi tiêu lớn hơn nên dùng thẻ."
+      }
+    ],
+    "quick_tips": [
+      "Luôn chọn thanh toán bằng SGD khi quẹt thẻ hoặc rút ATM để tránh phí DCC.",
+      "Đổi tiền ở Mustafa Centre hoặc The Arcade thay vì sân bay để được tỷ giá tốt.",
+      "Cài sẵn ví điện tử và dùng thẻ cho hầu hết chi tiêu, giữ ít tiền mặt cho hawker.",
+      "Không cần tip vì phí phục vụ đã tính trong hóa đơn.",
+      "Giữ ít tiền lẻ và tiền xu cho phương tiện công cộng và quán nhỏ."
+    ]
+  },
+  {
+    "code": "MY",
+    "country_vi": "Malaysia",
+    "currency_code": "MYR",
+    "intro": "Malaysia dùng đồng ringgit (MYR), một đồng tiền tương đối ổn định trong khu vực. Đây là điểm đến có chi phí hợp lý với hệ thống thanh toán hiện đại ở thành phố lớn nhưng vẫn cần tiền mặt ở vùng nông thôn. Đổi tiền tại đây khá minh bạch và dễ dàng.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là ringgit Malaysia (MYR, ký hiệu RM), 1 ringgit bằng 100 sen. Tiền giấy gồm 1, 5, 10, 20, 50, 100 ringgit, mỗi tờ một màu khác nhau dễ phân biệt. Tiền xu có 5, 10, 20, 50 sen. Người địa phương đôi khi gọi ringgit là 'dollar' trong giao tiếp thường ngày."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Ở Kuala Lumpur, Penang và các thành phố lớn, thẻ và ví điện tử (Touch 'n Go, GrabPay) được chấp nhận rộng rãi. Tuy nhiên chợ đêm (pasar malam), quán ăn nhỏ và vùng quê vẫn chủ yếu dùng tiền mặt. Nên kết hợp cả thẻ lẫn tiền mặt để linh hoạt."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Money changer được cấp phép ở các trung tâm thương mại như Mid Valley, KLCC hay Bukit Bintang có tỷ giá tốt và rõ ràng. Tỷ giá ở đây thường tốt hơn ngân hàng và hơn hẳn sân bay. Hãy chọn quầy có niêm yết tỷ giá công khai và đếm kỹ tiền trước khi rời quầy."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay KLIA có tỷ giá kém hơn đáng kể so với trong thành phố. Chỉ nên đổi một khoản nhỏ đủ đi tàu hoặc taxi về trung tâm. Đổi phần lớn ở money changer trong các mall để tiết kiệm."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM phổ biến tại ngân hàng như Maybank, CIMB, Public Bank và trong các trung tâm thương mại. Khi máy hỏi, hãy chọn rút bằng MYR thay vì tiền của thẻ bạn để tránh phí chuyển đổi động. Ưu tiên rút tại ATM trong ngân hàng hoặc mall để an toàn."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Malaysia không có văn hóa tip bắt buộc; nhiều nhà hàng đã cộng phí phục vụ và thuế vào hóa đơn. Bạn có thể làm tròn hóa đơn hoặc để lại chút tiền lẻ nếu hài lòng nhưng không bắt buộc. Taxi và Grab cũng không kỳ vọng tip."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Rủi ro chính là taxi không bật đồng hồ và hét giá, đặc biệt quanh khu du lịch; hãy dùng Grab để có giá rõ ràng. Cảnh giác với money changer không có giấy phép ở vỉa hè và luôn đếm lại tiền sau khi đổi. Khi quẹt thẻ hãy chọn thanh toán bằng MYR để tránh phí DCC."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Ở thành phố lớn bạn có thể dựa nhiều vào thẻ và Grab, chỉ cần lượng tiền mặt vừa phải cho ăn uống và chợ đêm. Nếu đi vùng quê, đảo hoặc Borneo thì nên mang nhiều tiền mặt hơn vì thẻ ít được chấp nhận. Luôn giữ tiền mặt dự phòng cho chi tiêu nhỏ hằng ngày."
+      }
+    ],
+    "quick_tips": [
+      "Dùng Grab thay taxi để tránh bị hét giá và không phải mặc cả.",
+      "Đổi tiền ở money changer trong mall (Bukit Bintang, KLCC) thay vì sân bay.",
+      "Cài ví Touch 'n Go nếu ở lâu, rất tiện cho giao thông và thanh toán.",
+      "Mang đủ tiền mặt khi đi đảo hoặc vùng quê vì thẻ ít dùng được.",
+      "Chọn thanh toán bằng MYR khi quẹt thẻ để tránh phí chuyển đổi động."
+    ]
+  },
+  {
+    "code": "ID",
+    "country_vi": "Indonesia",
+    "currency_code": "IDR",
+    "intro": "Indonesia dùng đồng rupiah (IDR) với mệnh giá rất lớn, nhiều số 0 dễ khiến du khách bối rối. Đây là quốc gia phần lớn dùng tiền mặt, đặc biệt ngoài các thành phố lớn và khu du lịch. Lưu ý quan trọng: Bali nổi tiếng có nhiều tiệm đổi tiền gian lận, cần hết sức cẩn thận.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là rupiah Indonesia (IDR, ký hiệu Rp), mệnh giá rất lớn với nhiều số 0. Tiền giấy phổ biến gồm 1.000, 2.000, 5.000, 10.000, 20.000, 50.000 và 100.000 rupiah. Vì số 0 nhiều, du khách rất dễ nhầm tờ 10.000 với 100.000, hãy đếm thật kỹ trong mọi giao dịch."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Indonesia chủ yếu là nền kinh tế tiền mặt, đặc biệt ở chợ, quán warung và vùng ngoài đô thị. Thẻ chỉ được chấp nhận tại khách sạn, nhà hàng và cửa hàng lớn ở thành phố và khu du lịch. Ví điện tử như GoPay, OVO rất phổ biến với người địa phương nhưng cần số điện thoại Indonesia."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Chỉ đổi tiền tại tiệm có giấy phép chính thức (authorized money changer) như PT Central Kuta hay BMC ở Bali, có biển hiệu rõ ràng và camera. Tránh tuyệt đối những quầy treo tỷ giá cao bất thường vì gần như chắc chắn là bẫy. Luôn tự đếm tiền chậm rãi, không để nhân viên đếm hộ rồi đưa lại."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy sân bay Denpasar hoặc Jakarta có tỷ giá kém, chỉ đổi khoản nhỏ đủ đi taxi. Nguy hiểm hơn là các tiệm 'no commission' tỷ giá quá đẹp trong phố Kuta/Legian, nơi nhân viên dùng thủ thuật gập tiền, đếm thiếu hay tráo tờ khi đưa lại. Hãy chọn tiệm uy tín dù tỷ giá kém hơn một chút."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM của BCA, Mandiri, BNI khá an toàn, nên rút tại ATM trong ngân hàng hoặc minimarket lớn như Indomaret, Alfamart. Cảnh giác thiết bị skimming ở ATM vắng vẻ ngoài đường. Chú ý ATM có giới hạn rút mỗi lần và có thể trả tiền theo tờ 50.000 hoặc 100.000; chọn rút bằng IDR để tránh phí DCC."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc nhưng được đánh giá cao; nhà hàng cao cấp thường tính sẵn phí phục vụ khoảng 5-10%. Với tài xế, hướng dẫn viên hay nhân viên spa, một khoản tip nhỏ là cử chỉ lịch sự được hoan nghênh. Làm tròn hóa đơn ở quán ăn cũng là cách tip phổ biến."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Bẫy lớn nhất là tiệm đổi tiền gian lận ở Bali, dùng trò đếm thiếu và tráo tiền ngay trước mắt khách. Ngoài ra còn taxi không bật đồng hồ, máy ATM bị skimming và việc đưa nhầm tiền do mệnh giá nhiều số 0. Luôn dùng Grab/Gojek, tự đếm tiền và đổi ở nơi có uy tín."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì phần lớn giao dịch dùng tiền mặt, bạn nên mang đủ tiền mặt cho chi tiêu hằng ngày như ăn uống, đi lại và mua sắm ở chợ. Tuy vậy đừng mang quá nhiều một lúc để giảm rủi ro mất cắp; rút ATM dần theo nhu cầu. Giữ tiền lớn ở khách sạn và chỉ mang tiền lẻ khi ra ngoài."
+      }
+    ],
+    "quick_tips": [
+      "Đếm số 0 thật kỹ, dễ nhầm tờ 10.000 với 100.000 rupiah.",
+      "Chỉ đổi tiền ở tiệm có giấy phép, tránh quầy tỷ giá đẹp bất thường ở Bali.",
+      "Tự đếm tiền chậm rãi sau khi đổi, không để nhân viên đếm và đưa lại.",
+      "Dùng Grab hoặc Gojek thay taxi để có giá minh bạch.",
+      "Rút ATM trong ngân hàng hoặc minimarket lớn để tránh skimming."
+    ]
+  },
+  {
+    "code": "PH",
+    "country_vi": "Philippines",
+    "currency_code": "PHP",
+    "intro": "Philippines dùng đồng peso (PHP), một đồng tiền dễ làm quen với du khách. Đây là quốc gia còn nặng về tiền mặt, đặc biệt ở các đảo và vùng ngoài Manila/Cebu. Đổi tiền tại các tiệm uy tín trong thành phố thường cho tỷ giá tốt nhất.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là peso Philippines (PHP, ký hiệu ₱), 1 peso bằng 100 centavo. Tiền giấy gồm 20, 50, 100, 200, 500 và 1.000 peso, mỗi tờ một màu riêng. Tiền xu có 1, 5, 10, 20 peso và các centavo nhỏ; nên giữ nhiều tiền lẻ cho jeepney và quán nhỏ."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ được chấp nhận tại mall, khách sạn và nhà hàng lớn ở Manila, Cebu nhưng tiền mặt vẫn là vua, nhất là ở đảo và vùng quê. Nhiều nơi du lịch như El Nido, Siargao có ATM hạn chế và hay hết tiền. Ví điện tử GCash rất phổ biến nhưng thường cần số điện thoại địa phương."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Money changer uy tín ở các khu như Makati hoặc trong mall lớn thường cho tỷ giá tốt hơn ngân hàng và sân bay. Hãy chọn tiệm có biển hiệu rõ ràng, niêm yết tỷ giá công khai và đếm kỹ tiền. USD là đồng dễ đổi và được tỷ giá tốt nhất."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay Manila (NAIA) có tỷ giá kém, chỉ nên đổi khoản nhỏ đủ đi lại ban đầu. Đổi phần lớn ở money changer trong thành phố hoặc mall để được tỷ giá tốt hơn nhiều. Tránh đổi với người chèo kéo bên ngoài quầy chính thức."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM của BDO, BPI, Metrobank phổ biến ở thành phố nhưng thường thu phí rút cho thẻ nước ngoài mỗi giao dịch và có giới hạn rút khá thấp. Ở các đảo du lịch, ATM hay hết tiền nên hãy rút sẵn trước khi rời thành phố lớn. Chọn rút bằng PHP để tránh phí chuyển đổi động."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip phổ biến hơn nhiều nước Đông Nam Á khác; nhà hàng thường tính sẵn phí phục vụ 10%, nếu chưa có thì để lại khoảng 10% là lịch sự. Với nhân viên khách sạn, hướng dẫn viên và tài xế, một khoản tip nhỏ được đánh giá cao. Làm tròn hóa đơn cũng là cách tip thông dụng."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Cảnh giác taxi không bật đồng hồ ở sân bay và khu du lịch; nên dùng Grab để có giá rõ ràng. Tránh đổi tiền với người lạ ngoài đường và kiểm tra phí ATM trước khi rút. Khi quẹt thẻ, luôn chọn thanh toán bằng PHP để không bị tỷ giá DCC bất lợi."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Ở thành phố bạn có thể dùng thẻ cho chi tiêu lớn, nhưng nên luôn có tiền mặt cho ăn uống, đi lại và mua sắm nhỏ. Khi ra đảo như El Nido hay Coron, hãy rút và mang đủ tiền mặt từ trước vì ATM hiếm và hay hết tiền. Giữ nhiều tiền lẻ cho jeepney, tricycle và quán địa phương."
+      }
+    ],
+    "quick_tips": [
+      "Rút đủ tiền mặt trước khi ra đảo vì ATM hiếm và hay hết tiền.",
+      "Dùng Grab thay taxi để tránh bị hét giá ở sân bay và khu du lịch.",
+      "Đổi USD ở money changer trong mall để được tỷ giá tốt nhất.",
+      "Giữ nhiều tiền lẻ cho jeepney, tricycle và quán nhỏ.",
+      "Chọn thanh toán bằng PHP khi quẹt thẻ để tránh phí DCC."
+    ]
+  },
+  {
+    "code": "VN",
+    "country_vi": "Việt Nam",
+    "currency_code": "VND",
+    "intro": "Việt Nam dùng đồng (VND) với mệnh giá lớn và nhiều số 0, rất dễ gây nhầm lẫn cho khách nước ngoài. Đây là quốc gia còn dùng nhiều tiền mặt dù ví điện tử và thẻ đang phổ biến nhanh ở thành phố. Lưu ý đặc biệt: các tờ mệnh giá lớn màu sắc gần giống nhau nên rất dễ đưa nhầm.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là đồng Việt Nam (VND, ký hiệu ₫), mệnh giá lớn với nhiều số 0. Tiền giấy phổ biến gồm 10.000, 20.000, 50.000, 100.000, 200.000 và 500.000 đồng, phần lớn là tiền polymer. Hai cặp dễ nhầm nhất là tờ 20.000 với 500.000 (cùng tông xanh) và 10.000 với 200.000 (cùng tông đỏ), hãy đếm thật kỹ."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Tiền mặt vẫn rất quan trọng cho chợ, quán ăn đường phố và taxi, dù thẻ và mã QR (VietQR, Momo) ngày càng phổ biến ở thành phố. Khách sạn, nhà hàng và cửa hàng lớn nhận thẻ nhưng nhiều nơi nhỏ chỉ nhận tiền mặt hoặc chuyển khoản nội địa. Nên luôn có tiền mặt cho chi tiêu hằng ngày."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Các tiệm vàng bạc uy tín (như khu Hà Trung ở Hà Nội) thường cho tỷ giá tốt hơn ngân hàng và hơn hẳn sân bay. Ngân hàng cũng là lựa chọn an toàn nếu bạn muốn chứng từ. Hãy đổi ở nơi có niêm yết rõ và đếm lại tiền cẩn thận vì mệnh giá lớn dễ nhầm."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay Nội Bài và Tân Sơn Nhất có tỷ giá kém hơn rõ rệt so với trong thành phố. Chỉ nên đổi một khoản nhỏ đủ đi taxi hoặc xe về trung tâm. Phần còn lại hãy đổi ở tiệm uy tín hoặc rút ATM trong phố."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM phổ biến tại các ngân hàng như Vietcombank, BIDV, Techcombank và rất sẵn ở thành phố. Lưu ý nhiều ATM giới hạn rút mỗi lần khá thấp (thường vài triệu đồng) và thu phí cho thẻ nước ngoài. Chọn rút bằng VND để tránh phí chuyển đổi động và ưu tiên ATM trong ngân hàng."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc và không phải thói quen truyền thống, nhưng ngày càng được hoan nghênh ở ngành du lịch. Nhà hàng cao cấp có thể tính sẵn phí phục vụ; với hướng dẫn viên, tài xế hay nhân viên spa thì một khoản tip nhỏ là cử chỉ đẹp. Làm tròn hóa đơn ở quán cũng đủ."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Bẫy thường gặp nhất là đưa nhầm hoặc bị tráo tiền do mệnh giá lớn nhiều số 0, đặc biệt tờ 20.000 và 500.000 trông giống nhau. Ngoài ra có taxi không bật đồng hồ hoặc gắn đồng hồ chạy nhanh; nên dùng Grab hoặc hãng uy tín như Mai Linh, Vinasun. Luôn đếm kỹ tiền thối và cảnh giác khi trả tiền vào ban đêm."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Nên luôn mang đủ tiền mặt cho ăn uống, đi lại và mua sắm nhỏ vì nhiều nơi không nhận thẻ. Tuy vậy không cần mang quá nhiều cùng lúc, vì ATM rất sẵn để rút dần. Giữ tiền lẻ mệnh giá nhỏ để trả taxi, quán đường phố và tránh bị nói 'không có tiền thối'."
+      }
+    ],
+    "quick_tips": [
+      "Đếm kỹ tiền, tờ 20.000 và 500.000 (xanh) cùng 10.000 và 200.000 (đỏ) rất dễ nhầm.",
+      "Đổi tiền ở tiệm vàng uy tín hoặc ngân hàng thay vì sân bay.",
+      "Dùng Grab hoặc taxi Mai Linh/Vinasun để tránh đồng hồ chạy gian.",
+      "Giữ nhiều tiền lẻ vì quán nhỏ thường thiếu tiền thối.",
+      "Chọn rút bằng VND ở ATM và để ý giới hạn rút mỗi lần."
+    ]
+  },
+  {
+    "code": "IN",
+    "country_vi": "Ấn Độ",
+    "currency_code": "INR",
+    "intro": "Ấn Độ dùng đồng rupee (INR), đồng tiền có quy định kiểm soát ngoại hối khá chặt. Một lưu ý quan trọng: rupee bị hạn chế mang qua biên giới nên du khách thường chỉ nên đổi tiền sau khi nhập cảnh. Đây là quốc gia còn dùng nhiều tiền mặt nhưng thanh toán bằng UPI/QR đã rất phổ biến với người địa phương.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là rupee Ấn Độ (INR, ký hiệu ₹), 1 rupee bằng 100 paise. Tiền giấy phổ biến gồm 10, 20, 50, 100, 200, 500 rupee; tờ 2.000 đã được rút dần khỏi lưu thông. Nên giữ nhiều tờ mệnh giá nhỏ vì hàng quán và xe kéo thường thiếu tiền thối."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Tiền mặt vẫn cần thiết cho chợ, xe auto-rickshaw và quán nhỏ, dù thẻ được nhận ở khách sạn và cửa hàng lớn tại đô thị. Hệ thống UPI (Google Pay, PhonePe) cực kỳ phổ biến với dân địa phương nhưng thường cần tài khoản ngân hàng Ấn Độ. Du khách nên dựa vào tiền mặt và thẻ kết hợp."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Vì rupee bị hạn chế mang vào, hãy đổi tiền sau khi nhập cảnh tại các quầy đổi ngoại tệ được cấp phép (authorized money changer) hoặc ngân hàng. Mang theo USD hoặc EUR và đổi ở tiệm uy tín có niêm yết rõ ràng, giữ lại biên lai đổi tiền. Tránh đổi tiền chợ đen vì rủi ro tiền giả và phạm pháp."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay có tỷ giá kém, chỉ nên đổi một khoản nhỏ ngay khi đến đủ đi taxi và chi tiêu ban đầu. Vì không nên mang rupee từ nhà sang, việc đổi một ít ở sân bay là cần thiết nhưng đừng đổi nhiều. Phần lớn hãy để đổi tại tiệm uy tín hoặc rút ATM trong thành phố."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM phổ biến tại các ngân hàng như SBI, HDFC, ICICI và là cách tiện để lấy rupee với tỷ giá tốt. Lưu ý nhiều ATM giới hạn rút mỗi lần và thu phí cho thẻ nước ngoài; một số máy hay hết tiền hoặc ngừng hoạt động. Chọn rút bằng INR để tránh phí DCC và ưu tiên ATM trong ngân hàng có bảo vệ."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip (gọi là 'baksheesh') khá phổ biến và được kỳ vọng trong nhiều dịch vụ. Nhà hàng thường để lại khoảng 5-10% nếu chưa tính phí phục vụ; tài xế, khuân vác và hướng dẫn viên đều mong nhận tip nhỏ. Hãy giữ sẵn tiền lẻ để tip cho thuận tiện."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Cảnh giác taxi/auto không bật đồng hồ và hét giá, cùng các 'cò' dẫn bạn đến cửa hàng để ăn hoa hồng; nên dùng Uber/Ola để có giá rõ. Có chiêu đưa lại tiền giả hoặc tờ rách (nhiều nơi từ chối tờ rách), hãy kiểm tra tiền nhận được. Đổi tiền chợ đen và 'tỷ giá đặc biệt' gần như luôn là bẫy."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Nên luôn có tiền mặt cho chi tiêu hằng ngày như ăn uống, đi lại bằng auto-rickshaw và mua sắm ở chợ. Vì rupee không nên mang sẵn từ nhà, hãy đổi một ít ở sân bay rồi rút thêm qua ATM theo nhu cầu. Giữ nhiều tờ mệnh giá nhỏ và tránh mang quá nhiều tiền mặt một lúc để giảm rủi ro."
+      }
+    ],
+    "quick_tips": [
+      "Đừng mang rupee từ nhà sang; đổi tiền sau khi nhập cảnh.",
+      "Đổi USD/EUR ở quầy được cấp phép và giữ lại biên lai đổi tiền.",
+      "Giữ nhiều tờ nhỏ và từ chối nhận tờ rách vì nhiều nơi không tiêu được.",
+      "Dùng Uber hoặc Ola để tránh auto-rickshaw hét giá và cò dẫn mối.",
+      "Chuẩn bị tiền lẻ để tip (baksheesh) cho tài xế, khuân vác, phục vụ."
+    ]
+  },
+  {
+    "code": "AE",
+    "country_vi": "Các Tiểu vương quốc Ả Rập Thống nhất",
+    "currency_code": "AED",
+    "intro": "Dirham UAE (AED) là đồng tiền chính thức, được neo cố định vào đô la Mỹ nên tỷ giá rất ổn định. Dubai và Abu Dhabi cực kỳ thân thiện với thẻ, nhưng khu chợ truyền thống (souk) lại là thế giới của tiền mặt và mặc cả. Bạn nên chuẩn bị cả hai để linh hoạt.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là dirham (AED), ký hiệu thường thấy là Dhs hoặc د.إ, mỗi dirham chia thành 100 fils. Tiền giấy gồm 5, 10, 20, 50, 100, 200, 500 và 1000 dirham với màu sắc khác nhau dễ phân biệt. Tiền xu có 1 dirham, 50 fils và 25 fils. Tờ 500 và 1000 khá lớn nên khó tiêu ở quán nhỏ, hãy giữ nhiều tờ 50 và 100."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ Visa và Mastercard được chấp nhận gần như khắp nơi: khách sạn, trung tâm thương mại, nhà hàng, taxi. Tuy nhiên chợ souk (vàng, gia vị, vải), taxi nhỏ và quán ăn bình dân vẫn ưu tiên tiền mặt. Hãy mang theo một ít tiền mặt cho các giao dịch nhỏ và để mặc cả thuận lợi hơn."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Các quầy đổi tiền (exchange house) như Al Ansari hay UAE Exchange trong thành phố thường cho tỷ giá tốt hơn ngân hàng và sân bay. Vì AED neo vào USD nên tỷ giá ít biến động, bạn không cần canh thời điểm. So sánh vài quầy trong cùng trung tâm thương mại và hỏi rõ có thu phí hay không trước khi đổi."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay Dubai và Abu Dhabi thường có tỷ giá kém và phí cao hơn trong thành phố. Chỉ nên đổi một khoản nhỏ đủ đi taxi hoặc tàu metro về khách sạn. Phần còn lại hãy đổi tại các quầy trong khu trung tâm hoặc rút từ ATM."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM có ở khắp nơi và chấp nhận thẻ quốc tế, nhưng máy thường hỏi bạn chọn tính tiền bằng AED hay tiền tệ gốc của thẻ. Luôn chọn AED để tránh phí chuyển đổi động (DCC) bất lợi. Báo trước cho ngân hàng của bạn về chuyến đi để thẻ không bị khóa, và rút số tiền lớn mỗi lần để giảm phí cố định."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc nhưng được đánh giá cao. Nhà hàng đôi khi đã tính phí phục vụ; nếu không, để lại khoảng 10-15% là lịch sự. Với tài xế taxi có thể làm tròn tiền, nhân viên khuân hành lý hay phục vụ phòng tip vài dirham là phù hợp."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Ở chợ souk, giá ban đầu thường bị thổi lên rất cao, hãy mặc cả và sẵn sàng bỏ đi. Cảnh giác với những người chèo kéo dẫn bạn tới cửa hàng vàng hay nước hoa giả. Khi quẹt thẻ luôn xem rõ số tiền và từ chối nếu họ tự đổi sang tiền tệ khác (DCC) trên máy POS."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì thẻ dùng được rộng rãi, bạn không cần mang nhiều tiền mặt. Một khoản vừa đủ cho taxi, chợ và các bữa ăn nhỏ là hợp lý, phần còn lại dựa vào thẻ và ATM. Giữ tiền mặt ở mức bạn có thể mất mà không quá lo lắng."
+      }
+    ],
+    "quick_tips": [
+      "Luôn chọn thanh toán bằng AED, không chọn tiền tệ gốc của thẻ khi quẹt hoặc rút",
+      "Giữ nhiều tờ 50 và 100 dirham để tiêu ở quán nhỏ và taxi",
+      "Mặc cả mạnh tay ở chợ souk, sẵn sàng bỏ đi để có giá tốt",
+      "Đổi tiền tại quầy trong thành phố thay vì sân bay",
+      "Báo ngân hàng về chuyến đi để tránh thẻ bị khóa khi giao dịch ở nước ngoài"
+    ]
+  },
+  {
+    "code": "TR",
+    "country_vi": "Thổ Nhĩ Kỳ",
+    "currency_code": "TRY",
+    "intro": "Lira Thổ Nhĩ Kỳ (TRY) là đồng tiền mất giá nhanh do lạm phát cao kéo dài. Vì vậy nguyên tắc vàng là đổi từng ít một và đổi nhiều lần thay vì đổi một cục lớn ngay từ đầu. Tiền mặt vẫn quan trọng ở chợ và quán nhỏ, nhưng thẻ ngày càng phổ biến ở thành phố lớn.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là lira Thổ Nhĩ Kỳ (TRY), ký hiệu ₺, mỗi lira chia thành 100 kuruş. Tiền giấy gồm 5, 10, 20, 50, 100 và 200 lira. Tiền xu có 1 lira cùng các đồng kuruş nhỏ. Do lạm phát, các tờ mệnh giá nhỏ tiêu khá nhanh nên hãy luôn giữ tiền lẻ cho giao dịch hàng ngày."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Ở Istanbul, Ankara và các khu du lịch, thẻ được chấp nhận rộng rãi tại nhà hàng, cửa hàng và khách sạn. Tuy nhiên chợ truyền thống (bazaar), taxi, quán trà và các thị trấn nhỏ vẫn cần tiền mặt. Vì lira biến động, trả bằng thẻ đôi khi giúp bạn nhận tỷ giá tốt hơn tại thời điểm thanh toán."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Các quầy đổi tiền (döviz) trong thành phố, đặc biệt quanh khu Grand Bazaar ở Istanbul, thường cho tỷ giá cạnh tranh và không thu phí. Do lạm phát cao, hãy đổi từng khoản nhỏ vừa đủ tiêu trong vài ngày thay vì đổi nhiều một lúc. So sánh vài quầy gần nhau vì tỷ giá có thể chênh đáng kể."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền tại sân bay Istanbul thường có tỷ giá rất bất lợi và chênh lệch mua bán lớn. Chỉ đổi một ít đủ để đi tàu hoặc taxi về trung tâm. Phần còn lại đổi ở các quầy döviz trong thành phố để được giá tốt hơn nhiều."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM phổ biến và chấp nhận thẻ quốc tế, nhưng nhiều máy thu phí rút tiền cao và sẽ mời bạn chọn DCC. Luôn chọn rút bằng lira (TRY), không chọn tiền tệ gốc của thẻ. Ưu tiên ATM của các ngân hàng lớn và rút trong giờ làm việc để dễ xử lý nếu máy giữ thẻ."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip (bahşiş) được mong đợi ở nhà hàng, khoảng 5-10% nếu chưa tính phí phục vụ. Để lại vài lira cho phục vụ quán trà, người dọn phòng hay nhân viên khuân hành lý là lịch sự. Với taxi, làm tròn tiền là đủ."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Ở khu du lịch, một số quán mời rượu hay shisha rồi tính giá cắt cổ, hãy hỏi rõ giá trước. Cảnh giác với chiêu trả lại tiền thừa thiếu hoặc tráo tờ mệnh giá nhỏ. Tại bazaar, giá khởi điểm thường cao gấp nhiều lần, hãy mặc cả quyết liệt và kiểm tra tiền thừa cẩn thận."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì lira mất giá nhanh, đừng giữ quá nhiều tiền mặt lira cùng lúc. Chỉ giữ đủ chi tiêu cho vài ngày và đổi thêm khi cần. Mang theo USD hoặc EUR để đổi dần là cách an toàn để bảo toàn giá trị."
+      }
+    ],
+    "quick_tips": [
+      "Đổi ít và đổi nhiều lần vì lạm phát làm lira mất giá nhanh",
+      "Mang theo USD hoặc EUR để đổi dần, giữ giá trị tốt hơn",
+      "Luôn rút và thanh toán bằng lira (TRY), từ chối DCC",
+      "Đổi tiền ở quầy döviz quanh Grand Bazaar thay vì sân bay",
+      "Mặc cả mạnh ở chợ và luôn đếm kỹ tiền thừa"
+    ]
+  },
+  {
+    "code": "MX",
+    "country_vi": "Mexico",
+    "currency_code": "MXN",
+    "intro": "Peso Mexico (MXN) là đồng tiền chính thức và bạn nên dùng nó thay vì trả bằng đô la Mỹ. Ở khu du lịch người ta hay nhận USD nhưng với tỷ giá rất bất lợi cho bạn. Tiền mặt vẫn cần thiết ở chợ, taxi và quán nhỏ, trong khi thẻ phổ biến ở thành phố và resort.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là peso Mexico (MXN), ký hiệu $ (đôi khi ghi MX$ để phân biệt với đô la), mỗi peso chia thành 100 centavos. Tiền giấy gồm 20, 50, 100, 200, 500 và 1000 peso. Tiền xu có 1, 2, 5, 10 peso và các đồng centavos. Hãy giữ tờ nhỏ vì quán bình dân và taxi thường khó thối tờ 500 hoặc 1000."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ Visa và Mastercard dùng tốt ở khách sạn, nhà hàng và siêu thị tại thành phố lớn và khu resort. Tuy nhiên chợ (mercado), quán ăn đường phố, taxi và thị trấn nhỏ chủ yếu dùng tiền mặt. Luôn mang một ít peso lẻ cho các chi tiêu nhỏ hàng ngày."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Đổi tại các quầy casa de cambio trong thành phố hoặc rút trực tiếp từ ATM thường cho tỷ giá tốt. Tránh trả bằng USD trực tiếp vì tỷ giá quy đổi của cửa hàng rất kém. So sánh tỷ giá niêm yết và hỏi rõ phí trước khi đổi."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay Cancún hay Mexico City có tỷ giá kém và phí cao. Chỉ đổi một khoản nhỏ đủ đi taxi hoặc xe về khách sạn. Phần còn lại nên rút ATM hoặc đổi ở casa de cambio trong trung tâm."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Nên dùng ATM gắn liền với ngân hàng lớn như BBVA, Banorte hoặc Santander, đặt trong khu vực an toàn và có người qua lại. Luôn chọn rút bằng peso (MXN) và từ chối DCC để tránh tỷ giá xấu. Cảnh giác máy ATM độc lập ở khu du lịch vì phí rất cao, và che tay khi nhập mã PIN."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip (propina) là thông lệ: nhà hàng thường để lại 10-15%. Nhân viên đóng gói ở siêu thị, người khuân hành lý và dọn phòng cũng nhận tip vài chục peso. Với taxi thông thường không bắt buộc tip, chỉ cần làm tròn tiền."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Một số nơi mời bạn thanh toán bằng USD rồi áp tỷ giá rất bất lợi, hãy luôn trả bằng peso. Taxi không đồng hồ ở khu du lịch hay hét giá, nên thỏa thuận giá trước hoặc dùng ứng dụng gọi xe. Kiểm tra hóa đơn nhà hàng xem đã tính sẵn phí phục vụ chưa để tránh tip hai lần."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Giữ đủ tiền mặt peso cho chợ, taxi, quán ăn và tip trong ngày, phần lớn còn lại dựa vào thẻ. Đừng mang quá nhiều tiền mặt khi đi lại ở khu đông người. Bổ sung dần qua ATM khi cần thay vì rút một lần thật nhiều."
+      }
+    ],
+    "quick_tips": [
+      "Luôn trả bằng peso, đừng trả bằng USD để khỏi bị tỷ giá xấu",
+      "Dùng ATM của ngân hàng lớn ở nơi an toàn, từ chối DCC",
+      "Giữ tờ nhỏ cho taxi và quán bình dân khó thối tiền lớn",
+      "Thỏa thuận giá taxi trước hoặc dùng app gọi xe",
+      "Để tip 10-15% ở nhà hàng nếu chưa tính sẵn phí phục vụ"
+    ]
+  },
+  {
+    "code": "BR",
+    "country_vi": "Brazil",
+    "currency_code": "BRL",
+    "intro": "Real Brazil (BRL) là đồng tiền chính thức, đọc là \"hê-au\". Brazil dùng thẻ và ví điện tử rất nhiều, đặc biệt qua hệ thống chuyển khoản tức thời Pix nội địa. Du khách nên dựa vào thẻ là chính nhưng vẫn giữ ít tiền mặt cho quán nhỏ, chợ và những vùng xa thành phố.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là real Brazil (BRL), số nhiều là reais, ký hiệu R$, mỗi real chia thành 100 centavos. Tiền giấy gồm 2, 5, 10, 20, 50, 100 và 200 real. Tiền xu có 1 real và các đồng centavos. Tờ 100 và 200 đôi khi khó tiêu ở quán nhỏ nên hãy giữ thêm tờ mệnh giá vừa."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ Visa và Mastercard được chấp nhận rất rộng rãi, kể cả ở nhiều quán nhỏ và taxi. Người Brazil dùng thẻ và Pix cho hầu hết giao dịch, nên bạn có thể đi lại với rất ít tiền mặt. Dù vậy, hãy giữ một ít tiền mặt cho chợ, bãi biển và những nơi máy quẹt thẻ trục trặc."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Đổi tại casa de câmbio trong thành phố thường tốt hơn sân bay, và rút ATM cũng là lựa chọn hợp lý. So sánh tỷ giá và hỏi phí rõ ràng trước khi đổi. Vì thẻ dùng được nhiều, bạn không cần đổi quá nhiều tiền mặt một lúc."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền sân bay ở São Paulo hay Rio thường có tỷ giá kém và phí cao. Chỉ đổi một ít đủ đi taxi hoặc xe về trung tâm. Phần còn lại nên rút ATM hoặc đổi ở casa de câmbio trong thành phố."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "Dùng ATM trong ngân hàng, trung tâm thương mại hoặc sân bay vào ban ngày để an toàn hơn. Banco do Brasil, Bradesco, Itaú và Santander thường chấp nhận thẻ quốc tế; nhiều máy có giới hạn rút mỗi lần. Luôn chọn rút bằng real (BRL), từ chối DCC, và tránh rút tiền ban đêm ở nơi vắng."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Nhà hàng thường tự cộng phí phục vụ 10% vào hóa đơn (\"serviço\"), khoản này coi như tip nên bạn không cần thêm. Nếu chưa có, để lại khoảng 10% là lịch sự. Tip cho taxi không bắt buộc, chỉ cần làm tròn tiền."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Cảnh giác móc túi và giật đồ ở khu đông người và bãi biển, đừng phô trương tiền mặt hay điện thoại. Chỉ dùng ATM ở nơi sáng sủa để tránh bị gắn thiết bị đọc trộm thẻ (skimming). Với taxi, dùng app gọi xe hoặc xe có đồng hồ để tránh bị hét giá."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì thẻ và Pix phổ biến, bạn chỉ cần ít tiền mặt cho chợ, bãi biển và quán nhỏ. Không nên mang nhiều tiền mặt khi đi dạo phố vì rủi ro trộm cắp. Bổ sung qua ATM khi cần thay vì giữ một khoản lớn."
+      }
+    ],
+    "quick_tips": [
+      "Dựa vào thẻ là chính, chỉ giữ ít tiền mặt cho quán nhỏ và bãi biển",
+      "Luôn rút và trả bằng real (BRL), từ chối DCC",
+      "Kiểm tra hóa đơn xem đã có phí phục vụ 10% chưa trước khi tip",
+      "Dùng ATM ban ngày ở nơi an toàn để tránh skimming",
+      "Đừng phô trương tiền mặt hay điện thoại ở khu đông người"
+    ]
+  },
+  {
+    "code": "AU",
+    "country_vi": "Úc",
+    "currency_code": "AUD",
+    "intro": "Đô la Úc (AUD) là đồng tiền chính thức, thường gọi thân mật là \"Aussie dollar\". Úc gần như là xã hội không tiền mặt: thẻ và thanh toán chạm (contactless) dùng được ở hầu hết mọi nơi. Bạn có thể đi cả chuyến mà gần như không cần tiền mặt, nhưng vẫn nên giữ một ít để dự phòng.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là đô la Úc (AUD), ký hiệu $ hoặc A$, mỗi đô la chia thành 100 cent. Tiền giấy bằng polymer chống nước gồm 5, 10, 20, 50 và 100 đô la. Tiền xu có 5, 10, 20, 50 cent cùng đồng 1 và 2 đô la. Lưu ý đồng 2 đô la nhỏ hơn đồng 1 đô la, dễ nhầm lúc đầu."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ và thanh toán chạm được chấp nhận gần như tuyệt đối: từ quán cà phê, taxi, xe buýt đến chợ nông sản. Apple Pay và Google Pay rất phổ biến. Tiền mặt hầu như chỉ cần cho vài quầy nhỏ ở vùng xa hoặc khi máy quẹt thẻ gặp sự cố."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Vì có thể dùng thẻ khắp nơi, bạn không cần đổi nhiều tiền mặt. Nếu cần, các quầy đổi tiền trong thành phố cho tỷ giá tốt hơn sân bay. Dùng thẻ ghi nợ hoặc tín dụng ít phí ngoại tệ thường là cách tiết kiệm nhất."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền ở sân bay Sydney hay Melbourne có tỷ giá bất lợi và phí cao. Vì Úc dùng thẻ rộng rãi, bạn gần như không cần đổi tiền mặt tại sân bay. Nếu muốn cầm chút tiền lẻ, chỉ đổi một khoản nhỏ."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM của Big Four (Commonwealth, Westpac, ANZ, NAB) thường không thu phí với thẻ nội địa nhưng có thể tính phí với thẻ nước ngoài. Luôn chọn rút bằng đô la Úc (AUD) và từ chối DCC. Tránh các ATM độc lập trong cửa hàng tiện lợi hay quán bar vì phí rất cao."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc ở Úc vì lương phục vụ đã được quy định ở mức tốt. Tại nhà hàng cao cấp, để lại khoảng 10% nếu hài lòng là cử chỉ đẹp nhưng hoàn toàn tự nguyện. Quán cà phê và taxi thông thường không cần tip."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Lừa đảo lớn ít gặp, nhưng hãy để ý phụ phí ngày lễ (surcharge) ở nhà hàng và phí quẹt thẻ (card surcharge) mà một số nơi cộng thêm. Khi quẹt thẻ luôn chọn AUD để tránh DCC. Cẩn thận với ATM độc lập phí cao và kiểm tra hóa đơn trước khi trả."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Bạn gần như không cần tiền mặt ở Úc, một khoản nhỏ để dự phòng là đủ. Hầu hết chi tiêu hãy dùng thẻ hoặc ví điện tử trên điện thoại. Chỉ rút thêm tiền mặt nếu bạn đến vùng quê hẻo lánh nơi sóng và máy quẹt thẻ kém."
+      }
+    ],
+    "quick_tips": [
+      "Dùng thẻ hoặc thanh toán chạm cho gần như mọi thứ, ít cần tiền mặt",
+      "Luôn chọn rút và trả bằng AUD, từ chối DCC",
+      "Tránh ATM độc lập trong cửa hàng tiện lợi vì phí cao",
+      "Để ý phụ phí quẹt thẻ và phụ phí ngày lễ trên hóa đơn",
+      "Tip là tự nguyện, không bắt buộc ở hầu hết nơi"
+    ]
+  },
+  {
+    "code": "CH",
+    "country_vi": "Thụy Sĩ",
+    "currency_code": "CHF",
+    "intro": "Thụy Sĩ dùng franc Thụy Sĩ (CHF), KHÔNG dùng euro dù nằm giữa châu Âu. Một số nơi du lịch nhận euro nhưng trả lại tiền thừa bằng franc với tỷ giá bất lợi, nên hãy dùng franc. Đây là một trong những nước đắt đỏ nhất thế giới, vì vậy hãy chuẩn bị ngân sách dư dả.",
+    "sections": [
+      {
+        "heading": "Tiền tệ và mệnh giá",
+        "body": "Đơn vị là franc Thụy Sĩ (CHF), ký hiệu Fr. hoặc SFr., mỗi franc chia thành 100 rappen (hay centime). Tiền giấy gồm 10, 20, 50, 100, 200 và 1000 franc với thiết kế nhiều màu rất đặc trưng. Tiền xu có 5, 10, 20 centime, nửa franc, 1, 2 và 5 franc. Tờ 200 và 1000 rất lớn nên giữ thêm tờ nhỏ để tiêu hàng ngày."
+      },
+      {
+        "heading": "Tiền mặt và thẻ",
+        "body": "Thẻ Visa và Mastercard cùng thanh toán chạm được chấp nhận gần như khắp nơi, kể cả tàu, quán và máy bán vé tự động. Tiền mặt vẫn hữu ích cho chợ nhỏ, vài quán vùng núi và tiền boa lặt vặt. Nhìn chung bạn có thể dựa chủ yếu vào thẻ."
+      },
+      {
+        "heading": "Cách đổi tiền lợi nhất",
+        "body": "Rút franc trực tiếp từ ATM bằng thẻ ít phí ngoại tệ thường cho tỷ giá tốt. Nếu đổi tiền mặt, các quầy trong thành phố hoặc nhà ga lớn tốt hơn sân bay. Đừng trả bằng euro ở Thụy Sĩ vì tỷ giá quy đổi của cửa hàng rất bất lợi cho bạn."
+      },
+      {
+        "heading": "Bẫy đổi tiền ở sân bay",
+        "body": "Quầy đổi tiền sân bay Zurich hay Geneva có tỷ giá kém và phí cao. Chỉ đổi một ít đủ cho chi tiêu ban đầu nếu cần. Phần lớn nên rút ATM hoặc dùng thẻ vì franc dùng được khắp nơi."
+      },
+      {
+        "heading": "Dùng cây ATM",
+        "body": "ATM (Bancomat) phổ biến và an toàn, chấp nhận thẻ quốc tế. Luôn chọn rút bằng franc (CHF) và từ chối DCC để tránh tỷ giá xấu. Rút khoản vừa đủ vì chi phí ở Thụy Sĩ cao, và ưu tiên ATM của ngân hàng lớn."
+      },
+      {
+        "heading": "Văn hóa tip",
+        "body": "Tip không bắt buộc vì phí phục vụ đã gộp trong giá theo luật. Thông lệ là làm tròn hóa đơn lên hoặc để lại vài franc nếu hài lòng. Mức tip ở Thụy Sĩ khiêm tốn hơn nhiều so với Mỹ, đừng cảm thấy áp lực phải tip lớn."
+      },
+      {
+        "heading": "Các bẫy và lừa đảo tiền bạc thường gặp",
+        "body": "Bẫy lớn nhất là chi phí cao bất ngờ chứ không phải lừa đảo, nên hãy luôn xem giá trước khi gọi món hay đặt phòng. Cẩn thận khi nơi nào nhận euro vì họ thường thối lại bằng franc với tỷ giá xấu. Khi quẹt thẻ luôn chọn CHF và kiểm tra hóa đơn cẩn thận."
+      },
+      {
+        "heading": "Nên mang bao nhiêu tiền mặt",
+        "body": "Vì thẻ dùng được khắp nơi, bạn chỉ cần một ít franc tiền mặt cho quán nhỏ và tiền boa. Do mặt bằng giá cao, đừng đổi quá nhiều tiền mặt một lúc mà hãy rút dần qua ATM. Giữ vài tờ nhỏ để tiện thanh toán nhanh."
+      }
+    ],
+    "quick_tips": [
+      "Dùng franc (CHF) chứ không phải euro, từ chối nhận thối lại bằng franc với tỷ giá xấu",
+      "Luôn rút và trả bằng CHF, từ chối DCC",
+      "Chuẩn bị ngân sách dư dả vì Thụy Sĩ rất đắt đỏ",
+      "Xem giá trước khi gọi món hay đặt phòng để tránh sốc giá",
+      "Tip chỉ cần làm tròn hóa đơn, không cần tip lớn kiểu Mỹ"
+    ]
+  }
+]
