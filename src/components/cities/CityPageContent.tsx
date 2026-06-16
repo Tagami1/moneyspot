@@ -6,6 +6,7 @@ import {
   getPrimaryCurrencyForCountry,
 } from "@/lib/world-cities";
 import { type CityDict, type CityLocale } from "@/lib/cities-i18n";
+import { WISE_CTA_ENABLED } from "@/lib/flags";
 
 type Props = {
   city: WorldCity;
@@ -100,20 +101,20 @@ export function CityPageContent({ city, dict, locale }: Props) {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href={`https://www.google.com/maps/search/currency+exchange/@${city.lat},${city.lng},13z`}
-              target="_blank"
-              rel="noopener"
-              className="rounded-lg border border-gray-300 bg-white px-5 py-3 text-sm font-bold text-gray-700 hover:bg-gray-50"
+            <Link
+              href={`/?lat=${city.lat}&lng=${city.lng}&city=${encodeURIComponent(cityName)}`}
+              className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-bold text-white hover:bg-blue-700"
             >
               {dict.openMap}
-            </a>
-            <Link
-              href={`/go/wise?to=${currency}&utm_campaign=city_${city.slug}_${locale}`}
-              className="rounded-lg bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-700"
-            >
-              {dict.wiseCTA(currency)}
             </Link>
+            {WISE_CTA_ENABLED && (
+              <Link
+                href={`/go/wise?to=${currency}&utm_campaign=city_${city.slug}_${locale}`}
+                className="rounded-lg bg-emerald-600 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-700"
+              >
+                {dict.wiseCTA(currency)}
+              </Link>
+            )}
           </div>
         </div>
       </section>
@@ -179,27 +180,69 @@ export function CityPageContent({ city, dict, locale }: Props) {
         </div>
       </section>
 
+      {/* Money-saving tips — user value + SEO content */}
       <section className="border-b border-gray-200">
         <div className="mx-auto max-w-5xl px-5 py-8">
-          <div className="rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-6 text-white sm:p-8">
+          <h2 className="text-xl font-black text-gray-950">{dict.tipsTitle(cityName)}</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+            {dict.tips(cityName, currency).map((tip, i) => (
+              <li
+                key={i}
+                className="flex gap-3 rounded-lg border border-gray-200 bg-white p-4 text-sm leading-6 text-gray-700"
+              >
+                <span className="font-black text-blue-600">{i + 1}</span>
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Free account CTA (replaces affiliate CTA until 100 users) */}
+      <section className="border-b border-gray-200">
+        <div className="mx-auto max-w-5xl px-5 py-8">
+          <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-500 p-6 text-white sm:p-8">
             <p className="text-xs font-bold uppercase tracking-wide opacity-90">
-              {dict.wiseCardLabel}
+              {dict.saveLabel}
             </p>
             <h3 className="mt-2 text-xl font-black sm:text-2xl">
-              {dict.wiseCardTitle(cityName, currency)}
+              {dict.saveTitle(cityName)}
             </h3>
-            <p className="mt-2 max-w-2xl text-sm leading-6 opacity-95">
-              {dict.wiseCardBody(cityName)}
-            </p>
+            <p className="mt-2 max-w-2xl text-sm leading-6 opacity-95">{dict.saveBody}</p>
             <Link
-              href={`/go/wise?to=${currency}&utm_campaign=city_${city.slug}_${locale}_cta`}
-              className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-bold text-emerald-700 hover:bg-emerald-50"
+              href="/?register=1"
+              className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-bold text-blue-700 hover:bg-blue-50"
             >
-              {dict.wiseCTA(currency)}
+              {dict.saveCTA}
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Wise affiliate card — only when monetization is enabled (≥100 users) */}
+      {WISE_CTA_ENABLED && (
+        <section className="border-b border-gray-200">
+          <div className="mx-auto max-w-5xl px-5 py-8">
+            <div className="rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 p-6 text-white sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-wide opacity-90">
+                {dict.wiseCardLabel}
+              </p>
+              <h3 className="mt-2 text-xl font-black sm:text-2xl">
+                {dict.wiseCardTitle(cityName, currency)}
+              </h3>
+              <p className="mt-2 max-w-2xl text-sm leading-6 opacity-95">
+                {dict.wiseCardBody(cityName)}
+              </p>
+              <Link
+                href={`/go/wise?to=${currency}&utm_campaign=city_${city.slug}_${locale}_cta`}
+                className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-bold text-emerald-700 hover:bg-emerald-50"
+              >
+                {dict.wiseCTA(currency)}
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {neighbours.length > 0 && (
         <section className="border-b border-gray-200">

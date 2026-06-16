@@ -1,6 +1,9 @@
 import type { ExchangeShop } from "./database.types";
+import { PROMOTED_SHOPS_ENABLED } from "./flags";
 
 export function isPromotedShop(shop: ExchangeShop): boolean {
+  // Promoted-shop monetization is off until the product reaches 100 users.
+  if (!PROMOTED_SHOPS_ENABLED) return false;
   if (!shop.is_promoted) return false;
   if (!shop.promoted_until) return true;
   return new Date(shop.promoted_until).getTime() > Date.now();

@@ -1,14 +1,15 @@
 {
-  "name": "MoneySpot - Tokyo Currency Exchange Rates",
+  "name": "MoneySpot - Currency Exchange Worldwide",
   "short_name": "MoneySpot",
-  "description": "Compare real-time currency exchange rates at shops across Tokyo. Find the best rates near you.",
-  "start_url": "/",
+  "description": "Find the best currency exchange rates and shops in 185+ cities worldwide. Free, no ads.",
+  "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait",
   "scope": "/",
-  "categories": ["finance", "travel"],
+  "lang": "en",
+  "categories": ["finance", "travel", "navigation"],
   "icons": [
     {
       "src": "/icon-48x48.png",

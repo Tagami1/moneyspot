@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { TFunction } from "@/i18n/useTranslation";
+import { WISE_CTA_ENABLED } from "@/lib/flags";
 
 type Props = {
   locale: string;
@@ -17,6 +18,8 @@ const WISE_AFFILIATE_URL = "https://wise.com/invite/a/PLACEHOLDER";
 export default function WiseAffiliateBanner({ locale, t, selectedCurrency, marketRate, shopRate }: Props) {
   const [dismissed, setDismissed] = useState(false);
 
+  // Affiliate CTAs are off until the product reaches 100 users.
+  if (!WISE_CTA_ENABLED) return null;
   if (dismissed) return null;
 
   const spread = marketRate && shopRate ? Math.abs(shopRate - marketRate) : null;

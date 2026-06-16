@@ -209,7 +209,28 @@ export function useAuth() {
       });
       if (updateError) return { error: getAuthErrorMessage(updateError.message) };
 
-      if (updateData.user || data.user) setUser((updateData.user ?? data.user) as User);
+      const verifiedUser = (updateData.user ?? data.user) as User | null;
+      if (verifiedUser) setUser(verifiedUser);
+
+      // Record the signup for the 100-user monitor (idempotent upsert).
+      // Silently ignores errors so registration never fails on analytics.
+      if (verifiedUser?.id) {
+        try {
+          await (supabase.from("signups" as never) as ReturnType<typeof supabase.from>).upsert(
+            {
+              user_id: verifiedUser.id,
+              country: profile.country || null,
+              locale:
+                typeof navigator !== "undefined"
+                  ? navigator.language.slice(0, 2)
+                  : null,
+            } as never,
+            { onConflict: "user_id", ignoreDuplicates: true }
+          );
+        } catch {
+          /* table may not exist yet — ignore */
+        }
+      }
       return { error: null };
     } catch (error) {
       return { error: getAuthErrorMessage(error) };

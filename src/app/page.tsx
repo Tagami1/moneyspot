@@ -203,6 +203,19 @@ export default function HomePage() {
       return () => window.clearTimeout(timer);
     }
 
+    // Deep link from world city pages: /?lat=..&lng=..&city=Tokyo
+    const latParam = Number(params.get("lat"));
+    const lngParam = Number(params.get("lng"));
+    if (Number.isFinite(latParam) && Number.isFinite(lngParam) && (latParam !== 0 || lngParam !== 0)) {
+      const timer = window.setTimeout(() => {
+        setUserLocation({ lat: latParam, lng: lngParam });
+        setLocationReady(true);
+        setViewMode("list");
+        setSearchRadiusM(EXPANDED_SEARCH_RADIUS_M);
+      }, 0);
+      return () => window.clearTimeout(timer);
+    }
+
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (pos) => {

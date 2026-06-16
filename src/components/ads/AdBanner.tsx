@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { TFunction } from "@/i18n/useTranslation";
+import { ADS_ENABLED } from "@/lib/flags";
 
 type Props = {
   isPremium?: boolean;
@@ -16,6 +17,8 @@ type Props = {
 export default function AdBanner({ isPremium, locale, t, placement = "list" }: Props) {
   const [dismissed, setDismissed] = useState(false);
 
+  // Monetization is off until the product reaches 100 users.
+  if (!ADS_ENABLED) return null;
   if (isPremium || dismissed) return null;
 
   return (
