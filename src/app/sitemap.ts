@@ -4,6 +4,7 @@ import { CITY_LOCALES } from "@/lib/cities-i18n";
 import { allPairs, pairSlug } from "@/lib/currencies-data";
 import { guideSlug, guides } from "@/lib/guides";
 import { jaGuideSlug, jaGuides } from "@/lib/guides-ja";
+import { GUIDE_LOCALES, getLocGuides, locGuideSlug } from "@/lib/guides-loc";
 import { mockCurrencies, mockShops } from "@/lib/mock-data";
 import { getShopSlug } from "@/lib/shop-pages";
 import { worldCities } from "@/lib/world-cities";
@@ -67,6 +68,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+    ...GUIDE_LOCALES.flatMap((l) => [
+      { url: `${SITE_URL}/${l}/guides`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.75 },
+      ...getLocGuides(l).map((g) => ({
+        url: `${SITE_URL}/${l}/guides/${locGuideSlug(g)}`,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+      })),
+    ]),
   ];
 
   // Tokyo area pages (existing)
