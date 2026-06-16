@@ -27,19 +27,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     })),
     { url: `${SITE_URL}/convert`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${SITE_URL}/ja/convert`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
     { url: `${SITE_URL}/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${SITE_URL}/ja/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/areas`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/share`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
   ];
 
-  // Currency converter pairs (high search volume)
-  const convertRoutes: MetadataRoute.Sitemap = allPairs().map(({ from, to }) => ({
-    url: `${SITE_URL}/convert/${pairSlug(from, to)}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: from === "USD" || to === "USD" || from === "EUR" || to === "JPY" ? 0.7 : 0.6,
-  }));
+  // Currency converter pairs (high search volume) — en + ja
+  const convertRoutes: MetadataRoute.Sitemap = allPairs().flatMap(({ from, to }) => {
+    const priority = from === "USD" || to === "USD" || from === "EUR" || to === "JPY" ? 0.7 : 0.6;
+    return [
+      {
+        url: `${SITE_URL}/convert/${pairSlug(from, to)}`,
+        lastModified: now,
+        changeFrequency: "weekly" as const,
+        priority,
+      },
+      {
+        url: `${SITE_URL}/ja/convert/${pairSlug(from, to)}`,
+        lastModified: now,
+        changeFrequency: "weekly" as const,
+        priority: priority - 0.05,
+      },
+    ];
+  });
 
   // Country travel-money guides (en + ja)
   const guideRoutes: MetadataRoute.Sitemap = [
