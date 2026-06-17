@@ -7,6 +7,7 @@ import {
 } from "@/lib/world-cities";
 import { type CityDict, type CityLocale } from "@/lib/cities-i18n";
 import { WISE_CTA_ENABLED } from "@/lib/flags";
+import { IOS_APP_URL } from "@/lib/app-links";
 
 type Props = {
   city: WorldCity;
@@ -209,12 +210,22 @@ export function CityPageContent({ city, dict, locale }: Props) {
               {dict.saveTitle(cityName)}
             </h3>
             <p className="mt-2 max-w-2xl text-sm leading-6 opacity-95">{dict.saveBody}</p>
-            <Link
-              href="/?register=1"
-              className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-bold text-blue-700 hover:bg-blue-50"
-            >
-              {dict.saveCTA}
-            </Link>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                href="/?register=1"
+                className="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-bold text-blue-700 hover:bg-blue-50"
+              >
+                {dict.saveCTA}
+              </Link>
+              <a
+                href={IOS_APP_URL}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 rounded-lg border border-white/40 px-5 py-3 text-sm font-bold text-white hover:bg-white/10"
+              >
+                 Download on the App Store
+              </a>
+            </div>
           </div>
         </div>
       </section>

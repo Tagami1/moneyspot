@@ -1016,6 +1016,14 @@ export default function HomePage() {
           <Link href="/guides" className="ml-2 font-semibold text-blue-600">
             📖 Guides
           </Link>
+          <a
+            href="https://apps.apple.com/app/moneyspot-fx/id6761978909"
+            target="_blank"
+            rel="noopener"
+            className="ml-2 font-semibold text-blue-600"
+          >
+            📱 iOS App
+          </a>
           <Link href="/areas" className="ml-2 font-semibold text-blue-500">
             {t("areaSeo.link")}
           </Link>

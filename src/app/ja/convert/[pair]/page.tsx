@@ -11,6 +11,7 @@ import {
 } from "@/lib/currencies-data";
 import { getWorldCity } from "@/lib/world-cities";
 import { crossRate, formatAmount, ratesData } from "@/lib/rates";
+import { IOS_APP_URL } from "@/lib/app-links";
 
 type Props = { params: Promise<{ pair: string }> };
 
@@ -124,6 +125,11 @@ export default async function JaPairPage({ params }: Props) {
           <div className="mt-6">
             <ConverterWidget from={from} to={to} fromSymbol={f.symbol} toSymbol={t.symbol} baseRate={rate} />
           </div>
+          <p className="mt-4 text-sm">
+            <a href={IOS_APP_URL} target="_blank" rel="noopener" className="font-bold text-blue-700 hover:underline">
+              📱 MoneySpot の無料iPhoneアプリを入手 →
+            </a>
+          </p>
         </div>
       </section>
 
